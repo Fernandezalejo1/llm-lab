@@ -220,7 +220,10 @@ def main():
             s.reconfigure(encoding="utf-8", errors="replace")
         except Exception:
             pass
-    tasks = [json.loads(l) for l in open("code_tasks.jsonl", encoding="utf-8") if l.strip()]
+    # Ruta relativa a este archivo: a mano se corre desde rag/, pero en CI el
+    # cwd es la raiz del repo y la ruta relativa no resolveria.
+    tasks_path = Path(__file__).resolve().parent / "code_tasks.jsonl"
+    tasks = [json.loads(l) for l in open(tasks_path, encoding="utf-8") if l.strip()]
     fails = 0
     for t in tasks:
         tid = t["id"]
