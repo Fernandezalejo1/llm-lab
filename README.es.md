@@ -82,3 +82,9 @@ python run_eval.py --model local-qwen:latest --tasks tasks.jsonl
 
 Resultados en `results/`. Detalles en [docs/architecture.md](docs/architecture.md)
 y [evals/README.md](evals/README.md).
+
+---
+
+## 13. Licencia
+
+MIT © 2026 Alejo Fernandez Di Piramo — ver [LICENSE](LICENSE).

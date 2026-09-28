@@ -235,3 +235,9 @@ README.es.md   the original Spanish version of this document
 ---
 
 *Spanish version: `README.es.md`. Everything runs offline; no data leaves the machine.*
+
+---
+
+## 13. License
+
+MIT © 2026 Alejo Fernandez Di Piramo — see [LICENSE](LICENSE).
