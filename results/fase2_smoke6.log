@@ -1,0 +1,63 @@
+============================================================
+1) Backend / GPU
+============================================================
+python: 3.12.14
+torch: 2.11.0+rocm7.13.0
+build: 7.13.99004
+gpu disponible: True
+device: AMD Radeon RX 9070 XT
+capability: (12, 0)
+VRAM total: 17.1 GB
+
+============================================================
+2) Unsloth
+============================================================
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+unsloth: 2026.9.10
+
+============================================================
+3) Carga 4-bit + LoRA + 8 ejemplos, 3 steps
+============================================================
+==((====))==  Unsloth 2026.9.10: Fast Qwen3 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   0%|          | 1/310 [00:00<03:27,  1.49it/s]Loading weights:  15%|█▌        | 48/310 [00:00<00:03, 83.65it/s]Loading weights:  35%|███▌      | 110/310 [00:00<00:01, 190.78it/s]Loading weights:  56%|█████▌    | 173/310 [00:00<00:00, 285.16it/s]Loading weights:  75%|███████▍  | 232/310 [00:01<00:00, 357.27it/s]Loading weights:  95%|█████████▍| 294/310 [00:01<00:00, 420.92it/s]Loading weights: 100%|██████████| 310/310 [00:01<00:00, 259.14it/s]
+Unsloth 2026.9.10 patched 28 layers with 28 QKV layers, 28 O layers and 28 MLP layers.
+modelo cargado en 10.8s
+Unsloth: Tokenizing ["text"]:   0%|          | 0/4 [00:00<?, ? examples/s]Unsloth: Tokenizing ["text"]: 100%|██████████| 4/4 [00:00<00:00, 725.94 examples/s]
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 4 | Num Epochs = 2 | Total steps = 6
+O^O/ \_/ \    Batch size per device = 1 | Gradient accumulation steps = 1
+\        /    Data Parallel GPUs = 1 | Total batch size (1 x 1 x 1) = 1
+ "-____-"     Trainable parameters = 17,432,576 of 1,738,007,552 (1.00% trained)
+🦥 Unsloth: Padding-free auto-enabled, enabling faster training.
+  0%|          | 0/6 [00:00<?, ?it/s]`use_return_dict` is deprecated! Use `return_dict` instead!
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+ 17%|█▋        | 1/6 [00:08<00:43,  8.68s/it]                                              17%|█▋        | 1/6 [00:08<00:43,  8.68s/it] 33%|███▎      | 2/6 [00:09<00:15,  3.77s/it]                                              33%|███▎      | 2/6 [00:09<00:15,  3.77s/it] 50%|█████     | 3/6 [00:09<00:06,  2.18s/it]                                              50%|█████     | 3/6 [00:09<00:06,  2.18s/it] 67%|██████▋   | 4/6 [00:09<00:02,  1.44s/it]                                              67%|██████▋   | 4/6 [00:09<00:02,  1.44s/it] 83%|████████▎ | 5/6 [00:09<00:01,  1.03s/it]                                              83%|████████▎ | 5/6 [00:09<00:01,  1.03s/it]100%|██████████| 6/6 [00:10<00:00,  1.27it/s]                                             100%|██████████| 6/6 [00:10<00:00,  1.27it/s]                                             100%|██████████| 6/6 [00:10<00:00,  1.27it/s]100%|██████████| 6/6 [00:10<00:00,  1.70s/it]
+{'loss': '2.222', 'grad_norm': '2.126', 'learning_rate': '0', 'epoch': '0.25'}
+{'loss': '2.173', 'grad_norm': '2.127', 'learning_rate': '0.0002', 'epoch': '0.5'}
+{'loss': '2.583', 'grad_norm': '1.742', 'learning_rate': '0.00016', 'epoch': '0.75'}
+{'loss': '2.535', 'grad_norm': '1.559', 'learning_rate': '0.00012', 'epoch': '1'}
+{'loss': '2.349', 'grad_norm': '1.551', 'learning_rate': '8e-05', 'epoch': '1.25'}
+{'loss': '2.34', 'grad_norm': '1.332', 'learning_rate': '4e-05', 'epoch': '1.5'}
+{'train_runtime': '10.22', 'train_samples_per_second': '0.587', 'train_steps_per_second': '0.587', 'train_loss': '2.367', 'epoch': '1.5'}
+loss por step: [2.2216, 2.1729, 2.5834, 2.5352, 2.3488, 2.3395]
+media primer tercio: 2.1973 | último tercio: 2.3441
+ATENCION: la loss no baja en tendencia (revisar config).
+VRAM pico: 2.00 GB de 17.1 GB

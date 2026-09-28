@@ -1,0 +1,1 @@
+{"id": "sh-001", "category": "bash", "model": "local-qwen:latest", "pass": true, "error": "", "duration_s": 2.9, "answer": "```bash\n#!/bin/bash\n\nif [ $# -eq 0 ]; then\n    exit 1\nfi\n\nwc -l < \"$1\"\n```"}

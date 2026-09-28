@@ -1,0 +1,409 @@
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\__init__.py:1568: UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Unsloth: UnslothBCOTrainer is already patched.
+Unsloth: UnslothCPOTrainer is already patched.
+Unsloth: UnslothDPOTrainer is already patched.
+Unsloth: UnslothGKDTrainer is already patched.
+Unsloth: UnslothGRPOTrainer is already patched.
+Unsloth: UnslothKTOTrainer is already patched.
+Unsloth: UnslothNashMDTrainer is already patched.
+Unsloth: UnslothOnlineDPOTrainer is already patched.
+Unsloth: UnslothORPOTrainer is already patched.
+Unsloth: UnslothPPOTrainer is already patched.
+Unsloth: UnslothPRMTrainer is already patched.
+Unsloth: UnslothRewardTrainer is already patched.
+Unsloth: UnslothRLOOTrainer is already patched.
+Unsloth: UnslothSFTTrainer is already patched.
+Unsloth: UnslothXPOTrainer is already patched.
+============================================================
+Cargando merged SFT (bf16 → 4-bit) + LoRA RL attention-only...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:27<5:53:08, 27.92s/it]Loading weights:   0%|          | 2/760 [00:50<5:13:13, 24.79s/it]Loading weights:   1%|          | 7/760 [00:51<1:00:50,  4.85s/it]Loading weights:   1%|          | 9/760 [00:51<42:59,  3.43s/it]  Loading weights:   1%|▏         | 10/760 [00:52<35:53,  2.87s/it]Loading weights:   2%|▏         | 12/760 [00:52<24:14,  1.94s/it]Loading weights:   2%|▏         | 13/760 [00:53<22:10,  1.78s/it]Loading weights:   2%|▏         | 14/760 [00:54<20:15,  1.63s/it]Loading weights:   2%|▏         | 15/760 [00:55<18:53,  1.52s/it]Loading weights:   3%|▎         | 23/760 [00:56<05:52,  2.09it/s]Loading weights:   3%|▎         | 24/760 [00:57<05:44,  2.13it/s]Loading weights:   3%|▎         | 26/760 [00:57<04:51,  2.52it/s]Loading weights:   4%|▎         | 27/760 [00:58<06:12,  1.97it/s]Loading weights:   4%|▎         | 28/760 [00:59<07:28,  1.63it/s]Loading weights:   4%|▍         | 29/760 [01:00<08:48,  1.38it/s]Loading weights:   5%|▍         | 37/760 [01:01<03:27,  3.49it/s]Loading weights:   5%|▌         | 38/760 [01:01<03:34,  3.37it/s]Loading weights:   5%|▌         | 40/760 [01:02<03:14,  3.71it/s]Loading weights:   5%|▌         | 41/760 [01:03<04:43,  2.53it/s]Loading weights:   6%|▌         | 42/760 [01:04<06:10,  1.94it/s]Loading weights:   6%|▌         | 43/760 [01:05<07:33,  1.58it/s]Loading weights:   6%|▌         | 46/760 [01:06<06:14,  1.91it/s]Loading weights:   6%|▌         | 47/760 [01:07<07:27,  1.59it/s]Loading weights:   6%|▋         | 48/760 [01:09<08:39,  1.37it/s]Loading weights:   7%|▋         | 51/760 [01:09<04:49,  2.45it/s]Loading weights:   7%|▋         | 52/760 [01:09<04:47,  2.46it/s]Loading weights:   7%|▋         | 54/760 [01:10<04:38,  2.53it/s]Loading weights:   7%|▋         | 55/760 [01:10<03:57,  2.97it/s]Loading weights:   8%|▊         | 62/760 [01:11<02:16,  5.12it/s]Loading weights:   8%|▊         | 63/760 [01:11<02:31,  4.59it/s]Loading weights:   9%|▊         | 65/760 [01:12<02:24,  4.80it/s]Loading weights:   9%|▊         | 66/760 [01:13<04:01,  2.87it/s]Loading weights:   9%|▉         | 67/760 [01:14<05:33,  2.08it/s]Loading weights:   9%|▉         | 68/760 [01:15<07:01,  1.64it/s]Loading weights:  10%|█         | 76/760 [01:16<02:57,  3.86it/s]Loading weights:  10%|█         | 77/760 [01:16<03:05,  3.68it/s]Loading weights:  10%|█         | 79/760 [01:16<02:50,  3.99it/s]Loading weights:  11%|█         | 80/760 [01:18<04:16,  2.65it/s]Loading weights:  11%|█         | 81/760 [01:19<05:40,  1.99it/s]Loading weights:  11%|█         | 82/760 [01:20<07:01,  1.61it/s]Loading weights:  12%|█▏        | 90/760 [01:21<02:54,  3.84it/s]Loading weights:  12%|█▏        | 91/760 [01:21<03:02,  3.67it/s]Loading weights:  12%|█▏        | 93/760 [01:21<02:47,  3.98it/s]Loading weights:  12%|█▏        | 94/760 [01:22<04:11,  2.65it/s]Loading weights:  12%|█▎        | 95/760 [01:24<05:33,  1.99it/s]Loading weights:  13%|█▎        | 96/760 [01:25<06:51,  1.61it/s]Loading weights:  13%|█▎        | 99/760 [01:26<05:40,  1.94it/s]Loading weights:  13%|█▎        | 100/760 [01:27<06:49,  1.61it/s]Loading weights:  13%|█▎        | 101/760 [01:28<07:59,  1.37it/s]Loading weights:  14%|█▎        | 104/760 [01:28<04:26,  2.46it/s]Loading weights:  14%|█▍        | 105/760 [01:29<04:22,  2.50it/s]Loading weights:  14%|█▍        | 107/760 [01:29<04:14,  2.56it/s]Loading weights:  14%|█▍        | 108/760 [01:29<03:39,  2.97it/s]Loading weights:  15%|█▌        | 115/760 [01:30<01:59,  5.42it/s]Loading weights:  15%|█▌        | 116/760 [01:31<02:12,  4.85it/s]Loading weights:  16%|█▌        | 118/760 [01:31<02:12,  4.83it/s]Loading weights:  16%|█▌        | 119/760 [01:32<03:42,  2.88it/s]Loading weights:  16%|█▌        | 120/760 [01:33<05:08,  2.07it/s]Loading weights:  16%|█▌        | 121/760 [01:34<06:28,  1.65it/s]Loading weights:  17%|█▋        | 129/760 [01:35<02:37,  4.01it/s]Loading weights:  17%|█▋        | 130/760 [01:35<02:45,  3.81it/s]Loading weights:  17%|█▋        | 132/760 [01:36<02:38,  3.96it/s]Loading weights:  18%|█▊        | 133/760 [01:37<03:58,  2.63it/s]Loading weights:  18%|█▊        | 134/760 [01:38<05:15,  1.99it/s]Loading weights:  18%|█▊        | 135/760 [01:39<06:28,  1.61it/s]Loading weights:  19%|█▉        | 143/760 [01:40<02:37,  3.92it/s]Loading weights:  19%|█▉        | 144/760 [01:40<02:45,  3.72it/s]Loading weights:  19%|█▉        | 146/760 [01:41<02:32,  4.02it/s]Loading weights:  19%|█▉        | 147/760 [01:42<03:53,  2.62it/s]Loading weights:  19%|█▉        | 148/760 [01:43<05:09,  1.98it/s]Loading weights:  20%|█▉        | 149/760 [01:44<06:29,  1.57it/s]Loading weights:  20%|██        | 152/760 [01:45<05:11,  1.95it/s]Loading weights:  20%|██        | 153/760 [01:46<06:21,  1.59it/s]Loading weights:  20%|██        | 154/760 [01:47<07:18,  1.38it/s]Loading weights:  21%|██        | 157/760 [01:48<04:02,  2.49it/s]Loading weights:  21%|██        | 158/760 [01:48<03:58,  2.53it/s]Loading weights:  21%|██        | 160/760 [01:49<03:52,  2.58it/s]Loading weights:  21%|██        | 161/760 [01:49<03:18,  3.02it/s]Loading weights:  22%|██▏       | 168/760 [01:50<01:48,  5.46it/s]Loading weights:  22%|██▏       | 169/760 [01:50<02:01,  4.85it/s]Loading weights:  22%|██▎       | 171/760 [01:50<01:58,  4.99it/s]Loading weights:  23%|██▎       | 172/760 [01:51<03:24,  2.87it/s]Loading weights:  23%|██▎       | 173/760 [01:53<04:43,  2.07it/s]Loading weights:  23%|██▎       | 174/760 [01:54<05:56,  1.64it/s]Loading weights:  24%|██▍       | 182/760 [01:54<02:23,  4.04it/s]Loading weights:  24%|██▍       | 183/760 [01:55<02:31,  3.81it/s]Loading weights:  24%|██▍       | 185/760 [01:55<02:19,  4.11it/s]Loading weights:  24%|██▍       | 186/760 [01:56<03:39,  2.61it/s]Loading weights:  25%|██▍       | 187/760 [01:57<04:50,  1.97it/s]Loading weights:  25%|██▍       | 188/760 [01:58<05:57,  1.60it/s]Loading weights:  26%|██▌       | 196/760 [01:59<02:25,  3.87it/s]Loading weights:  26%|██▌       | 197/760 [02:00<02:33,  3.67it/s]Loading weights:  26%|██▌       | 199/760 [02:00<02:23,  3.91it/s]Loading weights:  26%|██▋       | 200/760 [02:01<03:36,  2.59it/s]Loading weights:  26%|██▋       | 201/760 [02:02<04:44,  1.97it/s]Loading weights:  27%|██▋       | 202/760 [02:03<05:48,  1.60it/s]Loading weights:  27%|██▋       | 205/760 [02:04<04:40,  1.98it/s]Loading weights:  27%|██▋       | 206/760 [02:06<05:37,  1.64it/s]Loading weights:  27%|██▋       | 207/760 [02:07<06:38,  1.39it/s]Loading weights:  28%|██▊       | 210/760 [02:07<03:41,  2.49it/s]Loading weights:  28%|██▊       | 211/760 [02:07<03:37,  2.53it/s]Loading weights:  28%|██▊       | 213/760 [02:08<03:32,  2.58it/s]Loading weights:  28%|██▊       | 214/760 [02:08<03:02,  3.00it/s]Loading weights:  29%|██▉       | 221/760 [02:09<01:39,  5.43it/s]Loading weights:  29%|██▉       | 222/760 [02:09<01:52,  4.80it/s]Loading weights:  29%|██▉       | 224/760 [02:10<01:48,  4.95it/s]Loading weights:  30%|██▉       | 225/760 [02:11<03:03,  2.91it/s]Loading weights:  30%|██▉       | 226/760 [02:12<04:21,  2.05it/s]Loading weights:  30%|██▉       | 227/760 [02:13<05:26,  1.63it/s]Loading weights:  31%|███       | 235/760 [02:14<02:10,  4.02it/s]Loading weights:  31%|███       | 236/760 [02:14<02:17,  3.80it/s]Loading weights:  31%|███▏      | 238/760 [02:14<02:07,  4.10it/s]Loading weights:  31%|███▏      | 239/760 [02:16<03:14,  2.68it/s]Loading weights:  32%|███▏      | 240/760 [02:17<04:29,  1.93it/s]Loading weights:  32%|███▏      | 241/760 [02:18<05:28,  1.58it/s]Loading weights:  33%|███▎      | 249/760 [02:19<02:12,  3.84it/s]Loading weights:  33%|███▎      | 250/760 [02:19<02:19,  3.65it/s]Loading weights:  33%|███▎      | 252/760 [02:19<02:08,  3.96it/s]Loading weights:  33%|███▎      | 253/760 [02:21<03:12,  2.64it/s]Loading weights:  33%|███▎      | 254/760 [02:22<04:14,  1.99it/s]Loading weights:  34%|███▎      | 255/760 [02:23<05:18,  1.59it/s]Loading weights:  34%|███▍      | 258/760 [02:24<04:15,  1.97it/s]Loading weights:  34%|███▍      | 259/760 [02:25<05:07,  1.63it/s]Loading weights:  34%|███▍      | 260/760 [02:26<05:55,  1.41it/s]Loading weights:  35%|███▍      | 263/760 [02:26<03:16,  2.53it/s]Loading weights:  35%|███▍      | 264/760 [02:26<03:13,  2.56it/s]Loading weights:  35%|███▌      | 266/760 [02:27<03:09,  2.61it/s]Loading weights:  35%|███▌      | 268/760 [02:27<02:14,  3.65it/s]Loading weights:  36%|███▌      | 274/760 [02:28<01:36,  5.05it/s]Loading weights:  36%|███▌      | 275/760 [02:29<01:47,  4.53it/s]Loading weights:  36%|███▋      | 277/760 [02:29<01:41,  4.74it/s]Loading weights:  37%|███▋      | 278/760 [02:30<02:50,  2.83it/s]Loading weights:  37%|███▋      | 279/760 [02:31<03:55,  2.05it/s]Loading weights:  37%|███▋      | 280/760 [02:32<04:55,  1.63it/s]Loading weights:  38%|███▊      | 288/760 [02:33<02:01,  3.90it/s]Loading weights:  38%|███▊      | 289/760 [02:34<02:07,  3.68it/s]Loading weights:  38%|███▊      | 291/760 [02:34<01:57,  4.00it/s]Loading weights:  38%|███▊      | 292/760 [02:35<02:56,  2.65it/s]Loading weights:  39%|███▊      | 293/760 [02:36<03:54,  1.99it/s]Loading weights:  39%|███▊      | 294/760 [02:37<04:49,  1.61it/s]Loading weights:  40%|███▉      | 302/760 [02:38<01:56,  3.93it/s]Loading weights:  40%|███▉      | 303/760 [02:38<02:07,  3.59it/s]Loading weights:  40%|████      | 305/760 [02:39<01:56,  3.91it/s]Loading weights:  40%|████      | 306/760 [02:40<02:53,  2.62it/s]Loading weights:  40%|████      | 307/760 [02:41<03:48,  1.98it/s]Loading weights:  41%|████      | 308/760 [02:42<04:41,  1.61it/s]Loading weights:  41%|████      | 311/760 [02:43<03:47,  1.97it/s]Loading weights:  41%|████      | 312/760 [02:44<04:40,  1.60it/s]Loading weights:  41%|████      | 313/760 [02:45<05:22,  1.38it/s]Loading weights:  42%|████▏     | 317/760 [02:46<02:55,  2.52it/s]Loading weights:  42%|████▏     | 319/760 [02:47<02:51,  2.57it/s]Loading weights:  42%|████▏     | 320/760 [02:47<02:30,  2.93it/s]Loading weights:  43%|████▎     | 327/760 [02:48<01:24,  5.11it/s]Loading weights:  43%|████▎     | 328/760 [02:48<01:33,  4.62it/s]Loading weights:  43%|████▎     | 330/760 [02:48<01:29,  4.80it/s]Loading weights:  44%|████▎     | 331/760 [02:49<02:32,  2.80it/s]Loading weights:  44%|████▎     | 332/760 [02:51<03:28,  2.06it/s]Loading weights:  44%|████▍     | 333/760 [02:52<04:19,  1.64it/s]Loading weights:  45%|████▍     | 341/760 [02:52<01:44,  4.02it/s]Loading weights:  45%|████▌     | 342/760 [02:53<01:50,  3.80it/s]Loading weights:  45%|████▌     | 344/760 [02:53<01:41,  4.10it/s]Loading weights:  45%|████▌     | 345/760 [02:54<02:33,  2.70it/s]Loading weights:  46%|████▌     | 346/760 [02:55<03:29,  1.98it/s]Loading weights:  46%|████▌     | 347/760 [02:56<04:17,  1.61it/s]Loading weights:  47%|████▋     | 355/760 [02:57<01:44,  3.88it/s]Loading weights:  47%|████▋     | 356/760 [02:58<01:49,  3.69it/s]Loading weights:  47%|████▋     | 358/760 [02:58<01:40,  4.00it/s]Loading weights:  47%|████▋     | 359/760 [02:59<02:30,  2.66it/s]Loading weights:  47%|████▋     | 360/760 [03:00<03:26,  1.94it/s]Loading weights:  48%|████▊     | 361/760 [03:01<04:11,  1.58it/s]Loading weights:  48%|████▊     | 364/760 [03:03<03:21,  1.96it/s]Loading weights:  48%|████▊     | 365/760 [03:04<04:02,  1.63it/s]Loading weights:  48%|████▊     | 366/760 [03:05<04:44,  1.38it/s]Loading weights:  49%|████▊     | 369/760 [03:05<02:37,  2.48it/s]Loading weights:  49%|████▊     | 370/760 [03:05<02:34,  2.53it/s]Loading weights:  49%|████▉     | 372/760 [03:06<02:30,  2.58it/s]Loading weights:  50%|█████     | 380/760 [03:07<01:18,  4.84it/s]Loading weights:  50%|█████     | 381/760 [03:07<01:25,  4.45it/s]Loading weights:  50%|█████     | 383/760 [03:08<01:21,  4.63it/s]Loading weights:  51%|█████     | 384/760 [03:09<02:08,  2.92it/s]Loading weights:  51%|█████     | 385/760 [03:10<03:00,  2.08it/s]Loading weights:  51%|█████     | 386/760 [03:11<03:44,  1.67it/s]Loading weights:  52%|█████▏    | 394/760 [03:12<01:32,  3.95it/s]Loading weights:  52%|█████▏    | 395/760 [03:12<01:37,  3.73it/s]Loading weights:  52%|█████▏    | 397/760 [03:13<01:29,  4.04it/s]Loading weights:  52%|█████▏    | 398/760 [03:14<02:15,  2.68it/s]Loading weights:  52%|█████▎    | 399/760 [03:15<03:03,  1.96it/s]Loading weights:  53%|█████▎    | 400/760 [03:16<03:44,  1.60it/s]Loading weights:  54%|█████▎    | 408/760 [03:17<01:31,  3.85it/s]Loading weights:  54%|█████▍    | 409/760 [03:17<01:36,  3.64it/s]Loading weights:  54%|█████▍    | 411/760 [03:17<01:28,  3.95it/s]Loading weights:  54%|█████▍    | 412/760 [03:19<02:12,  2.63it/s]Loading weights:  54%|█████▍    | 413/760 [03:20<02:56,  1.96it/s]Loading weights:  54%|█████▍    | 414/760 [03:21<03:44,  1.54it/s]Loading weights:  55%|█████▍    | 417/760 [03:22<02:59,  1.91it/s]Loading weights:  55%|█████▌    | 418/760 [03:23<03:38,  1.57it/s]Loading weights:  55%|█████▌    | 419/760 [03:24<04:08,  1.37it/s]Loading weights:  56%|█████▌    | 422/760 [03:24<02:17,  2.46it/s]Loading weights:  56%|█████▌    | 423/760 [03:25<02:14,  2.50it/s]Loading weights:  56%|█████▌    | 425/760 [03:26<02:14,  2.49it/s]Loading weights:  56%|█████▌    | 426/760 [03:26<01:54,  2.91it/s]Loading weights:  57%|█████▋    | 431/760 [03:26<00:52,  6.29it/s]Loading weights:  57%|█████▋    | 433/760 [03:26<00:43,  7.56it/s]Loading weights:  57%|█████▋    | 435/760 [03:26<00:36,  8.87it/s]Loading weights:  58%|█████▊    | 443/760 [03:26<00:17, 18.62it/s]Loading weights:  59%|█████▉    | 447/760 [03:26<00:16, 18.50it/s]Loading weights:  60%|█████▉    | 455/760 [03:27<00:11, 26.98it/s]Loading weights:  60%|██████    | 459/760 [03:27<00:12, 24.51it/s]Loading weights:  61%|██████▏   | 467/760 [03:27<00:09, 32.55it/s]Loading weights:  62%|██████▏   | 472/760 [03:27<00:09, 29.12it/s]Loading weights:  63%|██████▎   | 479/760 [03:27<00:07, 35.56it/s]Loading weights:  64%|██████▎   | 484/760 [03:27<00:08, 31.03it/s]Loading weights:  65%|██████▍   | 491/760 [03:28<00:07, 37.31it/s]Loading weights:  65%|██████▌   | 496/760 [03:28<00:08, 31.97it/s]Loading weights:  66%|██████▌   | 503/760 [03:28<00:06, 38.18it/s]Loading weights:  67%|██████▋   | 508/760 [03:28<00:07, 32.43it/s]Loading weights:  68%|██████▊   | 515/760 [03:28<00:06, 38.56it/s]Loading weights:  68%|██████▊   | 520/760 [03:28<00:07, 32.76it/s]Loading weights:  69%|██████▉   | 527/760 [03:29<00:07, 32.11it/s]Loading weights:  70%|██████▉   | 531/760 [03:29<00:08, 27.50it/s]Loading weights:  71%|███████   | 539/760 [03:29<00:06, 35.74it/s]Loading weights:  72%|███████▏  | 544/760 [03:29<00:06, 31.28it/s]Loading weights:  72%|███████▎  | 551/760 [03:29<00:05, 36.15it/s]Loading weights:  73%|███████▎  | 556/760 [03:30<00:06, 31.39it/s]Loading weights:  74%|███████▍  | 563/760 [03:30<00:05, 37.49it/s]Loading weights:  75%|███████▍  | 568/760 [03:30<00:07, 25.96it/s]Loading weights:  75%|███████▌  | 573/760 [03:30<00:08, 21.39it/s]Loading weights:  76%|███████▌  | 577/760 [03:31<00:08, 21.15it/s]Loading weights:  76%|███████▋  | 580/760 [03:31<00:08, 22.02it/s]Loading weights:  77%|███████▋  | 587/760 [03:31<00:05, 29.55it/s]Loading weights:  78%|███████▊  | 591/760 [03:31<00:06, 25.60it/s]Loading weights:  79%|███████▉  | 599/760 [03:31<00:04, 34.59it/s]Loading weights:  79%|███████▉  | 604/760 [03:31<00:05, 26.47it/s]Loading weights:  80%|████████  | 611/760 [03:32<00:04, 33.06it/s]Loading weights:  81%|████████  | 616/760 [03:32<00:04, 29.52it/s]Loading weights:  82%|████████▏ | 623/760 [03:32<00:03, 35.87it/s]Loading weights:  83%|████████▎ | 628/760 [03:32<00:04, 31.15it/s]Loading weights:  84%|████████▎ | 635/760 [03:32<00:03, 37.38it/s]Loading weights:  84%|████████▍ | 640/760 [03:32<00:03, 32.11it/s]Loading weights:  85%|████████▌ | 647/760 [03:33<00:03, 29.67it/s]Loading weights:  86%|████████▌ | 651/760 [03:33<00:04, 26.08it/s]Loading weights:  87%|████████▋ | 659/760 [03:33<00:02, 34.25it/s]Loading weights:  87%|████████▋ | 664/760 [03:33<00:03, 30.36it/s]Loading weights:  88%|████████▊ | 671/760 [03:33<00:02, 34.97it/s]Loading weights:  89%|████████▉ | 675/760 [03:34<00:02, 29.15it/s]Loading weights:  90%|████████▉ | 683/760 [03:34<00:02, 37.40it/s]Loading weights:  91%|█████████ | 688/760 [03:34<00:02, 32.18it/s]Loading weights:  91%|█████████▏| 695/760 [03:34<00:01, 38.26it/s]Loading weights:  92%|█████████▏| 700/760 [03:34<00:01, 32.56it/s]Loading weights:  93%|█████████▎| 707/760 [03:34<00:01, 38.53it/s]Loading weights:  94%|█████████▎| 712/760 [03:35<00:01, 32.81it/s]Loading weights:  95%|█████████▍| 719/760 [03:35<00:01, 38.82it/s]Loading weights:  95%|█████████▌| 724/760 [03:35<00:01, 32.86it/s]Loading weights:  96%|█████████▌| 731/760 [03:35<00:00, 38.88it/s]Loading weights:  97%|█████████▋| 736/760 [03:35<00:00, 26.02it/s]Loading weights:  98%|█████████▊| 743/760 [03:36<00:00, 32.31it/s]Loading weights:  98%|█████████▊| 748/760 [03:36<00:00, 29.45it/s]Loading weights:  99%|█████████▉| 753/760 [03:36<00:00, 19.64it/s]Loading weights:  99%|█████████▉| 756/760 [03:37<00:00, 14.85it/s]Loading weights: 100%|██████████| 760/760 [03:37<00:00,  3.50it/s]
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+Modelo + LoRA RL en 225s
+  ✅ LoRA RL solo dentro del text LM (64 capas apuntadas)
+
+Esperando que el trainer parcheado sea UnslothGRPOTrainer: UnslothGRPOTrainer
+Dataset: 7 tareas puente (reward = verify_task 0/1).
+Unsloth: We now expect `per_device_train_batch_size` * `gradient_accumulation_steps` * `world_size` to be a multiple of `num_generations`.
+We will change the batch size of 1 to the `num_generations` of 4
+GRPOConfig: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+beta=0.001,
+bf16=True,
+bf16_full_eval=False,
+cache_implementation=None,
+data_seed=3407,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+delta=None,
+disable_dropout=False,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=False,
+ds3_gather_for_generation=True,
+enable_jit_checkpoint=False,
+epsilon=0.2,
+epsilon_high=None,
+eval_accumulation_steps=2,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generation_batch_size=8,
+generation_kwargs={},
+gradient_accumulation_steps=2,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': True},
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+importance_sampling_level=token,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_completions=False,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=False,
+logging_nan_inf_filter=False,
+logging_steps=1,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=bnpo,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.LINEAR,
+mask_truncated_completions=False,
+max_completion_length=2048,
+max_grad_norm=1.0,
+max_prompt_length=512,
+max_steps=2,
+metric_for_best_model=None,
+min_p=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_completions_to_print=None,
+num_generations=4,
+num_iterations=1,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_8BIT,
+optim_args=None,
+optim_target_modules=None,
+output_dir=out_grpo_smoke,
+parallelism_config=None,
+per_device_eval_batch_size=4,
+per_device_train_batch_size=4,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+remove_unused_columns=False,
+repetition_penalty=1.0,
+report_to=[],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+reward_weights=None,
+run_name=None,
+save_on_each_node=False,
+save_only_model=True,
+save_steps=7,
+save_strategy=SaveStrategy.STEPS,
+save_total_limit=None,
+scale_rewards=group,
+seed=7,
+shuffle_dataset=True,
+skip_memory_metrics=True,
+steps_per_generation=2,
+sync_ref_model=False,
+temperature=1.0,
+tf32=None,
+top_entropy_quantile=1.0,
+top_k=None,
+top_p=1.0,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=250,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+unsloth_grpo_mini_batch=None,
+unsloth_logit_chunk_multiplier=None,
+unsloth_num_chunks=-1,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_liger_loss=False,
+use_transformers_paged=False,
+use_vllm=False,
+vllm_enable_sleep_mode=False,
+vllm_gpu_memory_utilization=0.3,
+vllm_guided_decoding_regex=None,
+vllm_importance_sampling_cap=2.0,
+vllm_importance_sampling_correction=False,
+vllm_mode=colocate,
+vllm_model_impl=vllm,
+vllm_sampling_params=None,
+vllm_server_base_url=None,
+vllm_server_host=0.0.0.0,
+vllm_server_port=8000,
+vllm_server_timeout=240.0,
+vllm_tensor_parallel_size=1,
+wandb_log_unique_prompts=False,
+warmup_ratio=None,
+warmup_steps=2,
+weight_decay=0.0,
+)
+Trainer instanciado OK (226s desde el arranque).
+
+-- ej 0: 694 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia traduce el estado interno de cada movimie'
+
+-- ej 1: 924 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia determina si un movimiento bancario es du'
+
+-- ej 2: 891 tokens | prompt conv: system/user
+   user[:80]: 'El motor de contabilia genera el resumen de una conciliación a partir de los mov'
+
+Training GRPO (RL sobre los tests del puente)...
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248044}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 7 | Num Epochs = 1 | Total steps = 2
+O^O/ \_/ \    Batch size per device = 4 | Gradient accumulation steps = 2
+\        /    Data Parallel GPUs = 1 | Total batch size (4 x 2 x 1) = 8
+ "-____-"     Trainable parameters = 3,932,160 of 9,413,745,904 (0.04% trained)
+  0%|          | 0/2 [00:00<?, ?it/s]Passing `generation_config` together with generation-related arguments=({'disable_compile', 'pad_token_id'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for Qwen3_5RMSNorm_forward; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for apply_rotary_pos_emb; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for rotate_half; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for torch_causal_conv1d_update; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for chunked_hidden_states_selective_log_softmax; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+Unsloth: Will smartly offload gradients to save VRAM!
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\train_grpo.py", line 231, in <module>
+    main()
+  File "D:\ai-lab\fase2\train_grpo.py", line 210, in main
+    trainer.train()
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\UnslothGRPOTrainer.py", line 117, in wrapper
+    output = f(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\rl.py", line 140, in _unsloth_train_with_resume_guard
+    return original_train(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\trainer.py", line 1424, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 81, in _fast_inner_training_loop
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\trainer.py", line 1734, in _run_epoch
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\_utils.py", line 3838, in _unsloth_training_step_settling_fallbacks
+    return _training_step_before_settle(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 40, in _unsloth_training_step
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\UnslothGRPOTrainer.py", line 5321, in compute_loss
+    ) = grpo_accumulated_loss(
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\UnslothGRPOTrainer.py", line 2056, in grpo_accumulated_loss
+    new_hidden_states_chunk = unwrapped_model(
+                              ^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\peft\peft_model.py", line 2120, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\peft\tuners\tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\unsloth_compiled_module_qwen3_5.py", line 1377, in forward
+    return Qwen3_5ForConditionalGeneration_forward(self, input_ids=input_ids, attention_mask=attention_mask, position_ids=position_ids, past_key_values=past_key_values, inputs_embeds=inputs_embeds, labels=labels, pixel_values=pixel_values, pixel_values_videos=pixel_values_videos, image_grid_thw=image_grid_thw, video_grid_thw=video_grid_thw, mm_token_type_ids=mm_token_type_ids, logits_to_keep=logits_to_keep, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\_dynamo\external_utils.py", line 227, in nonrecursive_disable_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\generic.py", line 876, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\unsloth_compiled_module_qwen3_5.py", line 1145, in Qwen3_5ForConditionalGeneration_forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\generic.py", line 876, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 1637, in forward
+    inputs_embeds = self.get_input_embeddings()(input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1885, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1833, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\modules\sparse.py", line 189, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\nn\functional.py", line 2567, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: unspecified launch failure
+Search for `hipErrorLaunchFailure' in https://rocm.docs.amd.com/projects/HIP/en/latest/index.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Device-side assertion tracking was not enabled by user.
+  0%|          | 0/2 [03:24<?, ?it/s]
+Exception Code: 0xE06D7363
+0x00007FFC278241CA, C:\WINDOWS\System32\KERNELBASE.dll(0x00007FFC27760000) + 0xC41CA byte(s), RaiseException() + 0x8A byte(s)
+0x00007FFC211652C7, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\VCRUNTIME140.dll(0x00007FFC21160000) + 0x52C7 byte(s), _CxxThrowException() + 0x97 byte(s)
+0x00007FFBF81A4262, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\c10_hip.dll(0x00007FFBF8160000) + 0x44262 byte(s), ?c10_cuda_check_implementation@cuda@c10@@YAXHPEBD0I_N@Z() + 0x162 byte(s)
+0x00007FFBF81A5008, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\c10_hip.dll(0x00007FFBF8160000) + 0x45008 byte(s), ?ExchangeDevice@cuda@c10@@YACC@Z() + 0x58 byte(s)
+0x00007FFB394DE745, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_hip.dll(0x00007FFB390F0000) + 0x3EE745 byte(s), ?CompileAndLaunchKernel@cuda@at@@YA?AV?$SmallVector@VTensor@at@@$05@c10@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0HAEBV34@AEBV?$SmallVector@VScalar@c10@@$00@4@_N@Z() + 0x3D75 byte(s)
+0x00007FFB39986A7D, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_hip.dll(0x00007FFB390F0000) + 0x896A7D byte(s), ?reset_rnn_state@CUDAGeneratorImpl@at@@QEAA_NXZ() + 0x15DD byte(s)
+0x00007FFB399854ED, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_hip.dll(0x00007FFB390F0000) + 0x8954ED byte(s), ?reset_rnn_state@CUDAGeneratorImpl@at@@QEAA_NXZ() + 0x4D byte(s)
+0x00007FFB3B1C8B4F, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_hip.dll(0x00007FFB390F0000) + 0x20D8B4F byte(s), ?quantized_max_pool2d_cudnn@native@at@@YA?AVTensor@2@AEBV32@V?$ArrayRef@_J@c10@@111_N@Z() + 0x3B6F byte(s)
+0x00007FFB3B1C6B5D, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_hip.dll(0x00007FFB390F0000) + 0x20D6B5D byte(s), ?quantized_max_pool2d_cudnn@native@at@@YA?AVTensor@2@AEBV32@V?$ArrayRef@_J@c10@@111_N@Z() + 0x1B7D byte(s)
+0x00007FFBF837A595, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\c10.dll(0x00007FFBF8350000) + 0x2A595 byte(s), ??1StorageImpl@c10@@UEAA@XZ() + 0xB5 byte(s)
+0x00007FFBF83835E0, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\c10.dll(0x00007FFBF8350000) + 0x335E0 byte(s), ?getNonDeterministicRandom@detail@c10@@YA_K_N@Z() + 0x130 byte(s)
+0x00007FFBF83ABDA0, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\c10.dll(0x00007FFBF8350000) + 0x5BDA0 byte(s), ?try_incref_pyobject@TensorImpl@c10@@UEBA_NXZ() + 0x80 byte(s)
+0x00007FFB403B780E, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_cpu.dll(0x00007FFB403B0000) + 0x780E byte(s), ??4Tensor@at@@QEGAAAEAV01@$$QEAVTensorBase@1@@Z() + 0x4E byte(s)
+0x00007FFBBB82A91E, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_python.dll(0x00007FFBBB1D0000) + 0x65A91E byte(s), ?THPVariable_Wrap@@YAPEAU_object@@AEBVTensorBase@at@@PEAU_typeobject@@@Z() + 0xA20E byte(s)
+0x00007FFBBB82A6B6, D:\ai-lab\fase2\.venv\Lib\site-packages\torch\lib\torch_python.dll(0x00007FFBBB1D0000) + 0x65A6B6 byte(s), ?THPVariable_Wrap@@YAPEAU_object@@AEBVTensorBase@at@@PEAU_typeobject@@@Z() + 0x9FA6 byte(s)
+0x00007FFBE4C509B4, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0x309B4 byte(s), PyObject_GC_Del() + 0x1454 byte(s)
+0x00007FFBE4C4F0ED, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0x2F0ED byte(s), PyUnicode_DecodeUTF8Stateful() + 0x24D5 byte(s)
+0x00007FFBE4CAAFAC, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0x8AFAC byte(s), PyDict_SetItem() + 0x7E0 byte(s)
+0x00007FFBE4CABF07, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0x8BF07 byte(s), _PyModule_ClearDict() + 0x1F7 byte(s)
+0x00007FFBE4D0C4E1, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0xEC4E1 byte(s), _Py_DecodeUTF8_surrogateescape() + 0x3CD byte(s)
+0x00007FFBE4CF775E, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0xD775E byte(s), PyEval_AcquireThread() + 0x11A byte(s)
+0x00007FFBE4CF561D, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0xD561D byte(s), Py_FinalizeEx() + 0xCD byte(s)
+0x00007FFBE4CE753D, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0xC753D byte(s), Py_RunMain() + 0x1D byte(s)
+0x00007FFBE4D1D38B, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python312.dll(0x00007FFBE4C20000) + 0xFD38B byte(s), Py_Main() + 0x2B byte(s)
+0x00007FF636BF1230, ~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\python.exe(0x00007FF636BF0000) + 0x1230 byte(s)
+0x00007FFC29CECD87, C:\WINDOWS\System32\KERNEL32.DLL(0x00007FFC29CC0000) + 0x2CD87 byte(s), BaseThreadInitThunk() + 0x17 byte(s)
+0x00007FFC2A26CAEC, C:\WINDOWS\SYSTEM32\ntdll.dll(0x00007FFC2A1C0000) + 0xACAEC byte(s), RtlUserThreadStart() + 0x2C byte(s)
+Unhandled exception caught in c10/util/AbortHandler.h
+00007FFBBB71171C <unknown symbol address> torch_python.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC27482187 <unknown symbol address> ucrtbase.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2116123A <unknown symbol address> VCRUNTIME140.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBF837A5D5 <unknown symbol address> c10.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC21170430 <unknown symbol address> VCRUNTIME140.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC21163ACD <unknown symbol address> VCRUNTIME140.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2116F8B8 <unknown symbol address> VCRUNTIME140.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC21162CD4 <unknown symbol address> VCRUNTIME140.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC21170241 <unknown symbol address> VCRUNTIME140.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2A32557F <unknown symbol address> ntdll.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2A1D3680 <unknown symbol address> ntdll.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2A2E4746 <unknown symbol address> ntdll.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2A3254FF <unknown symbol address> ntdll.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2A28BD25 <unknown symbol address> ntdll.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2A1CF88D <unknown symbol address> ntdll.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC278241CA <unknown symbol address> KERNELBASE.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC211652C7 <unknown symbol address> VCRUNTIME140.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBF81A4262 <unknown symbol address> c10_hip.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBF81A5008 <unknown symbol address> c10_hip.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFB394DE745 <unknown symbol address> torch_hip.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFB39986A7D <unknown symbol address> torch_hip.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFB399854ED <unknown symbol address> torch_hip.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFB3B1C8B4F <unknown symbol address> torch_hip.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFB3B1C6B5D <unknown symbol address> torch_hip.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBF837A595 <unknown symbol address> c10.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBF83835E0 <unknown symbol address> c10.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBF83ABDA0 <unknown symbol address> c10.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFB403B780E <unknown symbol address> torch_cpu.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBBB82A91E <unknown symbol address> torch_python.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBBB82A6B6 <unknown symbol address> torch_python.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4C509B4 <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4C4F0ED <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4CAAFAC <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4CABF07 <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4D0C4E1 <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4CF775E <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4CF561D <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4CE753D <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFBE4D1D38B <unknown symbol address> python312.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FF636BF1230 <unknown symbol address> python.exe!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC29CECD87 <unknown symbol address> KERNEL32.DLL!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FFC2A26CAEC <unknown symbol address> ntdll.dll!<unknown symbol> [<unknown file> @ <unknown line number>]
+

@@ -1,0 +1,418 @@
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\__init__.py:1568: UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Unsloth: UnslothBCOTrainer is already patched.
+Unsloth: UnslothCPOTrainer is already patched.
+Unsloth: UnslothDPOTrainer is already patched.
+Unsloth: UnslothGKDTrainer is already patched.
+Unsloth: UnslothGRPOTrainer is already patched.
+Unsloth: UnslothKTOTrainer is already patched.
+Unsloth: UnslothNashMDTrainer is already patched.
+Unsloth: UnslothOnlineDPOTrainer is already patched.
+Unsloth: UnslothORPOTrainer is already patched.
+Unsloth: UnslothPPOTrainer is already patched.
+Unsloth: UnslothPRMTrainer is already patched.
+Unsloth: UnslothRewardTrainer is already patched.
+Unsloth: UnslothRLOOTrainer is already patched.
+Unsloth: UnslothSFTTrainer is already patched.
+Unsloth: UnslothXPOTrainer is already patched.
+============================================================
+Cargando merged SFT (bf16 → 4-bit) + LoRA RL attention-only...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:22<4:42:35, 22.34s/it]Loading weights:   0%|          | 2/760 [00:44<4:41:28, 22.28s/it]Loading weights:   1%|          | 7/760 [00:44<54:04,  4.31s/it]  Loading weights:   1%|▏         | 11/760 [00:45<29:36,  2.37s/it]Loading weights:   2%|▏         | 13/760 [00:47<24:22,  1.96s/it]Loading weights:   2%|▏         | 14/760 [00:48<22:40,  1.82s/it]Loading weights:   2%|▏         | 15/760 [00:49<21:07,  1.70s/it]Loading weights:   3%|▎         | 23/760 [00:50<07:40,  1.60it/s]Loading weights:   3%|▎         | 24/760 [00:50<07:29,  1.64it/s]Loading weights:   3%|▎         | 26/760 [00:51<06:14,  1.96it/s]Loading weights:   4%|▎         | 27/760 [00:52<07:19,  1.67it/s]Loading weights:   4%|▎         | 28/760 [00:53<08:21,  1.46it/s]Loading weights:   4%|▍         | 29/760 [00:54<09:19,  1.31it/s]Loading weights:   5%|▍         | 37/760 [00:55<03:44,  3.21it/s]Loading weights:   5%|▌         | 38/760 [00:55<03:50,  3.13it/s]Loading weights:   5%|▌         | 40/760 [00:56<03:26,  3.49it/s]Loading weights:   5%|▌         | 41/760 [00:57<04:53,  2.45it/s]Loading weights:   6%|▌         | 42/760 [00:58<06:18,  1.90it/s]Loading weights:   6%|▌         | 43/760 [00:59<07:38,  1.56it/s]Loading weights:   6%|▌         | 46/760 [01:00<06:21,  1.87it/s]Loading weights:   6%|▌         | 47/760 [01:01<07:32,  1.57it/s]Loading weights:   6%|▋         | 48/760 [01:02<08:43,  1.36it/s]Loading weights:   7%|▋         | 51/760 [01:03<04:52,  2.42it/s]Loading weights:   7%|▋         | 52/760 [01:03<04:46,  2.47it/s]Loading weights:   7%|▋         | 54/760 [01:04<04:38,  2.53it/s]Loading weights:   7%|▋         | 55/760 [01:04<03:59,  2.94it/s]Loading weights:   8%|▊         | 62/760 [01:05<02:13,  5.24it/s]Loading weights:   8%|▊         | 63/760 [01:05<02:41,  4.32it/s]Loading weights:   9%|▊         | 65/760 [01:06<02:32,  4.56it/s]Loading weights:   9%|▊         | 66/760 [01:07<04:08,  2.79it/s]Loading weights:   9%|▉         | 67/760 [01:08<05:40,  2.04it/s]Loading weights:   9%|▉         | 68/760 [01:09<07:05,  1.63it/s]Loading weights:  10%|█         | 76/760 [01:10<02:52,  3.97it/s]Loading weights:  10%|█         | 77/760 [01:10<03:01,  3.77it/s]Loading weights:  10%|█         | 79/760 [01:10<02:50,  3.98it/s]Loading weights:  11%|█         | 80/760 [01:12<04:18,  2.63it/s]Loading weights:  11%|█         | 81/760 [01:13<05:42,  1.98it/s]Loading weights:  11%|█         | 82/760 [01:14<07:01,  1.61it/s]Loading weights:  12%|█▏        | 90/760 [01:15<02:52,  3.89it/s]Loading weights:  12%|█▏        | 91/760 [01:15<03:00,  3.71it/s]Loading weights:  12%|█▏        | 93/760 [01:15<02:51,  3.89it/s]Loading weights:  12%|█▏        | 94/760 [01:16<04:15,  2.60it/s]Loading weights:  12%|█▎        | 95/760 [01:18<05:37,  1.97it/s]Loading weights:  13%|█▎        | 96/760 [01:19<07:03,  1.57it/s]Loading weights:  13%|█▎        | 99/760 [01:20<05:42,  1.93it/s]Loading weights:  13%|█▎        | 100/760 [01:22<08:13,  1.34it/s]Loading weights:  13%|█▎        | 101/760 [01:23<09:13,  1.19it/s]Loading weights:  14%|█▎        | 104/760 [01:23<05:04,  2.15it/s]Loading weights:  14%|█▍        | 105/760 [01:23<04:53,  2.23it/s]Loading weights:  14%|█▍        | 107/760 [01:24<04:50,  2.24it/s]Loading weights:  14%|█▍        | 108/760 [01:24<04:07,  2.64it/s]Loading weights:  15%|█▌        | 115/760 [01:25<02:08,  5.02it/s]Loading weights:  15%|█▌        | 116/760 [01:25<02:21,  4.56it/s]Loading weights:  16%|█▌        | 118/760 [01:26<02:15,  4.74it/s]Loading weights:  16%|█▌        | 119/760 [01:27<03:54,  2.74it/s]Loading weights:  16%|█▌        | 120/760 [01:28<05:18,  2.01it/s]Loading weights:  16%|█▌        | 121/760 [01:29<06:36,  1.61it/s]Loading weights:  17%|█▋        | 129/760 [01:30<02:40,  3.94it/s]Loading weights:  17%|█▋        | 130/760 [01:30<02:47,  3.75it/s]Loading weights:  17%|█▋        | 132/760 [01:31<02:34,  4.05it/s]Loading weights:  18%|█▊        | 133/760 [01:32<03:55,  2.66it/s]Loading weights:  18%|█▊        | 134/760 [01:33<05:13,  2.00it/s]Loading weights:  18%|█▊        | 135/760 [01:34<06:27,  1.61it/s]Loading weights:  19%|█▉        | 143/760 [01:35<02:39,  3.86it/s]Loading weights:  19%|█▉        | 144/760 [01:35<02:47,  3.67it/s]Loading weights:  19%|█▉        | 146/760 [01:36<02:34,  3.98it/s]Loading weights:  19%|█▉        | 147/760 [01:37<03:52,  2.64it/s]Loading weights:  19%|█▉        | 148/760 [01:38<05:16,  1.94it/s]Loading weights:  20%|█▉        | 149/760 [01:39<06:25,  1.58it/s]Loading weights:  20%|██        | 152/760 [01:40<05:13,  1.94it/s]Loading weights:  20%|██        | 153/760 [01:41<06:21,  1.59it/s]Loading weights:  20%|██        | 154/760 [01:43<07:39,  1.32it/s]Loading weights:  21%|██        | 157/760 [01:43<04:14,  2.37it/s]Loading weights:  21%|██        | 158/760 [01:43<04:08,  2.43it/s]Loading weights:  21%|██        | 160/760 [01:44<04:01,  2.49it/s]Loading weights:  21%|██        | 161/760 [01:44<03:26,  2.90it/s]Loading weights:  22%|██▏       | 168/760 [01:45<01:51,  5.32it/s]Loading weights:  22%|██▏       | 169/760 [01:45<02:05,  4.72it/s]Loading weights:  22%|██▎       | 171/760 [01:45<02:00,  4.88it/s]Loading weights:  23%|██▎       | 172/760 [01:47<03:23,  2.89it/s]Loading weights:  23%|██▎       | 173/760 [01:48<04:42,  2.08it/s]Loading weights:  23%|██▎       | 174/760 [01:49<06:01,  1.62it/s]Loading weights:  24%|██▍       | 182/760 [01:50<02:27,  3.93it/s]Loading weights:  24%|██▍       | 183/760 [01:50<02:35,  3.72it/s]Loading weights:  24%|██▍       | 185/760 [01:50<02:22,  4.03it/s]Loading weights:  24%|██▍       | 186/760 [01:51<03:35,  2.66it/s]Loading weights:  25%|██▍       | 187/760 [01:53<04:47,  2.00it/s]Loading weights:  25%|██▍       | 188/760 [01:54<06:01,  1.58it/s]Loading weights:  26%|██▌       | 196/760 [01:54<02:27,  3.83it/s]Loading weights:  26%|██▌       | 197/760 [01:55<02:36,  3.59it/s]Loading weights:  26%|██▌       | 199/760 [01:55<02:23,  3.90it/s]Loading weights:  26%|██▋       | 200/760 [01:56<03:34,  2.62it/s]Loading weights:  26%|██▋       | 201/760 [01:58<04:47,  1.94it/s]Loading weights:  27%|██▋       | 202/760 [01:59<05:50,  1.59it/s]Loading weights:  27%|██▋       | 205/760 [02:00<04:56,  1.87it/s]Loading weights:  27%|██▋       | 206/760 [02:01<05:59,  1.54it/s]Loading weights:  27%|██▋       | 207/760 [02:02<06:47,  1.36it/s]Loading weights:  28%|██▊       | 210/760 [02:02<03:45,  2.44it/s]Loading weights:  28%|██▊       | 211/760 [02:03<03:40,  2.48it/s]Loading weights:  28%|██▊       | 213/760 [02:03<03:35,  2.54it/s]Loading weights:  28%|██▊       | 214/760 [02:03<03:04,  2.95it/s]Loading weights:  29%|██▉       | 221/760 [02:04<01:39,  5.41it/s]Loading weights:  29%|██▉       | 222/760 [02:05<01:57,  4.59it/s]Loading weights:  29%|██▉       | 224/760 [02:05<01:52,  4.78it/s]Loading weights:  30%|██▉       | 225/760 [02:06<03:06,  2.86it/s]Loading weights:  30%|██▉       | 226/760 [02:07<04:18,  2.07it/s]Loading weights:  30%|██▉       | 227/760 [02:08<05:24,  1.64it/s]Loading weights:  31%|███       | 235/760 [02:09<02:10,  4.02it/s]Loading weights:  31%|███       | 236/760 [02:10<02:18,  3.79it/s]Loading weights:  31%|███▏      | 238/760 [02:10<02:11,  3.98it/s]Loading weights:  31%|███▏      | 239/760 [02:11<03:17,  2.64it/s]Loading weights:  32%|███▏      | 240/760 [02:12<04:21,  1.99it/s]Loading weights:  32%|███▏      | 241/760 [02:13<05:22,  1.61it/s]Loading weights:  33%|███▎      | 249/760 [02:14<02:11,  3.88it/s]Loading weights:  33%|███▎      | 250/760 [02:14<02:18,  3.68it/s]Loading weights:  33%|███▎      | 252/760 [02:15<02:12,  3.85it/s]Loading weights:  33%|███▎      | 253/760 [02:16<03:18,  2.56it/s]Loading weights:  33%|███▎      | 254/760 [02:17<04:19,  1.95it/s]Loading weights:  34%|███▎      | 255/760 [02:18<05:17,  1.59it/s]Loading weights:  34%|███▍      | 258/760 [02:19<04:15,  1.97it/s]Loading weights:  34%|███▍      | 259/760 [02:20<05:13,  1.60it/s]Loading weights:  34%|███▍      | 260/760 [02:22<06:00,  1.39it/s]Loading weights:  35%|███▍      | 263/760 [02:22<03:20,  2.48it/s]Loading weights:  35%|███▍      | 264/760 [02:22<03:16,  2.52it/s]Loading weights:  35%|███▌      | 266/760 [02:23<03:13,  2.56it/s]Loading weights:  35%|███▌      | 267/760 [02:23<02:45,  2.97it/s]Loading weights:  36%|███▌      | 274/760 [02:24<01:31,  5.32it/s]Loading weights:  36%|███▌      | 275/760 [02:24<01:42,  4.73it/s]Loading weights:  36%|███▋      | 277/760 [02:24<01:38,  4.90it/s]Loading weights:  37%|███▋      | 278/760 [02:26<02:49,  2.84it/s]Loading weights:  37%|███▋      | 279/760 [02:27<03:53,  2.06it/s]Loading weights:  37%|███▋      | 280/760 [02:28<04:53,  1.64it/s]Loading weights:  38%|███▊      | 288/760 [02:29<01:59,  3.96it/s]Loading weights:  38%|███▊      | 289/760 [02:29<02:06,  3.73it/s]Loading weights:  38%|███▊      | 291/760 [02:29<01:56,  4.04it/s]Loading weights:  38%|███▊      | 292/760 [02:31<02:56,  2.66it/s]Loading weights:  39%|███▊      | 293/760 [02:32<04:00,  1.94it/s]Loading weights:  39%|███▊      | 294/760 [02:33<04:57,  1.56it/s]Loading weights:  40%|███▉      | 302/760 [02:34<02:02,  3.74it/s]Loading weights:  40%|███▉      | 303/760 [02:34<02:07,  3.57it/s]Loading weights:  40%|████      | 305/760 [02:34<01:56,  3.89it/s]Loading weights:  40%|████      | 306/760 [02:36<02:53,  2.61it/s]Loading weights:  40%|████      | 307/760 [02:37<03:55,  1.93it/s]Loading weights:  41%|████      | 308/760 [02:38<04:46,  1.58it/s]Loading weights:  41%|████      | 311/760 [02:39<03:52,  1.93it/s]Loading weights:  41%|████      | 312/760 [02:40<04:39,  1.60it/s]Loading weights:  41%|████      | 313/760 [02:41<05:27,  1.37it/s]Loading weights:  42%|████▏     | 316/760 [02:41<03:00,  2.46it/s]Loading weights:  42%|████▏     | 317/760 [02:42<02:57,  2.50it/s]Loading weights:  42%|████▏     | 319/760 [02:42<02:52,  2.56it/s]Loading weights:  42%|████▏     | 320/760 [02:43<02:26,  3.00it/s]Loading weights:  43%|████▎     | 327/760 [02:43<01:19,  5.44it/s]Loading weights:  43%|████▎     | 328/760 [02:44<01:29,  4.83it/s]Loading weights:  43%|████▎     | 330/760 [02:44<01:26,  4.98it/s]Loading weights:  44%|████▎     | 331/760 [02:45<02:26,  2.94it/s]Loading weights:  44%|████▎     | 332/760 [02:46<03:30,  2.04it/s]Loading weights:  44%|████▍     | 333/760 [02:47<04:22,  1.63it/s]Loading weights:  45%|████▍     | 341/760 [02:48<01:47,  3.89it/s]Loading weights:  45%|████▌     | 342/760 [02:49<01:53,  3.70it/s]Loading weights:  45%|████▌     | 344/760 [02:49<01:43,  4.01it/s]Loading weights:  45%|████▌     | 345/760 [02:50<02:36,  2.65it/s]Loading weights:  46%|████▌     | 346/760 [02:51<03:33,  1.94it/s]Loading weights:  46%|████▌     | 347/760 [02:52<04:20,  1.58it/s]Loading weights:  47%|████▋     | 355/760 [02:53<01:45,  3.84it/s]Loading weights:  47%|████▋     | 356/760 [02:54<01:51,  3.64it/s]Loading weights:  47%|████▋     | 358/760 [02:54<01:41,  3.95it/s]Loading weights:  47%|████▋     | 359/760 [02:55<02:31,  2.64it/s]Loading weights:  47%|████▋     | 360/760 [02:56<03:21,  1.99it/s]Loading weights:  48%|████▊     | 361/760 [02:57<04:13,  1.57it/s]Loading weights:  48%|████▊     | 364/760 [02:58<03:25,  1.93it/s]Loading weights:  48%|████▊     | 365/760 [03:00<04:05,  1.61it/s]Loading weights:  48%|████▊     | 366/760 [03:01<04:43,  1.39it/s]Loading weights:  49%|████▊     | 369/760 [03:01<02:38,  2.47it/s]Loading weights:  49%|████▊     | 370/760 [03:01<02:35,  2.52it/s]Loading weights:  49%|████▉     | 372/760 [03:02<02:35,  2.49it/s]Loading weights:  49%|████▉     | 373/760 [03:02<02:12,  2.91it/s]Loading weights:  50%|█████     | 380/760 [03:03<01:10,  5.36it/s]Loading weights:  50%|█████     | 381/760 [03:03<01:19,  4.79it/s]Loading weights:  50%|█████     | 383/760 [03:04<01:16,  4.91it/s]Loading weights:  51%|█████     | 384/760 [03:05<02:14,  2.80it/s]Loading weights:  51%|█████     | 385/760 [03:06<03:03,  2.04it/s]Loading weights:  51%|█████     | 386/760 [03:07<03:54,  1.60it/s]Loading weights:  52%|█████▏    | 394/760 [03:08<01:33,  3.90it/s]Loading weights:  52%|█████▏    | 395/760 [03:08<01:38,  3.69it/s]Loading weights:  52%|█████▏    | 397/760 [03:09<01:30,  3.99it/s]Loading weights:  52%|█████▏    | 398/760 [03:10<02:17,  2.63it/s]Loading weights:  52%|█████▎    | 399/760 [03:11<03:02,  1.98it/s]Loading weights:  53%|█████▎    | 400/760 [03:12<03:48,  1.57it/s]Loading weights:  54%|█████▎    | 408/760 [03:13<01:32,  3.79it/s]Loading weights:  54%|█████▍    | 409/760 [03:13<01:37,  3.60it/s]Loading weights:  54%|█████▍    | 411/760 [03:14<01:29,  3.91it/s]Loading weights:  54%|█████▍    | 412/760 [03:15<02:13,  2.61it/s]Loading weights:  54%|█████▍    | 413/760 [03:16<02:55,  1.97it/s]Loading weights:  54%|█████▍    | 414/760 [03:17<03:41,  1.56it/s]Loading weights:  55%|█████▍    | 417/760 [03:18<02:57,  1.93it/s]Loading weights:  55%|█████▌    | 418/760 [03:19<03:32,  1.61it/s]Loading weights:  55%|█████▌    | 419/760 [03:20<04:04,  1.40it/s]Loading weights:  56%|█████▌    | 422/760 [03:20<02:15,  2.50it/s]Loading weights:  56%|█████▌    | 423/760 [03:21<02:13,  2.53it/s]Loading weights:  56%|█████▌    | 425/760 [03:22<02:13,  2.51it/s]Loading weights:  56%|█████▌    | 426/760 [03:22<01:54,  2.92it/s]Loading weights:  57%|█████▋    | 431/760 [03:22<00:52,  6.30it/s]Loading weights:  57%|█████▋    | 433/760 [03:22<00:43,  7.57it/s]Loading weights:  57%|█████▋    | 435/760 [03:22<00:36,  8.88it/s]Loading weights:  58%|█████▊    | 443/760 [03:22<00:16, 18.65it/s]Loading weights:  59%|█████▉    | 447/760 [03:22<00:16, 18.50it/s]Loading weights:  60%|█████▉    | 455/760 [03:22<00:11, 26.96it/s]Loading weights:  60%|██████    | 459/760 [03:23<00:12, 24.52it/s]Loading weights:  61%|██████▏   | 466/760 [03:23<00:09, 32.62it/s]Loading weights:  62%|██████▏   | 471/760 [03:23<00:11, 25.43it/s]Loading weights:  63%|██████▎   | 479/760 [03:23<00:08, 33.76it/s]Loading weights:  64%|██████▎   | 484/760 [03:23<00:09, 30.07it/s]Loading weights:  65%|██████▍   | 491/760 [03:24<00:07, 36.33it/s]Loading weights:  65%|██████▌   | 496/760 [03:24<00:08, 31.46it/s]Loading weights:  66%|██████▌   | 503/760 [03:24<00:06, 37.56it/s]Loading weights:  67%|██████▋   | 508/760 [03:24<00:07, 32.13it/s]Loading weights:  68%|██████▊   | 515/760 [03:24<00:06, 38.22it/s]Loading weights:  68%|██████▊   | 520/760 [03:24<00:07, 32.63it/s]Loading weights:  69%|██████▉   | 527/760 [03:25<00:06, 38.67it/s]Loading weights:  70%|███████   | 532/760 [03:25<00:06, 32.75it/s]Loading weights:  71%|███████   | 539/760 [03:25<00:05, 38.89it/s]Loading weights:  72%|███████▏  | 544/760 [03:25<00:06, 32.86it/s]Loading weights:  72%|███████▎  | 551/760 [03:25<00:05, 37.65it/s]Loading weights:  73%|███████▎  | 556/760 [03:25<00:06, 32.18it/s]Loading weights:  74%|███████▍  | 563/760 [03:26<00:05, 38.24it/s]Loading weights:  75%|███████▍  | 568/760 [03:26<00:05, 32.52it/s]Loading weights:  76%|███████▌  | 575/760 [03:26<00:04, 38.61it/s]Loading weights:  76%|███████▋  | 580/760 [03:26<00:05, 32.78it/s]Loading weights:  77%|███████▋  | 587/760 [03:26<00:04, 38.77it/s]Loading weights:  78%|███████▊  | 592/760 [03:26<00:05, 32.83it/s]Loading weights:  79%|███████▉  | 599/760 [03:27<00:04, 38.82it/s]Loading weights:  79%|███████▉  | 604/760 [03:27<00:04, 32.89it/s]Loading weights:  80%|████████  | 609/760 [03:27<00:04, 34.75it/s]Loading weights:  81%|████████  | 613/760 [03:27<00:04, 29.78it/s]Loading weights:  81%|████████  | 617/760 [03:27<00:04, 31.49it/s]Loading weights:  82%|████████▏ | 623/760 [03:27<00:03, 36.58it/s]Loading weights:  83%|████████▎ | 628/760 [03:28<00:04, 31.00it/s]Loading weights:  84%|████████▎ | 635/760 [03:28<00:03, 37.80it/s]Loading weights:  84%|████████▍ | 640/760 [03:28<00:03, 32.06it/s]Loading weights:  85%|████████▌ | 647/760 [03:28<00:02, 38.52it/s]Loading weights:  86%|████████▌ | 652/760 [03:28<00:03, 32.52it/s]Loading weights:  87%|████████▋ | 659/760 [03:28<00:02, 38.75it/s]Loading weights:  87%|████████▋ | 664/760 [03:29<00:02, 32.74it/s]Loading weights:  88%|████████▊ | 671/760 [03:29<00:02, 37.12it/s]Loading weights:  89%|████████▉ | 676/760 [03:29<00:02, 31.87it/s]Loading weights:  90%|████████▉ | 683/760 [03:29<00:02, 38.02it/s]Loading weights:  91%|█████████ | 688/760 [03:29<00:02, 32.44it/s]Loading weights:  91%|█████████▏| 695/760 [03:29<00:01, 38.58it/s]Loading weights:  92%|█████████▏| 700/760 [03:30<00:01, 32.65it/s]Loading weights:  93%|█████████▎| 707/760 [03:30<00:01, 38.77it/s]Loading weights:  94%|█████████▎| 712/760 [03:30<00:01, 32.87it/s]Loading weights:  95%|█████████▍| 719/760 [03:30<00:01, 38.97it/s]Loading weights:  95%|█████████▌| 724/760 [03:30<00:01, 32.86it/s]Loading weights:  96%|█████████▌| 731/760 [03:30<00:00, 38.88it/s]Loading weights:  97%|█████████▋| 736/760 [03:31<00:00, 32.89it/s]Loading weights:  98%|█████████▊| 743/760 [03:31<00:00, 38.91it/s]Loading weights:  98%|█████████▊| 748/760 [03:31<00:00, 33.30it/s]Loading weights:  99%|█████████▉| 753/760 [03:31<00:00, 20.83it/s]Loading weights: 100%|█████████▉| 757/760 [03:32<00:00, 16.35it/s]Loading weights: 100%|██████████| 760/760 [03:32<00:00,  3.58it/s]
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+Modelo + LoRA RL en 229s
+  ✅ LoRA RL solo dentro del text LM (64 capas apuntadas)
+
+Esperando que el trainer parcheado sea UnslothGRPOTrainer: UnslothGRPOTrainer
+Dataset: 7 tareas puente (reward = verify_task 0/1).
+Unsloth: We now expect `per_device_train_batch_size` * `gradient_accumulation_steps` * `world_size` to be a multiple of `num_generations`.
+We will change the batch size of 1 to the `num_generations` of 3
+GRPOConfig: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+beta=0.001,
+bf16=True,
+bf16_full_eval=False,
+cache_implementation=None,
+data_seed=3407,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+delta=None,
+disable_dropout=False,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=False,
+ds3_gather_for_generation=True,
+enable_jit_checkpoint=False,
+epsilon=0.2,
+epsilon_high=None,
+eval_accumulation_steps=2,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generation_batch_size=6,
+generation_kwargs={},
+gradient_accumulation_steps=2,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': True},
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+importance_sampling_level=token,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_completions=False,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=False,
+logging_nan_inf_filter=False,
+logging_steps=1,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=bnpo,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.LINEAR,
+mask_truncated_completions=False,
+max_completion_length=1536,
+max_grad_norm=1.0,
+max_prompt_length=512,
+max_steps=28,
+metric_for_best_model=None,
+min_p=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_completions_to_print=None,
+num_generations=3,
+num_iterations=1,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_8BIT,
+optim_args=None,
+optim_target_modules=None,
+output_dir=out_grpo,
+parallelism_config=None,
+per_device_eval_batch_size=4,
+per_device_train_batch_size=3,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+remove_unused_columns=False,
+repetition_penalty=1.0,
+report_to=[],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+reward_weights=None,
+run_name=None,
+save_on_each_node=False,
+save_only_model=True,
+save_steps=7,
+save_strategy=SaveStrategy.STEPS,
+save_total_limit=None,
+scale_rewards=group,
+seed=7,
+shuffle_dataset=True,
+skip_memory_metrics=True,
+steps_per_generation=2,
+sync_ref_model=False,
+temperature=0.8,
+tf32=None,
+top_entropy_quantile=1.0,
+top_k=None,
+top_p=1.0,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=250,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+unsloth_grpo_mini_batch=None,
+unsloth_logit_chunk_multiplier=None,
+unsloth_num_chunks=-1,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_liger_loss=False,
+use_transformers_paged=False,
+use_vllm=False,
+vllm_enable_sleep_mode=False,
+vllm_gpu_memory_utilization=0.3,
+vllm_guided_decoding_regex=None,
+vllm_importance_sampling_cap=2.0,
+vllm_importance_sampling_correction=False,
+vllm_mode=colocate,
+vllm_model_impl=vllm,
+vllm_sampling_params=None,
+vllm_server_base_url=None,
+vllm_server_host=0.0.0.0,
+vllm_server_port=8000,
+vllm_server_timeout=240.0,
+vllm_tensor_parallel_size=1,
+wandb_log_unique_prompts=False,
+warmup_ratio=None,
+warmup_steps=2,
+weight_decay=0.0,
+)
+Trainer instanciado OK (230s desde el arranque).
+
+-- ej 0: 694 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia traduce el estado interno de cada movimie'
+
+-- ej 1: 924 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia determina si un movimiento bancario es du'
+
+-- ej 2: 891 tokens | prompt conv: system/user
+   user[:80]: 'El motor de contabilia genera el resumen de una conciliación a partir de los mov'
+
+Training GRPO (RL sobre los tests del puente)...
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248044}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 7 | Num Epochs = 10 | Total steps = 28
+O^O/ \_/ \    Batch size per device = 3 | Gradient accumulation steps = 2
+\        /    Data Parallel GPUs = 1 | Total batch size (3 x 2 x 1) = 6
+ "-____-"     Trainable parameters = 3,932,160 of 9,413,745,904 (0.04% trained)
+  0%|          | 0/28 [00:00<?, ?it/s][inicio step 0] vram_cur=8.05 GB
+Passing `generation_config` together with generation-related arguments=({'disable_compile', 'pad_token_id'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for Qwen3_5RMSNorm_forward; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for apply_rotary_pos_emb; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for rotate_half; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for torch_causal_conv1d_update; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for chunked_hidden_states_selective_log_softmax; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for UnslothEfficientGRPO.forward.<locals>.accumulate_chunk; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+  4%|▎         | 1/28 [08:48<3:57:37, 528.07s/it]Unsloth: Will smartly offload gradients to save VRAM!
+Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
+[fin step 1] vram_cur=8.98 GB
+                                                   4%|▎         | 1/28 [08:48<3:57:37, 528.07s/it]{'loss': '2.512e-07', 'grad_norm': '2.425e-06', 'learning_rate': '0', 'num_tokens': '1.037e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0002512', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '0.3333'}
+
+[step 1] vram_cur=8.98 GB peak=17.11 GB  rewards=0.0
+[inicio step 1] vram_cur=8.98 GB
+  7%|▋         | 2/28 [12:00<2:23:15, 330.61s/it][fin step 2] vram_cur=9.06 GB
+                                                   7%|▋         | 2/28 [12:00<2:23:15, 330.61s/it]{'loss': '4.53e-07', 'grad_norm': '3.711e-06', 'learning_rate': '1e-05', 'num_tokens': '1.849e+04', 'completions/mean_length': '1186', 'completions/min_length': '204', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '836', 'completions/min_terminated_length': '204', 'completions/max_terminated_length': '1334', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1186', 'kl': '0.0004065', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '0.6667'}
+
+[step 2] vram_cur=9.06 GB peak=15.17 GB  rewards=0.0
+[inicio step 2] vram_cur=9.06 GB
+ 11%|█         | 3/28 [16:07<2:01:55, 292.62s/it][fin step 3] vram_cur=9.06 GB
+                                                  11%|█         | 3/28 [16:07<2:01:55, 292.62s/it]{'loss': '4.972e-07', 'grad_norm': '3.525e-06', 'learning_rate': '2e-05', 'num_tokens': '2.881e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0004972', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1'}
+
+[step 3] vram_cur=9.06 GB peak=14.98 GB  rewards=0.0
+[inicio step 3] vram_cur=9.06 GB
+ 14%|█▍        | 4/28 [19:49<1:45:51, 264.64s/it][fin step 4] vram_cur=9.06 GB
+                                                  14%|█▍        | 4/28 [19:49<1:45:51, 264.64s/it]{'loss': '3.682e-07', 'grad_norm': '3.558e-06', 'learning_rate': '1.923e-05', 'num_tokens': '3.665e+04', 'completions/mean_length': '1140', 'completions/min_length': '520', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '744', 'completions/min_terminated_length': '520', 'completions/max_terminated_length': '1023', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1140', 'kl': '0.0003584', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1.333'}
+
+[step 4] vram_cur=9.06 GB peak=15.03 GB  rewards=0.0
+[inicio step 4] vram_cur=9.06 GB
+ 18%|█▊        | 5/28 [22:19<1:25:36, 223.33s/it][fin step 5] vram_cur=9.06 GB
+                                                  18%|█▊        | 5/28 [22:19<1:25:36, 223.33s/it]{'loss': '0.09963', 'grad_norm': '0.02621', 'learning_rate': '1.846e-05', 'num_tokens': '4.564e+04', 'completions/mean_length': '1311', 'completions/min_length': '784', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '1087', 'completions/min_terminated_length': '784', 'completions/max_terminated_length': '1264', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1311', 'kl': '0.0004565', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1.667'}
+
+[step 5] vram_cur=9.06 GB peak=15.26 GB  rewards=0.1666666716337204
+[inicio step 5] vram_cur=9.06 GB
+ 21%|██▏       | 6/28 [24:34<1:10:54, 193.37s/it][fin step 6] vram_cur=9.06 GB
+                                                  21%|██▏       | 6/28 [24:34<1:10:54, 193.37s/it]{'loss': '5.33e-07', 'grad_norm': '3.692e-06', 'learning_rate': '1.769e-05', 'num_tokens': '5.603e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.000533', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '2'}
+
+[step 6] vram_cur=9.06 GB peak=14.95 GB  rewards=0.0
+[inicio step 6] vram_cur=9.06 GB
+ 25%|██▌       | 7/28 [26:30<58:48, 168.03s/it]  [fin step 7] vram_cur=9.06 GB
+                                                25%|██▌       | 7/28 [26:30<58:48, 168.03s/it]{'loss': '4.486e-07', 'grad_norm': '4.127e-06', 'learning_rate': '1.692e-05', 'num_tokens': '6.415e+04', 'completions/mean_length': '1186', 'completions/min_length': '606', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '836', 'completions/min_terminated_length': '606', 'completions/max_terminated_length': '1045', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1186', 'kl': '0.0004338', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '2.333'}
+
+[step 7] vram_cur=9.06 GB peak=15.10 GB  rewards=0.0
+Unsloth: Restored added_tokens_decoder metadata in out_grpo\checkpoint-7\tokenizer_config.json.
+[inicio step 7] vram_cur=9.06 GB
+ 29%|██▊       | 8/28 [28:37<51:34, 154.73s/it][fin step 8] vram_cur=9.06 GB
+                                                29%|██▊       | 8/28 [28:37<51:34, 154.73s/it]{'loss': '0.02397', 'grad_norm': '0.024', 'learning_rate': '1.615e-05', 'num_tokens': '7.423e+04', 'completions/mean_length': '1466', 'completions/min_length': '1243', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.6667', 'completions/mean_terminated_length': '1326', 'completions/min_terminated_length': '1243', 'completions/max_terminated_length': '1409', 'rewards/reward_fn/mean': '0.3333', 'rewards/reward_fn/std': '0.5164', 'reward': '0.3333', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1466', 'kl': '0.0004312', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '2.667'}
+
+[step 8] vram_cur=9.06 GB peak=15.05 GB  rewards=0.3333333432674408
+[inicio step 8] vram_cur=9.06 GB
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+a_grid_desc_m_ak_container_{5120, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{5120, 64}
+ 32%|███▏      | 9/28 [30:16<43:29, 137.34s/it][fin step 9] vram_cur=9.06 GB
+                                                32%|███▏      | 9/28 [30:16<43:29, 137.34s/it]{'loss': '4.163e-07', 'grad_norm': '3.612e-06', 'learning_rate': '1.538e-05', 'num_tokens': '8.098e+04', 'completions/mean_length': '980.2', 'completions/min_length': '189', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.1667', 'completions/mean_terminated_length': '869', 'completions/min_terminated_length': '189', 'completions/max_terminated_length': '1186', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '980.2', 'kl': '0.0004194', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '3'}
+
+[step 9] vram_cur=9.06 GB peak=15.01 GB  rewards=0.0
+[inicio step 9] vram_cur=9.06 GB
+ 36%|███▌      | 10/28 [32:20<40:00, 133.38s/it][fin step 10] vram_cur=9.06 GB
+                                                 36%|███▌      | 10/28 [32:20<40:00, 133.38s/it]{'loss': '4.845e-07', 'grad_norm': '4.019e-06', 'learning_rate': '1.462e-05', 'num_tokens': '9.136e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0004845', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '3.333'}
+
+[step 10] vram_cur=9.06 GB peak=14.95 GB  rewards=0.0
+[inicio step 10] vram_cur=9.06 GB
+ 39%|███▉      | 11/28 [33:48<33:53, 119.59s/it][fin step 11] vram_cur=9.06 GB
+                                                 39%|███▉      | 11/28 [33:48<33:53, 119.59s/it]{'loss': '3.792e-07', 'grad_norm': '3.551e-06', 'learning_rate': '1.385e-05', 'num_tokens': '9.983e+04', 'completions/mean_length': '1267', 'completions/min_length': '429', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '998.3', 'completions/min_terminated_length': '429', 'completions/max_terminated_length': '1400', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1267', 'kl': '0.0003744', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '3.667'}
+
+[step 11] vram_cur=9.06 GB peak=15.01 GB  rewards=0.0
+[inicio step 11] vram_cur=9.06 GB
+ 43%|████▎     | 12/28 [36:07<33:24, 125.27s/it][fin step 12] vram_cur=9.06 GB
+                                                 43%|████▎     | 12/28 [36:07<33:24, 125.27s/it]{'loss': '4.562e-07', 'grad_norm': '3.763e-06', 'learning_rate': '1.308e-05', 'num_tokens': '1.074e+05', 'completions/mean_length': '1102', 'completions/min_length': '486', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '884.8', 'completions/min_terminated_length': '486', 'completions/max_terminated_length': '1139', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1102', 'kl': '0.0004465', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '4'}
+
+[step 12] vram_cur=9.06 GB peak=15.06 GB  rewards=0.0
+[inicio step 12] vram_cur=9.06 GB
+ 46%|████▋     | 13/28 [37:34<28:28, 113.90s/it][fin step 13] vram_cur=9.06 GB
+                                                 46%|████▋     | 13/28 [37:34<28:28, 113.90s/it]{'loss': '-0.09587', 'grad_norm': '0.03668', 'learning_rate': '1.231e-05', 'num_tokens': '1.14e+05', 'completions/mean_length': '960.8', 'completions/min_length': '251', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '673.2', 'completions/min_terminated_length': '251', 'completions/max_terminated_length': '1104', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '960.8', 'kl': '0.0003763', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '4.333'}
+
+[step 13] vram_cur=9.06 GB peak=15.01 GB  rewards=0.1666666716337204
+[inicio step 13] vram_cur=9.06 GB
+ 50%|█████     | 14/28 [41:11<33:47, 144.79s/it][fin step 14] vram_cur=9.06 GB
+                                                 50%|█████     | 14/28 [41:11<33:47, 144.79s/it]{'loss': '0.006125', 'grad_norm': '0.02991', 'learning_rate': '1.154e-05', 'num_tokens': '1.224e+05', 'completions/mean_length': '1194', 'completions/min_length': '370', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '851.3', 'completions/min_terminated_length': '370', 'completions/max_terminated_length': '1348', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1194', 'kl': '0.0003614', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '4.667'}
+
+[step 14] vram_cur=9.06 GB peak=15.14 GB  rewards=0.1666666716337204
+Unsloth: Restored added_tokens_decoder metadata in out_grpo\checkpoint-14\tokenizer_config.json.
+[inicio step 14] vram_cur=9.06 GB
+ 54%|█████▎    | 15/28 [44:41<35:38, 164.48s/it][fin step 15] vram_cur=9.06 GB
+                                                 54%|█████▎    | 15/28 [44:41<35:38, 164.48s/it]{'loss': '4.672e-07', 'grad_norm': '1.148e-05', 'learning_rate': '1.077e-05', 'num_tokens': '1.312e+05', 'completions/mean_length': '1297', 'completions/min_length': '709', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '1059', 'completions/min_terminated_length': '709', 'completions/max_terminated_length': '1396', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1297', 'kl': '0.000466', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '5'}
+
+[step 15] vram_cur=9.06 GB peak=15.10 GB  rewards=0.0
+[inicio step 15] vram_cur=9.06 GB
+ 57%|█████▋    | 16/28 [48:26<36:32, 182.69s/it][fin step 16] vram_cur=9.06 GB
+                                                 57%|█████▋    | 16/28 [48:26<36:32, 182.69s/it]{'loss': '5.513e-07', 'grad_norm': '0.02674', 'learning_rate': '1e-05', 'num_tokens': '1.417e+05', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1536', 'kl': '0.0005388', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '5.333'}
+
+[step 16] vram_cur=9.06 GB peak=15.05 GB  rewards=0.1666666716337204
+[inicio step 16] vram_cur=9.06 GB
+ 61%|██████    | 17/28 [51:53<34:49, 189.95s/it][fin step 17] vram_cur=9.06 GB
+                                                 61%|██████    | 17/28 [51:53<34:49, 189.95s/it]{'loss': '4.271e-07', 'grad_norm': '3.748e-06', 'learning_rate': '9.231e-06', 'num_tokens': '1.49e+05', 'completions/mean_length': '1057', 'completions/min_length': '386', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '817.2', 'completions/min_terminated_length': '386', 'completions/max_terminated_length': '1420', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1057', 'kl': '0.0004247', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '5.667'}
+
+[step 17] vram_cur=9.06 GB peak=15.10 GB  rewards=0.0
+[inicio step 17] vram_cur=9.06 GB
+ 64%|██████▍   | 18/28 [54:52<31:08, 186.90s/it][fin step 18] vram_cur=9.06 GB
+                                                 64%|██████▍   | 18/28 [54:52<31:08, 186.90s/it]{'loss': '4.204e-07', 'grad_norm': '3.234e-06', 'learning_rate': '8.462e-06', 'num_tokens': '1.57e+05', 'completions/mean_length': '1185', 'completions/min_length': '527', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '834', 'completions/min_terminated_length': '527', 'completions/max_terminated_length': '1384', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1185', 'kl': '0.0004305', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '6'}
+
+[step 18] vram_cur=9.06 GB peak=14.97 GB  rewards=0.0
+[inicio step 18] vram_cur=9.06 GB
+ 68%|██████▊   | 19/28 [58:27<29:17, 195.29s/it][fin step 19] vram_cur=9.06 GB
+                                                 68%|██████▊   | 19/28 [58:27<29:17, 195.29s/it]{'loss': '0.02091', 'grad_norm': '0.03115', 'learning_rate': '7.692e-06', 'num_tokens': '1.633e+05', 'completions/mean_length': '893.8', 'completions/min_length': '144', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.1667', 'completions/mean_terminated_length': '765.4', 'completions/min_terminated_length': '144', 'completions/max_terminated_length': '1476', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '893.8', 'kl': '0.0004058', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '6.333'}
+
+[step 19] vram_cur=9.06 GB peak=15.10 GB  rewards=0.1666666716337204
+[inicio step 19] vram_cur=9.06 GB
+ 71%|███████▏  | 20/28 [1:02:03<26:51, 201.46s/it][fin step 20] vram_cur=9.06 GB
+                                                   71%|███████▏  | 20/28 [1:02:03<26:51, 201.46s/it]{'loss': '4.36e-07', 'grad_norm': '5.323e-06', 'learning_rate': '6.923e-06', 'num_tokens': '1.729e+05', 'completions/mean_length': '1425', 'completions/min_length': '872', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.8333', 'completions/mean_terminated_length': '872', 'completions/min_terminated_length': '872', 'completions/max_terminated_length': '872', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1425', 'kl': '0.000428', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '6.667'}
+
+[step 20] vram_cur=9.06 GB peak=15.06 GB  rewards=0.0
+[inicio step 20] vram_cur=9.06 GB
+ 75%|███████▌  | 21/28 [1:06:00<24:45, 212.20s/it][fin step 21] vram_cur=9.06 GB
+                                                   75%|███████▌  | 21/28 [1:06:00<24:45, 212.20s/it]{'loss': '-0.009046', 'grad_norm': '0.02649', 'learning_rate': '6.154e-06', 'num_tokens': '1.825e+05', 'completions/mean_length': '1380', 'completions/min_length': '696', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.6667', 'completions/mean_terminated_length': '1066', 'completions/min_terminated_length': '696', 'completions/max_terminated_length': '1437', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1380', 'kl': '0.0004527', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '7'}
+
+[step 21] vram_cur=9.06 GB peak=15.05 GB  rewards=0.1666666716337204
+Unsloth: Restored added_tokens_decoder metadata in out_grpo\checkpoint-21\tokenizer_config.json.
+[inicio step 21] vram_cur=9.06 GB
+ 79%|███████▊  | 22/28 [1:09:02<20:18, 203.14s/it][fin step 22] vram_cur=9.06 GB
+                                                   79%|███████▊  | 22/28 [1:09:02<20:18, 203.14s/it]{'loss': '4.002e-07', 'grad_norm': '4.926e-06', 'learning_rate': '5.385e-06', 'num_tokens': '1.902e+05', 'completions/mean_length': '1141', 'completions/min_length': '256', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '943.5', 'completions/min_terminated_length': '256', 'completions/max_terminated_length': '1507', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1141', 'kl': '0.0003806', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '7.333'}
+
+[step 22] vram_cur=9.06 GB peak=15.01 GB  rewards=0.0
+[inicio step 22] vram_cur=9.06 GB
+ 82%|████████▏ | 23/28 [1:12:35<17:09, 205.89s/it][fin step 23] vram_cur=9.06 GB
+                                                   82%|████████▏ | 23/28 [1:12:35<17:09, 205.89s/it]{'loss': '-0.01343', 'grad_norm': '0.0349', 'learning_rate': '4.615e-06', 'num_tokens': '1.983e+05', 'completions/mean_length': '1188', 'completions/min_length': '166', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '839', 'completions/min_terminated_length': '166', 'completions/max_terminated_length': '1451', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1188', 'kl': '0.0003845', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '7.667'}
+
+[step 23] vram_cur=9.06 GB peak=15.10 GB  rewards=0.1666666716337204
+[inicio step 23] vram_cur=9.06 GB
+ 86%|████████▌ | 24/28 [1:16:32<14:21, 215.44s/it][fin step 24] vram_cur=9.06 GB
+                                                   86%|████████▌ | 24/28 [1:16:32<14:21, 215.44s/it]{'loss': '5.119e-07', 'grad_norm': '3.74e-06', 'learning_rate': '3.846e-06', 'num_tokens': '2.088e+05', 'completions/mean_length': '1533', 'completions/min_length': '1517', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.8333', 'completions/mean_terminated_length': '1517', 'completions/min_terminated_length': '1517', 'completions/max_terminated_length': '1517', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1533', 'kl': '0.0005115', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '8'}
+
+[step 24] vram_cur=9.06 GB peak=15.05 GB  rewards=0.0
+[inicio step 24] vram_cur=9.06 GB
+ 89%|████████▉ | 25/28 [1:20:32<11:08, 222.73s/it][fin step 25] vram_cur=9.06 GB
+                                                   89%|████████▉ | 25/28 [1:20:32<11:08, 222.73s/it]{'loss': '4.342e-07', 'grad_norm': '3.499e-06', 'learning_rate': '3.077e-06', 'num_tokens': '2.157e+05', 'completions/mean_length': '970.7', 'completions/min_length': '357', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '688', 'completions/min_terminated_length': '357', 'completions/max_terminated_length': '1491', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '970.7', 'kl': '0.0004016', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '8.333'}
+
+[step 25] vram_cur=9.06 GB peak=15.26 GB  rewards=0.0
+[inicio step 25] vram_cur=9.06 GB
+ 93%|█████████▎| 26/28 [1:23:57<07:14, 217.48s/it][fin step 26] vram_cur=9.06 GB
+                                                   93%|█████████▎| 26/28 [1:23:57<07:14, 217.48s/it]{'loss': '3.984e-07', 'grad_norm': '3.89e-06', 'learning_rate': '2.308e-06', 'num_tokens': '2.239e+05', 'completions/mean_length': '1178', 'completions/min_length': '406', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '819.3', 'completions/min_terminated_length': '406', 'completions/max_terminated_length': '1146', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1178', 'kl': '0.0003625', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '8.667'}
+
+[step 26] vram_cur=9.06 GB peak=14.97 GB  rewards=0.0
+[inicio step 26] vram_cur=9.06 GB
+ 96%|█████████▋| 27/28 [1:26:57<03:26, 206.03s/it][fin step 27] vram_cur=9.06 GB
+                                                   96%|█████████▋| 27/28 [1:26:57<03:26, 206.03s/it]{'loss': '4.065e-07', 'grad_norm': '4.251e-06', 'learning_rate': '1.538e-06', 'num_tokens': '2.307e+05', 'completions/mean_length': '982.2', 'completions/min_length': '134', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '705.2', 'completions/min_terminated_length': '134', 'completions/max_terminated_length': '1244', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '982.2', 'kl': '0.0003635', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '9'}
+
+[step 27] vram_cur=9.06 GB peak=15.01 GB  rewards=0.0
+[inicio step 27] vram_cur=9.06 GB
+100%|██████████| 28/28 [1:30:31<00:00, 208.68s/it][fin step 28] vram_cur=9.06 GB
+                                                  100%|██████████| 28/28 [1:30:31<00:00, 208.68s/it]{'loss': '4.263e-07', 'grad_norm': '4.657e-06', 'learning_rate': '7.692e-07', 'num_tokens': '2.372e+05', 'completions/mean_length': '924.3', 'completions/min_length': '107', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '618.5', 'completions/min_terminated_length': '107', 'completions/max_terminated_length': '1091', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '924.3', 'kl': '0.0003699', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '9.333'}
+
+[step 28] vram_cur=9.06 GB peak=15.06 GB  rewards=0.0
+Unsloth: Restored added_tokens_decoder metadata in out_grpo\checkpoint-28\tokenizer_config.json.
+                                                  100%|██████████| 28/28 [1:30:33<00:00, 208.68s/it]{'train_runtime': '5433', 'train_samples_per_second': '0.031', 'train_steps_per_second': '0.005', 'train_loss': '0.001153', 'epoch': '9.333'}
+
+[step 28] vram_cur=9.06 GB peak=15.06 GB  rewards=n/a
+100%|██████████| 28/28 [1:30:33<00:00, 194.04s/it]
+Guardando adapter RL...
+Unsloth: Restored added_tokens_decoder metadata in out_grpo/adapter_rl\tokenizer_config.json.
+VRAM pico: 15.06 GB
+LISTO.

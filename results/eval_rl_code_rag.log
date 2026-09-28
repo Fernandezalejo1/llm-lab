@@ -1,0 +1,31 @@
+HIT  ct-01  docs/07-RECONCILIATION.md
+HIT  ct-02  docs/07-RECONCILIATION.md
+HIT  ct-03  apps/api/src/modules/reconciliation/reconciliation.serv
+HIT  ct-04  docs/02-DATABASE-SCHEMA.md
+HIT  ct-05  docs/02-DATABASE-SCHEMA.md
+HIT  ct-06  docs/06-CASH-APPLICATION.md
+HIT  ct-07  docs/07-RECONCILIATION.md
+
+[1/7] ct-01 ...
+   hit=True | sin RAG: FAIL | con RAG: PASS
+
+[2/7] ct-02 ...
+   hit=True | sin RAG: FAIL | con RAG: FAIL
+
+[3/7] ct-03 ...
+   hit=True | sin RAG: PASS | con RAG: PASS
+
+[4/7] ct-04 ...
+   hit=True | sin RAG: FAIL | con RAG: PASS
+
+[5/7] ct-05 ...
+   hit=True | sin RAG: FAIL | con RAG: PASS
+
+[6/7] ct-06 ...
+   hit=True | sin RAG: PASS | con RAG: FAIL
+
+[7/7] ct-07 ...
+   hit=True | sin RAG: FAIL | con RAG: FAIL
+
+Resolución — sin RAG: 2/7 | con RAG: 4/7
+Guardado: code_rag_20260923_200953_local-qwen-rl.jsonl / .md

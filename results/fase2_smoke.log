@@ -1,0 +1,27 @@
+============================================================
+1) Backend / GPU
+============================================================
+python: 3.12.14
+torch: 2.12.1+cpu
+build: None
+gpu disponible: False
+
+============================================================
+2) Unsloth
+============================================================
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\smoke_test.py", line 37, in <module>
+    import unsloth  # noqa: E402
+    ^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\__init__.py", line 1568, in <module>
+    from ._gpu_init import *
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\_gpu_init.py", line 177, in <module>
+    import unsloth_zoo
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\__init__.py", line 398, in <module>
+    from .device_type import (
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\device_type.py", line 405, in <module>
+    DEVICE_TYPE : str = get_device_type()
+                        ^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\device_type.py", line 389, in get_device_type
+    raise NotImplementedError("Unsloth cannot find any torch accelerator? You need a GPU.")
+NotImplementedError: Unsloth cannot find any torch accelerator? You need a GPU.

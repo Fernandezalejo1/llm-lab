@@ -1,0 +1,47 @@
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Cargando modelo mergeado (bf16)...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:22<4:45:40, 22.58s/it]Loading weights:   0%|          | 2/760 [00:44<4:42:20, 22.35s/it]Loading weights:   1%|          | 7/760 [00:44<54:12,  4.32s/it]  Loading weights:   2%|▏         | 13/760 [00:46<23:56,  1.92s/it]Loading weights:   2%|▏         | 15/760 [00:48<21:37,  1.74s/it]Loading weights:   4%|▎         | 28/760 [00:48<07:07,  1.71it/s]Loading weights:   5%|▌         | 41/760 [00:48<03:38,  3.30it/s]Loading weights:   6%|▋         | 49/760 [00:48<02:35,  4.57it/s]Loading weights:   9%|▊         | 66/760 [00:48<01:21,  8.50it/s]Loading weights:  10%|█         | 79/760 [00:48<00:54, 12.45it/s]Loading weights:  12%|█▏        | 90/760 [00:48<00:40, 16.68it/s]Loading weights:  13%|█▎        | 100/760 [00:49<00:31, 20.66it/s]Loading weights:  15%|█▌        | 116/760 [00:49<00:20, 30.97it/s]Loading weights:  17%|█▋        | 127/760 [00:49<00:16, 38.35it/s]Loading weights:  18%|█▊        | 138/760 [00:49<00:13, 44.72it/s]Loading weights:  19%|█▉        | 148/760 [00:49<00:11, 51.55it/s]Loading weights:  21%|██        | 158/760 [00:53<01:04,  9.32it/s]Loading weights:  23%|██▎       | 172/760 [00:53<00:42, 13.94it/s]Loading weights:  24%|██▍       | 183/760 [00:53<00:31, 18.56it/s]Loading weights:  25%|██▌       | 193/760 [00:53<00:24, 23.57it/s]Loading weights:  27%|██▋       | 203/760 [00:56<01:08,  8.12it/s]Loading weights:  28%|██▊       | 210/760 [00:59<01:49,  5.02it/s]Loading weights:  30%|██▉       | 225/760 [01:01<01:21,  6.59it/s]Loading weights:  30%|███       | 229/760 [01:03<01:49,  4.86it/s]Loading weights:  31%|███▏      | 239/760 [01:04<01:32,  5.65it/s]Loading weights:  32%|███▏      | 242/760 [01:06<02:07,  4.06it/s]Loading weights:  33%|███▎      | 253/760 [01:07<01:36,  5.25it/s]Loading weights:  34%|███▎      | 255/760 [01:10<02:19,  3.61it/s]Loading weights:  34%|███▍      | 258/760 [01:11<02:26,  3.43it/s]Loading weights:  34%|███▍      | 259/760 [01:12<02:55,  2.86it/s]Loading weights:  34%|███▍      | 260/760 [01:13<03:29,  2.39it/s]Loading weights:  37%|███▋      | 278/760 [01:14<01:22,  5.83it/s]Loading weights:  37%|███▋      | 279/760 [01:15<01:38,  4.86it/s]Loading weights:  38%|███▊      | 292/760 [01:15<00:50,  9.26it/s]Loading weights:  40%|███▉      | 303/760 [01:15<00:32, 14.08it/s]Loading weights:  41%|████      | 309/760 [01:15<00:26, 16.98it/s]Loading weights:  42%|████▏     | 316/760 [01:15<00:20, 21.40it/s]Loading weights:  44%|████▎     | 331/760 [01:16<00:12, 34.68it/s]Loading weights:  45%|████▌     | 344/760 [01:16<00:08, 46.57it/s]Loading weights:  47%|████▋     | 354/760 [01:16<00:07, 54.64it/s]Loading weights:  48%|████▊     | 364/760 [01:16<00:07, 54.28it/s]Loading weights:  49%|████▉     | 373/760 [01:16<00:06, 59.61it/s]Loading weights:  51%|█████     | 385/760 [01:16<00:05, 69.65it/s]Loading weights:  52%|█████▏    | 398/760 [01:16<00:04, 80.87it/s]Loading weights:  54%|█████▍    | 411/760 [01:16<00:03, 90.48it/s]Loading weights:  56%|█████▌    | 422/760 [01:17<00:04, 74.21it/s]Loading weights:  64%|██████▎   | 483/760 [01:17<00:01, 188.70it/s]Loading weights:  76%|███████▌  | 579/760 [01:17<00:00, 369.41it/s]Loading weights:  89%|████████▉ | 675/760 [01:17<00:00, 517.03it/s]Loading weights:  99%|█████████▉| 755/760 [01:17<00:00, 582.22it/s]Loading weights: 100%|██████████| 760/760 [01:17<00:00,  9.80it/s] 
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Exportando GGUF q4_k_m...
+Unsloth: Restored added_tokens_decoder metadata in D:/ai-lab/fase2/merged_qwen35_attn\tokenizer_config.json.
+[unsloth_zoo.llama_cpp|WARNING]Unsloth: 1 suspicious pattern(s) in the llama.cpp converter at ~\.unsloth\llama.cpp\gguf-py\gguf\utility.py. This file is executed to build your GGUF, so read it before continuing.
+[unsloth_zoo.llama_cpp|WARNING]Unsloth:   [CRITICAL] Harvests environment variables/secrets AND makes network calls
+[unsloth_zoo.llama_cpp|WARNING]Unsloth:     L268: if os.environ.get("HF_TOKEN"): | L269: headers["Authorization"] = f"Bearer {os.environ['HF_TOKEN']}"
+[unsloth_zoo.llama_cpp|WARNING]Unsloth:     L236: response = requests.get(url, allow_redirects=True, headers=headers) | L258: response = requests.head(url, allow_redirects=True, headers=headers)
+[unsloth_zoo.llama_cpp|WARNING]Unsloth: To pin a converter you have reviewed, put convert_hf_to_gguf.py in a directory and set UNSLOTH_LLAMA_CPP_SCRIPTS_DIR to it; Unsloth then reads that file instead of downloading one. Set UNSLOTH_CONVERTER_SCAN_STRICT=1 to make findings in a downloaded converter fail the export instead of warning, or UNSLOTH_DISABLE_CONVERTER_SCAN=1 to silence this scan.
+Unsloth: Model is not a PEFT model. Using existing checkpoint at D:/ai-lab/fase2/merged_qwen35_attn
+Unsloth: Converting to GGUF format...
+==((====))==  Unsloth: Conversion from HF to GGUF information
+   \\   /|    [0] Installing llama.cpp might take 3 minutes.
+O^O/ \_/ \    [1] Converting HF to GGUF bf16 might take 3 minutes.
+\        /    [2] Converting GGUF bf16 to ['q4_k_m'] might take 10 minutes each.
+ "-____-"     In total, you will have to wait at least 16 minutes.
+
+Unsloth: llama.cpp found in the system. Skipping installation.
+Unsloth: Preparing converter script...
+Unsloth: [1] Converting model into bf16 GGUF format.
+This might take 3 minutes...
+Unsloth: Initial conversion completed! Files: ['D:\\ai-lab\\fase2\\gguf_qwen35_attn_gguf\\merged_qwen35_attn.BF16.gguf', 'D:\\ai-lab\\fase2\\gguf_qwen35_attn_gguf\\merged_qwen35_attn.BF16-mmproj.gguf']
+Unsloth: [2] Converting GGUF bf16 into q4_k_m. This might take 10 minutes...
+Unsloth: Model files cleanup...
+Unsloth: All GGUF conversions completed successfully!
+Generated files: ['D:\\ai-lab\\fase2\\gguf_qwen35_attn_gguf\\merged_qwen35_attn.Q4_K_M.gguf', 'D:\\ai-lab\\fase2\\gguf_qwen35_attn_gguf\\merged_qwen35_attn.BF16-mmproj.gguf']
+Unsloth: No Ollama template mapping found for model 'D:/ai-lab/fase2/merged_qwen35_attn'. Skipping Ollama Modelfile
+
+
+Unsloth: example usage for Multimodal LLMs: ~\.unsloth\llama.cpp\build\bin\Release\llama-mtmd-cli.exe -m D:\ai-lab\fase2\gguf_qwen35_attn_gguf\merged_qwen35_attn.Q4_K_M.gguf --mmproj D:\ai-lab\fase2\gguf_qwen35_attn_gguf\merged_qwen35_attn.BF16-mmproj.gguf
+Unsloth: load image inside llama.cpp runner: /image test_image.jpg
+Unsloth: Prompt model to describe the image
+LISTO: D:/ai-lab/fase2/gguf_qwen35_attn

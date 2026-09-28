@@ -1,0 +1,64 @@
+Modelo: local-qwen:latest | tareas: 50 | salida: ..\results\20260922_180656_local-qwen-latest_baseline.jsonl
+
+[1/50] python_core/py-001 ... PASS
+[2/50] python_core/py-002 ... PASS
+[3/50] python_core/py-003 ... PASS
+[4/50] python_core/py-004 ... FAIL (Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+    as)
+[5/50] python_core/py-005 ... PASS
+[6/50] python_core/py-006 ... PASS
+[7/50] python_core/py-007 ... PASS
+[8/50] python_core/py-008 ... PASS
+[9/50] python_core/py-009 ... PASS
+[10/50] python_core/py-010 ... PASS
+[11/50] algorithms/al-001 ... PASS
+[12/50] algorithms/al-002 ... PASS
+[13/50] algorithms/al-003 ... PASS
+[14/50] algorithms/al-004 ... PASS
+[15/50] algorithms/al-005 ... PASS
+[16/50] algorithms/al-006 ... PASS
+[17/50] algorithms/al-007 ... PASS
+[18/50] algorithms/al-008 ... PASS
+[19/50] algorithms/al-009 ... PASS
+[20/50] algorithms/al-010 ... PASS
+[21/50] debugging/db-001 ... PASS
+[22/50] debugging/db-002 ... PASS
+[23/50] debugging/db-003 ... PASS
+[24/50] debugging/db-004 ... PASS
+[25/50] debugging/db-005 ... PASS
+[26/50] debugging/db-006 ... PASS
+[27/50] debugging/db-007 ... PASS
+[28/50] debugging/db-008 ... PASS
+[29/50] debugging/db-009 ... PASS
+[30/50] debugging/db-010 ... PASS
+[31/50] sql/sq-001 ... PASS
+[32/50] sql/sq-002 ... PASS
+[33/50] sql/sq-003 ... PASS
+[34/50] sql/sq-004 ... PASS
+[35/50] sql/sq-005 ... FAIL (Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+    a)
+[36/50] reasoning/rs-001 ... PASS
+[37/50] reasoning/rs-002 ... FAIL (respuesta: 'Médico')
+[38/50] reasoning/rs-003 ... PASS
+[39/50] reasoning/rs-004 ... PASS
+[40/50] reasoning/rs-005 ... PASS
+[41/50] reasoning/rs-006 ... PASS
+[42/50] reasoning/rs-007 ... PASS
+[43/50] reasoning/rs-008 ... PASS
+[44/50] reasoning/rs-009 ... PASS
+[45/50] reasoning/rs-010 ... PASS
+[46/50] bash/sh-001 ... PASS
+[47/50] bash/sh-002 ... PASS
+[48/50] bash/sh-003 ... PASS
+[49/50] bash/sh-004 ... PASS
+[50/50] bash/sh-005 ... PASS
+
+Resumen:
+# Baseline local-qwen:latest — 20260922_180656
+
+| Categoría | Resueltas | Total | % |
+|---|---|---|---|
+...
+Guardado: 20260922_180656_local-qwen-latest_baseline.jsonl / 20260922_180656_local-qwen-latest_summary.md

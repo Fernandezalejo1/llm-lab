@@ -1,0 +1,84 @@
+============================================================
+1) Backend / GPU
+============================================================
+python: 3.12.14
+torch: 2.11.0+rocm7.13.0
+build: 7.13.99004
+gpu disponible: True
+device: AMD Radeon RX 9070 XT
+capability: (12, 0)
+VRAM total: 17.1 GB
+
+============================================================
+2) Unsloth
+============================================================
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+unsloth: 2026.9.10
+
+============================================================
+3) Carga 4-bit + LoRA + 8 ejemplos, 3 steps
+============================================================
+==((====))==  Unsloth 2026.9.10: Fast Qwen3 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   0%|          | 1/310 [00:00<03:15,  1.58it/s]Loading weights:  18%|█▊        | 55/310 [00:00<00:02, 100.81it/s]Loading weights:  39%|███▉      | 121/310 [00:00<00:00, 216.75it/s]Loading weights:  61%|██████    | 188/310 [00:00<00:00, 317.24it/s]Loading weights:  82%|████████▏ | 254/310 [00:01<00:00, 396.97it/s]Loading weights: 100%|██████████| 310/310 [00:01<00:00, 282.05it/s]
+Unsloth 2026.9.10 patched 28 layers with 28 QKV layers, 28 O layers and 28 MLP layers.
+modelo cargado en 9.6s
+Unsloth: Tokenizing ["text"]:   0%|          | 0/4 [00:00<?, ? examples/s]Unsloth: Tokenizing ["text"]: 100%|██████████| 4/4 [00:00<00:00, 887.45 examples/s]
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None}.
+🦥 Unsloth: Padding-free auto-enabled, enabling faster training.
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\smoke_test.py", line 160, in <module>
+    trainer.train()
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\trainer.py", line 1549, in _train_with_reset
+    return _orig_train(*train_args, **train_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\UnslothSFTTrainer.py", line 116, in wrapper
+    output = f(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\trainer.py", line 1424, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 37, in _fast_inner_training_loop
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\trainer.py", line 1599, in _prepare_for_training
+    model, self.optimizer = self.accelerator.prepare(self.model, self.optimizer)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\accelerate\accelerator.py", line 1558, in prepare
+    result = tuple(
+             ^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\accelerate\accelerator.py", line 1559, in <genexpr>
+    self._prepare_one(obj, first_pass=True, device_placement=d) for obj, d in zip(args, device_placement)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\accelerate\accelerator.py", line 1404, in _prepare_one
+    return self.prepare_model(obj, device_placement=device_placement)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\accelerate\accelerator.py", line 1802, in prepare_model
+    and not model_has_dtensor(model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\accelerate\utils\other.py", line 243, in model_has_dtensor
+    from torch.distributed.tensor import DTensor
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\distributed\tensor\__init__.py", line 4, in <module>
+    import torch.distributed.tensor._ops  # force import all built-in dtensor ops
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\distributed\tensor\_ops\__init__.py", line 2, in <module>
+    from ._conv_ops import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\distributed\tensor\_ops\_conv_ops.py", line 5, in <module>
+    from torch.distributed.tensor._dtensor_spec import DTensorSpec, TensorMeta
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\distributed\tensor\_dtensor_spec.py", line 9, in <module>
+    from torch.distributed.tensor.placement_types import (
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\distributed\tensor\placement_types.py", line 10, in <module>
+    import torch.distributed._functional_collectives as funcol
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\distributed\_functional_collectives.py", line 9, in <module>
+    import torch.distributed.distributed_c10d as c10d
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\distributed\distributed_c10d.py", line 25, in <module>
+    from torch._C._distributed_c10d import (
+ModuleNotFoundError: No module named 'torch._C._distributed_c10d'; 'torch._C' is not a package

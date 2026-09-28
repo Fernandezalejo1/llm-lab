@@ -1,0 +1,112 @@
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\__init__.py:1568: UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:02<25:37,  2.03s/it]Loading weights:   0%|          | 2/760 [00:17<2:08:07, 10.14s/it]Loading weights:   1%|          | 7/760 [00:17<24:45,  1.97s/it]  Loading weights:   2%|▏         | 13/760 [00:19<11:39,  1.07it/s]Loading weights:   2%|▏         | 15/760 [00:21<12:02,  1.03it/s]Loading weights:   4%|▎         | 27/760 [00:22<04:55,  2.48it/s]Loading weights:   4%|▎         | 28/760 [00:23<05:31,  2.21it/s]Loading weights:   4%|▍         | 29/760 [00:24<06:15,  1.95it/s]Loading weights:   6%|▌         | 42/760 [00:24<02:18,  5.17it/s]Loading weights:   6%|▌         | 47/760 [00:24<01:46,  6.72it/s]Loading weights:   8%|▊         | 63/760 [00:24<00:49, 13.96it/s]Loading weights:   9%|▉         | 71/760 [00:25<00:38, 18.12it/s]Loading weights:  11%|█         | 81/760 [00:25<00:27, 24.76it/s]Loading weights:  12%|█▏        | 94/760 [00:25<00:18, 35.61it/s]Loading weights:  14%|█▎        | 104/760 [00:25<00:16, 40.84it/s]Loading weights:  16%|█▌        | 119/760 [00:25<00:11, 56.03it/s]Loading weights:  17%|█▋        | 132/760 [00:25<00:09, 67.90it/s]Loading weights:  19%|█▉        | 143/760 [00:25<00:08, 74.54it/s]Loading weights:  20%|██        | 154/760 [00:32<01:50,  5.49it/s]Loading weights:  23%|██▎       | 172/760 [00:33<01:19,  7.37it/s]Loading weights:  23%|██▎       | 178/760 [00:35<01:41,  5.74it/s]Loading weights:  24%|██▍       | 186/760 [00:37<01:35,  5.99it/s]Loading weights:  25%|██▌       | 190/760 [00:39<02:06,  4.51it/s]Loading weights:  26%|██▋       | 200/760 [00:40<01:44,  5.37it/s]Loading weights:  27%|██▋       | 202/760 [00:42<02:28,  3.76it/s]Loading weights:  27%|██▋       | 205/760 [00:43<02:36,  3.55it/s]Loading weights:  27%|██▋       | 206/760 [00:44<03:07,  2.96it/s]Loading weights:  27%|██▋       | 207/760 [00:45<03:48,  2.42it/s]Loading weights:  30%|██▉       | 225/760 [00:47<01:32,  5.79it/s]Loading weights:  30%|██▉       | 226/760 [00:48<02:10,  4.08it/s]Loading weights:  30%|██▉       | 227/760 [00:49<02:42,  3.28it/s]Loading weights:  31%|███▏      | 239/760 [00:51<02:03,  4.22it/s]Loading weights:  32%|███▏      | 240/760 [00:53<02:30,  3.46it/s]Loading weights:  32%|███▏      | 241/760 [00:54<03:03,  2.82it/s]Loading weights:  33%|███▎      | 253/760 [00:55<01:43,  4.90it/s]Loading weights:  33%|███▎      | 254/760 [00:56<02:13,  3.78it/s]Loading weights:  34%|███▎      | 255/760 [00:57<02:49,  2.98it/s]Loading weights:  34%|███▍      | 258/760 [00:58<02:52,  2.91it/s]Loading weights:  34%|███▍      | 259/760 [00:59<03:34,  2.34it/s]Loading weights:  34%|███▍      | 260/760 [01:00<04:19,  1.93it/s]Loading weights:  37%|███▋      | 278/760 [01:02<01:21,  5.94it/s]Loading weights:  37%|███▋      | 279/760 [01:03<01:47,  4.49it/s]Loading weights:  37%|███▋      | 280/760 [01:04<02:20,  3.41it/s]Loading weights:  38%|███▊      | 292/760 [01:05<01:24,  5.54it/s]Loading weights:  39%|███▊      | 293/760 [01:06<01:53,  4.12it/s]Loading weights:  39%|███▊      | 294/760 [01:07<02:26,  3.18it/s]Loading weights:  40%|████      | 307/760 [01:07<00:58,  7.80it/s]Loading weights:  41%|████      | 312/760 [01:08<01:08,  6.51it/s]Loading weights:  43%|████▎     | 330/760 [01:09<00:30, 14.16it/s]Loading weights:  45%|████▍     | 341/760 [01:09<00:21, 19.74it/s]Loading weights:  46%|████▌     | 349/760 [01:11<00:45,  9.00it/s]Loading weights:  47%|████▋     | 359/760 [01:12<00:44,  8.92it/s]Loading weights:  48%|████▊     | 364/760 [01:15<01:23,  4.72it/s]Loading weights:  48%|████▊     | 367/760 [01:18<01:51,  3.51it/s]Loading weights:  49%|████▉     | 372/760 [01:18<01:38,  3.95it/s]Loading weights:  50%|█████     | 380/760 [01:19<01:15,  5.03it/s]Loading weights:  50%|█████     | 382/760 [01:20<01:14,  5.07it/s]Loading weights:  51%|█████     | 384/760 [01:21<01:43,  3.65it/s]Loading weights:  51%|█████     | 385/760 [01:22<02:13,  2.82it/s]Loading weights:  51%|█████     | 386/760 [01:23<02:44,  2.28it/s]Loading weights:  52%|█████▏    | 394/760 [01:24<01:29,  4.08it/s]Loading weights:  52%|█████▏    | 395/760 [01:25<01:34,  3.87it/s]Loading weights:  52%|█████▏    | 397/760 [01:25<01:28,  4.12it/s]Loading weights:  52%|█████▏    | 398/760 [01:26<02:08,  2.82it/s]Loading weights:  52%|█████▎    | 399/760 [01:27<02:53,  2.09it/s]Loading weights:  53%|█████▎    | 400/760 [01:28<03:32,  1.69it/s]Loading weights:  54%|█████▎    | 408/760 [01:29<01:31,  3.86it/s]Loading weights:  54%|█████▍    | 409/760 [01:30<01:40,  3.50it/s]Loading weights:  54%|█████▍    | 411/760 [01:30<01:31,  3.81it/s]Loading weights:  54%|█████▍    | 412/760 [01:31<02:14,  2.59it/s]Loading weights:  54%|█████▍    | 413/760 [01:32<03:00,  1.92it/s]Loading weights:  54%|█████▍    | 414/760 [01:33<03:39,  1.58it/s]Loading weights:  55%|█████▍    | 417/760 [01:34<02:56,  1.94it/s]Loading weights:  55%|█████▌    | 418/760 [01:36<03:34,  1.59it/s]Loading weights:  55%|█████▌    | 419/760 [01:37<04:05,  1.39it/s]Loading weights:  56%|█████▌    | 422/760 [01:37<02:15,  2.49it/s]Loading weights:  56%|█████▌    | 423/760 [01:37<02:16,  2.46it/s]Loading weights:  56%|█████▌    | 425/760 [01:38<02:12,  2.53it/s]Loading weights:  56%|█████▌    | 426/760 [01:38<01:52,  2.96it/s]Loading weights:  57%|█████▋    | 431/760 [01:38<00:51,  6.38it/s]Loading weights:  57%|█████▋    | 433/760 [01:38<00:42,  7.66it/s]Loading weights:  57%|█████▋    | 435/760 [01:38<00:36,  8.97it/s]Loading weights:  58%|█████▊    | 443/760 [01:39<00:16, 18.79it/s]Loading weights:  59%|█████▉    | 447/760 [01:39<00:16, 18.61it/s]Loading weights:  60%|█████▉    | 455/760 [01:39<00:11, 27.11it/s]Loading weights:  60%|██████    | 459/760 [01:39<00:12, 24.57it/s]Loading weights:  61%|██████    | 465/760 [01:39<00:09, 29.79it/s]Loading weights:  62%|██████▏   | 469/760 [01:39<00:11, 26.38it/s]Loading weights:  62%|██████▏   | 473/760 [01:40<00:10, 28.69it/s]Loading weights:  63%|██████▎   | 479/760 [01:40<00:08, 34.20it/s]Loading weights:  64%|██████▎   | 483/760 [01:40<00:09, 28.01it/s]Loading weights:  65%|██████▍   | 491/760 [01:40<00:07, 37.43it/s]Loading weights:  65%|██████▌   | 496/760 [01:40<00:08, 31.75it/s]Loading weights:  66%|██████▌   | 503/760 [01:40<00:06, 38.21it/s]Loading weights:  67%|██████▋   | 508/760 [01:41<00:07, 32.37it/s]Loading weights:  68%|██████▊   | 515/760 [01:41<00:06, 38.56it/s]Loading weights:  68%|██████▊   | 520/760 [01:41<00:07, 32.72it/s]Loading weights:  69%|██████▉   | 527/760 [01:41<00:06, 38.82it/s]Loading weights:  70%|███████   | 532/760 [01:41<00:06, 32.76it/s]Loading weights:  71%|███████   | 539/760 [01:41<00:05, 38.83it/s]Loading weights:  72%|███████▏  | 544/760 [01:42<00:06, 32.90it/s]Loading weights:  72%|███████▎  | 551/760 [01:42<00:05, 37.64it/s]Loading weights:  73%|███████▎  | 556/760 [01:42<00:06, 32.20it/s]Loading weights:  74%|███████▍  | 563/760 [01:42<00:05, 33.44it/s]Loading weights:  75%|███████▍  | 567/760 [01:42<00:06, 28.28it/s]Loading weights:  76%|███████▌  | 575/760 [01:42<00:05, 36.54it/s]Loading weights:  76%|███████▋  | 580/760 [01:43<00:05, 31.73it/s]Loading weights:  77%|███████▋  | 587/760 [01:43<00:04, 37.81it/s]Loading weights:  78%|███████▊  | 592/760 [01:43<00:05, 32.34it/s]Loading weights:  79%|███████▉  | 599/760 [01:43<00:04, 38.38it/s]Loading weights:  79%|███████▉  | 604/760 [01:43<00:04, 32.61it/s]Loading weights:  80%|████████  | 611/760 [01:43<00:03, 38.85it/s]Loading weights:  81%|████████  | 616/760 [01:44<00:04, 32.79it/s]Loading weights:  82%|████████▏ | 623/760 [01:44<00:03, 38.87it/s]Loading weights:  83%|████████▎ | 628/760 [01:44<00:04, 32.84it/s]Loading weights:  84%|████████▎ | 635/760 [01:44<00:03, 38.93it/s]Loading weights:  84%|████████▍ | 640/760 [01:44<00:03, 32.95it/s]Loading weights:  85%|████████▌ | 647/760 [01:44<00:02, 39.03it/s]Loading weights:  86%|████████▌ | 652/760 [01:45<00:03, 32.92it/s]Loading weights:  87%|████████▋ | 659/760 [01:45<00:02, 38.94it/s]Loading weights:  87%|████████▋ | 664/760 [01:45<00:02, 32.95it/s]Loading weights:  88%|████████▊ | 671/760 [01:45<00:02, 37.23it/s]Loading weights:  89%|████████▉ | 676/760 [01:45<00:02, 31.98it/s]Loading weights:  90%|████████▉ | 683/760 [01:45<00:02, 38.02it/s]Loading weights:  91%|█████████ | 688/760 [01:46<00:02, 32.54it/s]Loading weights:  91%|█████████▏| 695/760 [01:46<00:01, 38.60it/s]Loading weights:  92%|█████████▏| 700/760 [01:46<00:01, 32.68it/s]Loading weights:  93%|█████████▎| 707/760 [01:46<00:01, 38.79it/s]Loading weights:  94%|█████████▎| 712/760 [01:46<00:01, 32.87it/s]Loading weights:  95%|█████████▍| 719/760 [01:46<00:01, 38.96it/s]Loading weights:  95%|█████████▌| 724/760 [01:47<00:01, 32.85it/s]Loading weights:  96%|█████████▌| 731/760 [01:47<00:00, 38.90it/s]Loading weights:  97%|█████████▋| 736/760 [01:47<00:00, 32.87it/s]Loading weights:  98%|█████████▊| 743/760 [01:47<00:00, 35.23it/s]Loading weights:  98%|█████████▊| 747/760 [01:47<00:00, 29.60it/s]Loading weights:  99%|█████████▉| 753/760 [01:48<00:00, 18.50it/s]Loading weights:  99%|█████████▉| 756/760 [01:48<00:00, 14.37it/s]Loading weights: 100%|██████████| 760/760 [01:49<00:00,  6.97it/s]
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+cargado en 115s
+pad_token_id: 248055 | pad_token: <|vision_pad|>
+largo prompts: [289, 479, 340]
+batch shape: (3, 112)
+pad ids usados: 95 | max id: 248068
+forward train+backward...
+D:\ai-lab\fase2\debug_grpo_forward.py:58: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at B:\src\torch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  print("OK backward | loss:", float(loss), flush=True)
+OK backward | loss: 2.792377471923828
+
+forward causal completo + backward...
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for Qwen3_5RMSNorm_forward; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+remark: <unknown>:0:0: 114 instructions in function
+remark: <unknown>:0:0: 107 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 3477 instructions in function
+remark: <unknown>:0:0: 2094 instructions in function
+remark: <unknown>:0:0: 1928 instructions in function
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for apply_rotary_pos_emb; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for rotate_half; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+remark: <unknown>:0:0: 1290 instructions in function
+remark: <unknown>:0:0: 765 instructions in function
+remark: <unknown>:0:0: 430 instructions in function
+remark: <unknown>:0:0: 2198 instructions in function
+remark: <unknown>:0:0: 1293 instructions in function
+remark: <unknown>:0:0: 781 instructions in function
+remark: <unknown>:0:0: 4761 instructions in function
+remark: <unknown>:0:0: 2198 instructions in function
+remark: <unknown>:0:0: 1314 instructions in function
+remark: <unknown>:0:0: 2444 instructions in function
+remark: <unknown>:0:0: 144 instructions in function
+remark: <unknown>:0:0: 465 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1767 instructions in function
+remark: <unknown>:0:0: 3791 instructions in function
+remark: <unknown>:0:0: 9172 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1804 instructions in function
+remark: <unknown>:0:0: 3991 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1795 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 946 instructions in function
+remark: <unknown>:0:0: 97 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 462 instructions in function
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+Unsloth: Will smartly offload gradients to save VRAM!
+OK | loss: 1.9362298250198364
+VRAM pico: 9.22 GB

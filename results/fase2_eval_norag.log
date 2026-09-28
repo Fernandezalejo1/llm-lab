@@ -1,0 +1,2 @@
+usage: run_code_rag.py [-h] [--model MODEL] [--retrieval-only]
+run_code_rag.py: error: unrecognized arguments: --no-rag

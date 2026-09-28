@@ -1,0 +1,15 @@
+store: 811 chunks | modelo RAG: local-qwen:latest
+
+[1/10] rag-q01 ... HIT docs/09-PRD-FULL-PLATFORM.md
+[2/10] rag-q02 ... HIT docs/07-RECONCILIATION.md
+[3/10] rag-q03 ... HIT docs/01-ARCHITECTURE-OVERVIEW.md
+[4/10] rag-q04 ... MISS docs/09-PRD-FULL-PLATFORM.md
+[5/10] rag-q05 ... HIT docs/09-PRD-FULL-PLATFORM.md
+[6/10] rag-q06 ... HIT docs/05-LEARNING-ENGINE.md
+[7/10] rag-q07 ... HIT docs/01-ARCHITECTURE-OVERVIEW.md
+[8/10] rag-q08 ... MISS README.md
+[9/10] rag-q09 ... HIT README.md
+[10/10] rag-q10 ... HIT docs/08-UX-DESIGN.md
+
+Hit rate: 8/10 = 80%
+Guardado: rag_20260922_184238_local-qwen.jsonl / rag_20260922_184238_local-qwen.md

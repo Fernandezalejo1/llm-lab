@@ -1,0 +1,123 @@
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Cargando modelo mergeado (bf16)...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:22<4:43:19, 22.40s/it]Loading weights:   0%|          | 2/760 [00:44<4:41:35, 22.29s/it]Loading weights:   1%|          | 7/760 [00:44<54:03,  4.31s/it]  Loading weights:   2%|▏         | 13/760 [00:45<23:51,  1.92s/it]Loading weights:   2%|▏         | 15/760 [00:48<21:34,  1.74s/it]Loading weights:   4%|▎         | 27/760 [00:49<08:18,  1.47it/s]Loading weights:   4%|▎         | 28/760 [00:50<08:39,  1.41it/s]Loading weights:   4%|▍         | 29/760 [00:51<09:05,  1.34it/s]Loading weights:   5%|▌         | 41/760 [00:52<04:11,  2.85it/s]Loading weights:   6%|▌         | 42/760 [00:53<04:48,  2.49it/s]Loading weights:   6%|▌         | 43/760 [00:55<05:32,  2.16it/s]Loading weights:   6%|▌         | 46/760 [00:56<05:13,  2.28it/s]Loading weights:   6%|▌         | 47/760 [00:57<06:12,  1.92it/s]Loading weights:   8%|▊         | 63/760 [00:57<01:42,  6.77it/s]Loading weights:   9%|▉         | 68/760 [00:57<01:21,  8.50it/s]Loading weights:  11%|█         | 81/760 [00:57<00:44, 15.24it/s]Loading weights:  12%|█▏        | 94/760 [00:57<00:28, 23.52it/s]Loading weights:  14%|█▎        | 103/760 [00:57<00:23, 28.32it/s]Loading weights:  16%|█▌        | 119/760 [00:58<00:15, 42.39it/s]Loading weights:  17%|█▋        | 132/760 [00:58<00:11, 53.61it/s]Loading weights:  19%|█▉        | 143/760 [00:58<00:21, 28.14it/s]Loading weights:  20%|█▉        | 151/760 [01:02<01:17,  7.89it/s]Loading weights:  21%|██        | 157/760 [01:05<02:07,  4.73it/s]Loading weights:  21%|██        | 161/760 [01:06<02:04,  4.80it/s]Loading weights:  22%|██▏       | 168/760 [01:07<01:47,  5.49it/s]Loading weights:  23%|██▎       | 172/760 [01:08<01:58,  4.96it/s]Loading weights:  23%|██▎       | 174/760 [01:10<03:00,  3.25it/s]Loading weights:  24%|██▍       | 182/760 [01:11<02:08,  4.51it/s]Loading weights:  24%|██▍       | 186/760 [01:12<02:15,  4.24it/s]Loading weights:  25%|██▍       | 187/760 [01:13<02:54,  3.29it/s]Loading weights:  25%|██▍       | 188/760 [01:14<03:37,  2.63it/s]Loading weights:  26%|██▌       | 196/760 [01:15<02:10,  4.34it/s]Loading weights:  26%|██▋       | 200/760 [01:16<02:17,  4.07it/s]Loading weights:  26%|██▋       | 201/760 [01:17<03:03,  3.05it/s]Loading weights:  27%|██▋       | 202/760 [01:19<03:50,  2.42it/s]Loading weights:  27%|██▋       | 205/760 [01:20<03:40,  2.52it/s]Loading weights:  27%|██▋       | 206/760 [01:21<04:31,  2.04it/s]Loading weights:  27%|██▋       | 207/760 [01:22<05:27,  1.69it/s]Loading weights:  28%|██▊       | 213/760 [01:23<02:57,  3.09it/s]Loading weights:  29%|██▉       | 221/760 [01:23<01:48,  4.95it/s]Loading weights:  30%|██▉       | 225/760 [01:25<02:00,  4.45it/s]Loading weights:  30%|██▉       | 226/760 [01:26<02:41,  3.31it/s]Loading weights:  30%|██▉       | 227/760 [01:27<03:30,  2.54it/s]Loading weights:  31%|███       | 235/760 [01:27<01:58,  4.43it/s]Loading weights:  31%|███       | 236/760 [01:28<02:09,  4.04it/s]Loading weights:  31%|███▏      | 238/760 [01:28<02:02,  4.27it/s]Loading weights:  31%|███▏      | 239/760 [01:29<03:01,  2.87it/s]Loading weights:  32%|███▏      | 240/760 [01:31<04:01,  2.15it/s]Loading weights:  32%|███▏      | 241/760 [01:32<05:00,  1.73it/s]Loading weights:  33%|███▎      | 249/760 [01:32<02:10,  3.91it/s]Loading weights:  33%|███▎      | 250/760 [01:33<02:20,  3.62it/s]Loading weights:  33%|███▎      | 252/760 [01:33<02:09,  3.93it/s]Loading weights:  33%|███▎      | 253/760 [01:34<03:12,  2.63it/s]Loading weights:  33%|███▎      | 254/760 [01:35<04:14,  1.99it/s]Loading weights:  34%|███▎      | 255/760 [01:37<05:12,  1.61it/s]Loading weights:  34%|███▍      | 258/760 [01:38<04:27,  1.88it/s]Loading weights:  34%|███▍      | 259/760 [01:39<05:17,  1.58it/s]Loading weights:  34%|███▍      | 260/760 [01:40<06:02,  1.38it/s]Loading weights:  35%|███▍      | 263/760 [01:40<03:21,  2.46it/s]Loading weights:  35%|███▍      | 264/760 [01:41<03:17,  2.51it/s]Loading weights:  35%|███▌      | 266/760 [01:41<03:13,  2.56it/s]Loading weights:  35%|███▌      | 268/760 [01:41<02:17,  3.57it/s]Loading weights:  36%|███▌      | 274/760 [01:42<01:33,  5.22it/s]Loading weights:  36%|███▌      | 275/760 [01:43<01:44,  4.65it/s]Loading weights:  36%|███▋      | 277/760 [01:43<01:42,  4.71it/s]Loading weights:  37%|███▋      | 278/760 [01:44<02:50,  2.82it/s]Loading weights:  37%|███▋      | 279/760 [01:45<03:55,  2.04it/s]Loading weights:  37%|███▋      | 280/760 [01:46<04:55,  1.62it/s]Loading weights:  38%|███▊      | 288/760 [01:47<01:59,  3.96it/s]Loading weights:  38%|███▊      | 289/760 [01:47<02:06,  3.72it/s]Loading weights:  38%|███▊      | 291/760 [01:48<01:56,  4.03it/s]Loading weights:  38%|███▊      | 292/760 [01:49<03:02,  2.57it/s]Loading weights:  39%|███▊      | 293/760 [01:50<03:59,  1.95it/s]Loading weights:  39%|███▊      | 294/760 [01:51<05:00,  1.55it/s]Loading weights:  40%|███▉      | 302/760 [01:52<02:02,  3.75it/s]Loading weights:  40%|███▉      | 303/760 [01:52<02:07,  3.58it/s]Loading weights:  40%|████      | 305/760 [01:53<02:26,  3.10it/s]Loading weights:  40%|████      | 306/760 [01:55<03:19,  2.28it/s]Loading weights:  40%|████      | 307/760 [01:56<04:26,  1.70it/s]Loading weights:  41%|████      | 308/760 [01:57<05:11,  1.45it/s]Loading weights:  41%|████      | 311/760 [01:58<04:14,  1.76it/s]Loading weights:  41%|████      | 312/760 [01:59<05:05,  1.47it/s]Loading weights:  41%|████      | 313/760 [02:00<05:42,  1.31it/s]Loading weights:  42%|████▏     | 316/760 [02:01<03:08,  2.35it/s]Loading weights:  42%|████▏     | 317/760 [02:01<03:09,  2.33it/s]Loading weights:  42%|████▏     | 319/760 [02:02<03:00,  2.44it/s]Loading weights:  42%|████▏     | 320/760 [02:02<02:34,  2.85it/s]Loading weights:  43%|████▎     | 327/760 [02:03<01:22,  5.27it/s]Loading weights:  43%|████▎     | 328/760 [02:03<01:31,  4.71it/s]Loading weights:  43%|████▎     | 330/760 [02:03<01:28,  4.88it/s]Loading weights:  44%|████▎     | 331/760 [02:05<02:39,  2.70it/s]Loading weights:  44%|████▎     | 332/760 [02:06<03:40,  1.94it/s]Loading weights:  44%|████▍     | 333/760 [02:07<04:39,  1.53it/s]Loading weights:  45%|████▍     | 341/760 [02:08<01:50,  3.80it/s]Loading weights:  45%|████▌     | 342/760 [02:08<01:55,  3.62it/s]Loading weights:  45%|████▌     | 344/760 [02:09<01:45,  3.94it/s]Loading weights:  45%|████▌     | 345/760 [02:10<02:48,  2.47it/s]Loading weights:  46%|████▌     | 346/760 [02:11<03:39,  1.88it/s]Loading weights:  46%|████▌     | 347/760 [02:12<04:25,  1.55it/s]Loading weights:  47%|████▋     | 355/760 [02:13<01:47,  3.78it/s]Loading weights:  47%|████▋     | 356/760 [02:13<01:52,  3.59it/s]Loading weights:  47%|████▋     | 358/760 [02:14<01:42,  3.92it/s]Loading weights:  47%|████▋     | 359/760 [02:15<02:33,  2.61it/s]Loading weights:  47%|████▋     | 360/760 [02:16<03:22,  1.97it/s]Loading weights:  48%|████▊     | 361/760 [02:17<04:08,  1.60it/s]Loading weights:  48%|████▊     | 364/760 [02:18<03:22,  1.95it/s]Loading weights:  48%|████▊     | 365/760 [02:19<04:03,  1.62it/s]Loading weights:  48%|████▊     | 366/760 [02:20<04:48,  1.37it/s]Loading weights:  49%|████▊     | 369/760 [02:20<02:40,  2.44it/s]Loading weights:  49%|████▊     | 370/760 [02:21<02:36,  2.49it/s]Loading weights:  49%|████▉     | 372/760 [02:22<02:33,  2.53it/s]Loading weights:  49%|████▉     | 373/760 [02:22<02:10,  2.96it/s]Loading weights:  50%|█████     | 380/760 [02:22<01:10,  5.41it/s]Loading weights:  50%|█████     | 381/760 [02:23<01:18,  4.82it/s]Loading weights:  50%|█████     | 383/760 [02:23<01:16,  4.91it/s]Loading weights:  51%|█████     | 384/760 [02:24<02:09,  2.90it/s]Loading weights:  51%|█████     | 385/760 [02:25<03:00,  2.08it/s]Loading weights:  51%|█████     | 386/760 [02:27<03:46,  1.65it/s]Loading weights:  52%|█████▏    | 394/760 [02:27<01:34,  3.87it/s]Loading weights:  52%|█████▏    | 395/760 [02:28<01:39,  3.67it/s]Loading weights:  52%|█████▏    | 397/760 [02:28<01:31,  3.99it/s]Loading weights:  52%|█████▏    | 398/760 [02:29<02:17,  2.64it/s]Loading weights:  52%|█████▎    | 399/760 [02:30<03:08,  1.91it/s]Loading weights:  53%|█████▎    | 400/760 [02:32<03:48,  1.57it/s]Loading weights:  54%|█████▎    | 408/760 [02:32<01:32,  3.80it/s]Loading weights:  54%|█████▍    | 409/760 [02:33<01:37,  3.60it/s]Loading weights:  54%|█████▍    | 411/760 [02:33<01:29,  3.91it/s]Loading weights:  54%|█████▍    | 412/760 [02:34<02:13,  2.61it/s]Loading weights:  54%|█████▍    | 413/760 [02:35<02:59,  1.94it/s]Loading weights:  54%|█████▍    | 414/760 [02:37<03:38,  1.58it/s]Loading weights:  55%|█████▍    | 417/760 [02:38<02:56,  1.94it/s]Loading weights:  55%|█████▌    | 418/760 [02:39<03:31,  1.61it/s]Loading weights:  55%|█████▌    | 419/760 [02:40<04:03,  1.40it/s]Loading weights:  56%|█████▌    | 422/760 [02:40<02:15,  2.50it/s]Loading weights:  56%|█████▌    | 423/760 [02:40<02:17,  2.45it/s]Loading weights:  56%|█████▌    | 425/760 [02:41<02:12,  2.52it/s]Loading weights:  56%|█████▌    | 426/760 [02:41<01:53,  2.95it/s]Loading weights:  57%|█████▋    | 431/760 [02:41<00:51,  6.37it/s]Loading weights:  57%|█████▋    | 433/760 [02:41<00:42,  7.65it/s]Loading weights:  57%|█████▋    | 435/760 [02:42<00:36,  8.96it/s]Loading weights:  58%|█████▊    | 443/760 [02:42<00:16, 18.79it/s]Loading weights:  59%|█████▉    | 447/760 [02:42<00:16, 18.59it/s]Loading weights:  60%|█████▉    | 455/760 [02:42<00:11, 27.10it/s]Loading weights:  60%|██████    | 459/760 [02:42<00:12, 24.60it/s]Loading weights:  61%|██████▏   | 467/760 [02:42<00:08, 32.61it/s]Loading weights:  62%|██████▏   | 472/760 [02:43<00:09, 29.18it/s]Loading weights:  63%|██████▎   | 479/760 [02:43<00:07, 35.63it/s]Loading weights:  64%|██████▎   | 484/760 [02:43<00:08, 31.09it/s]Loading weights:  65%|██████▍   | 491/760 [02:43<00:07, 33.90it/s]Loading weights:  65%|██████▌   | 495/760 [02:43<00:09, 28.46it/s]Loading weights:  66%|██████▌   | 503/760 [02:43<00:06, 36.80it/s]Loading weights:  67%|██████▋   | 508/760 [02:44<00:07, 31.78it/s]Loading weights:  68%|██████▊   | 515/760 [02:44<00:06, 37.85it/s]Loading weights:  68%|██████▊   | 520/760 [02:44<00:07, 32.40it/s]Loading weights:  69%|██████▉   | 527/760 [02:44<00:06, 38.48it/s]Loading weights:  70%|███████   | 532/760 [02:44<00:06, 32.63it/s]Loading weights:  71%|███████   | 539/760 [02:44<00:05, 38.69it/s]Loading weights:  72%|███████▏  | 544/760 [02:45<00:06, 32.82it/s]Loading weights:  72%|███████▎  | 551/760 [02:45<00:05, 37.56it/s]Loading weights:  73%|███████▎  | 556/760 [02:45<00:06, 32.16it/s]Loading weights:  74%|███████▍  | 563/760 [02:45<00:05, 38.30it/s]Loading weights:  75%|███████▍  | 568/760 [02:45<00:06, 29.73it/s]Loading weights:  76%|███████▌  | 575/760 [02:46<00:05, 35.99it/s]Loading weights:  76%|███████▋  | 580/760 [02:46<00:05, 31.36it/s]Loading weights:  77%|███████▋  | 587/760 [02:46<00:04, 37.48it/s]Loading weights:  78%|███████▊  | 592/760 [02:46<00:05, 32.11it/s]Loading weights:  79%|███████▉  | 599/760 [02:46<00:04, 38.18it/s]Loading weights:  79%|███████▉  | 604/760 [02:47<00:05, 29.70it/s]Loading weights:  80%|████████  | 611/760 [02:47<00:04, 36.05it/s]Loading weights:  81%|████████  | 616/760 [02:47<00:04, 31.31it/s]Loading weights:  82%|████████▏ | 623/760 [02:47<00:03, 35.04it/s]Loading weights:  83%|████████▎ | 628/760 [02:47<00:04, 30.97it/s]Loading weights:  84%|████████▎ | 635/760 [02:47<00:03, 37.10it/s]Loading weights:  84%|████████▍ | 640/760 [02:48<00:03, 32.01it/s]Loading weights:  85%|████████▌ | 647/760 [02:48<00:02, 38.17it/s]Loading weights:  86%|████████▌ | 652/760 [02:48<00:03, 32.46it/s]Loading weights:  87%|████████▋ | 659/760 [02:48<00:02, 38.55it/s]Loading weights:  87%|████████▋ | 664/760 [02:48<00:02, 32.71it/s]Loading weights:  88%|████████▊ | 671/760 [02:48<00:02, 37.09it/s]Loading weights:  89%|████████▉ | 676/760 [02:49<00:02, 31.87it/s]Loading weights:  90%|████████▉ | 683/760 [02:49<00:02, 37.95it/s]Loading weights:  91%|█████████ | 688/760 [02:49<00:02, 32.47it/s]Loading weights:  91%|█████████▏| 695/760 [02:49<00:01, 38.52it/s]Loading weights:  92%|█████████▏| 700/760 [02:49<00:01, 32.69it/s]Loading weights:  93%|█████████▎| 707/760 [02:49<00:01, 38.76it/s]Loading weights:  94%|█████████▎| 712/760 [02:50<00:01, 32.82it/s]Loading weights:  95%|█████████▍| 719/760 [02:50<00:01, 38.92it/s]Loading weights:  95%|█████████▌| 724/760 [02:50<00:01, 32.91it/s]Loading weights:  96%|█████████▌| 731/760 [02:50<00:00, 38.89it/s]Loading weights:  97%|█████████▋| 736/760 [02:50<00:00, 32.89it/s]Loading weights:  98%|█████████▊| 743/760 [02:50<00:00, 34.55it/s]Loading weights:  98%|█████████▊| 747/760 [02:51<00:00, 29.26it/s]Loading weights:  99%|█████████▉| 753/760 [02:51<00:00, 20.42it/s]Loading weights:  99%|█████████▉| 756/760 [02:52<00:00, 15.26it/s]Loading weights: 100%|██████████| 760/760 [02:52<00:00,  4.41it/s]
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Exportando GGUF q4_k_m...
+Unsloth: Restored added_tokens_decoder metadata in D:/ai-lab/fase2/merged_qwen35_attn\tokenizer_config.json.
+[unsloth_zoo.llama_cpp|WARNING]Unsloth: Converter dependency install failed ([FAIL] Command `uv pip install gguf protobuf sentencepiece mistral_common` failed with exit code 2
+stdout: Resolved 28 packages in 662ms
+Downloading pycountry (7.7MiB)
+Downloading numpy (12.2MiB)
+Downloading mistral-common (6.3MiB)
+ Downloaded mistral-common
+ Downloaded numpy
+ Downloaded pycountry
+Prepared 7 packages in 854ms
+error: failed to remove file `D:\ai-lab\fase2\.venv\Lib\site-packages\numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll`: Acceso denegado. (os error 5)
+
+); conversion self-heals if needed.
+[unsloth_zoo.llama_cpp|WARNING]Unsloth: 1 suspicious pattern(s) in the llama.cpp converter at ~\.unsloth\llama.cpp\gguf-py\gguf\utility.py. This file is executed to build your GGUF, so read it before continuing.
+[unsloth_zoo.llama_cpp|WARNING]Unsloth:   [CRITICAL] Harvests environment variables/secrets AND makes network calls
+[unsloth_zoo.llama_cpp|WARNING]Unsloth:     L268: if os.environ.get("HF_TOKEN"): | L269: headers["Authorization"] = f"Bearer {os.environ['HF_TOKEN']}"
+[unsloth_zoo.llama_cpp|WARNING]Unsloth:     L236: response = requests.get(url, allow_redirects=True, headers=headers) | L258: response = requests.head(url, allow_redirects=True, headers=headers)
+[unsloth_zoo.llama_cpp|WARNING]Unsloth: To pin a converter you have reviewed, put convert_hf_to_gguf.py in a directory and set UNSLOTH_LLAMA_CPP_SCRIPTS_DIR to it; Unsloth then reads that file instead of downloading one. Set UNSLOTH_CONVERTER_SCAN_STRICT=1 to make findings in a downloaded converter fail the export instead of warning, or UNSLOTH_DISABLE_CONVERTER_SCAN=1 to silence this scan.
+Unsloth: Model is not a PEFT model. Using existing checkpoint at D:/ai-lab/fase2/merged_qwen35_attn
+Unsloth: Converting to GGUF format...
+==((====))==  Unsloth: Conversion from HF to GGUF information
+   \\   /|    [0] Installing llama.cpp might take 3 minutes.
+O^O/ \_/ \    [1] Converting HF to GGUF bf16 might take 3 minutes.
+\        /    [2] Converting GGUF bf16 to ['q4_k_m'] might take 10 minutes each.
+ "-____-"     In total, you will have to wait at least 16 minutes.
+
+Unsloth: Installing llama.cpp. This might take 3 minutes...
+Unsloth: Installing prebuilt llama.cpp b11030-mix-5ff778e (app-b11030-mix-5ff778e-windows-x64-cpu.zip) - skipping compilation.
+Unsloth: Preparing converter script...
+Unsloth: [1] Converting model into bf16 GGUF format.
+This might take 3 minutes...
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\llama_cpp.py", line 6074, in convert_to_gguf
+    subprocess.run(command, shell=False, check=True,
+  File "~\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\ai-lab\\fase2\\.venv\\Scripts\\python.exe', '~\\.unsloth\\llama.cpp\\unsloth_convert_hf_to_gguf.py', '--outfile', 'merged_qwen35_attn.BF16.gguf', '--outtype', 'bf16', '--split-max-size', '50G', 'D:/ai-lab/fase2/merged_qwen35_attn']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\save.py", line 4064, in unsloth_save_pretrained_gguf
+    all_file_locations, want_full_precision, is_vlm_update = save_to_gguf(
+                                                             ^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\save.py", line 1949, in save_to_gguf
+    initial_files, is_vlm_update = convert_to_gguf(
+                                   ^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\llama_cpp.py", line 6217, in convert_to_gguf
+    raise RuntimeError(f"Unsloth: Failed to convert {description} to GGUF with command `{cmd}`: {e}{details}{repair_note}{no_mtp_note}{skew_note}")
+RuntimeError: Unsloth: Failed to convert text model to GGUF with command `D:\ai-lab\fase2\.venv\Scripts\python.exe ~\.unsloth\llama.cpp\unsloth_convert_hf_to_gguf.py --outfile merged_qwen35_attn.BF16.gguf --outtype bf16 --split-max-size 50G D:/ai-lab/fase2/merged_qwen35_attn`: Command '['D:\\ai-lab\\fase2\\.venv\\Scripts\\python.exe', '~\\.unsloth\\llama.cpp\\unsloth_convert_hf_to_gguf.py', '--outfile', 'merged_qwen35_attn.BF16.gguf', '--outtype', 'bf16', '--split-max-size', '50G', 'D:/ai-lab/fase2/merged_qwen35_attn']' returned non-zero exit status 1.
+--- converter stderr ---
+D:\ai-lab\fase2\.venv\Lib\site-packages\huggingface_hub\constants.py:301: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+Traceback (most recent call last):
+  File "~\.unsloth\llama.cpp\unsloth_convert_hf_to_gguf.py", line 18, in <module>
+    from conversion import (
+  File "~\.unsloth\llama.cpp\conversion\__init__.py", line 3, in <module>
+    from .base import (
+  File "~\.unsloth\llama.cpp\conversion\base.py", line 18, in <module>
+    from transformers import AutoConfig
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\__init__.py", line 30, in <module>
+    from . import dependency_versions_check
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\dependency_versions_check.py", line 56, in <module>
+    require_version_core(deps[pkg])
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\versions.py", line 116, in require_version_core
+    return require_version(requirement, hint)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\versions.py", line 110, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\versions.py", line 38, in _compare_versions
+    raise ValueError(
+ValueError: Unable to compare versions for numpy>=1.17: need=1.17 found=None. This is unusual. Consider reinstalling numpy.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\to_gguf.py", line 33, in <module>
+    model.save_pretrained_gguf(
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\save.py", line 870, in wrapper
+    return save_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\save.py", line 4098, in unsloth_save_pretrained_gguf
+    raise RuntimeError(f"Unsloth: GGUF conversion failed: {_describe_exception(e)}") from e
+RuntimeError: Unsloth: GGUF conversion failed: RuntimeError: Unsloth: Failed to convert text model to GGUF with command `D:\ai-lab\fase2\.venv\Scripts\python.exe ~\.unsloth\llama.cpp\unsloth_convert_hf_to_gguf.py --outfile merged_qwen35_attn.BF16.gguf --outtype bf16 --split-max-size 50G D:/ai-lab/fase2/merged_qwen35_attn`: Command '['D:\\ai-lab\\fase2\\.venv\\Scripts\\python.exe', '~\\.unsloth\\llama.cpp\\unsloth_convert_hf_to_gguf.py', '--outfile', 'merged_qwen35_attn.BF16.gguf', '--outtype', 'bf16', '--split-max-size', '50G', 'D:/ai-lab/fase2/merged_qwen35_attn']' returned non-zero exit status 1.
+--- converter stderr ---
+D:\ai-lab\fase2\.venv\Lib\site-packages\huggingface_hub\constants.py:301: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+Traceback (most recent call last):
+  File "~\.unsloth\llama.cpp\unsloth_convert_hf_to_gguf.py", line 18, in <module>
+    from conversion import (
+  File "~\.unsloth\llama.cpp\conversion\__init__.py", line 3, in <module>
+    from .base import (
+  File "~\.unsloth\llama.cpp\conversion\base.py", line 18, in <module>
+    from transformers import AutoConfig
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\__init__.py", line 30, in <module>
+    from . import dependency_versions_check
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\dependency_versions_check.py", line 56, in <module>
+    require_version_core(deps[pkg])
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\versions.py", line 116, in require_version_core
+    return require_version(requirement, hint)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\versions.py", line 110, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\utils\versions.py", line 38, in _compare_versions
+    raise ValueError(
+ValueError: Unable to compare versions for numpy>=1.17: need=1.17 found=None. This is unusual. Consider reinstalling numpy.

@@ -1,0 +1,32 @@
+# Alejo AI Lab
+
+# Entornos y caches de Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+unsloth_compiled_cache/
+
+# Modelos, pesos y dispositivos (se descargan o se reconstruyen)
+hf_cache/
+models/
+merged_*/
+gguf_*/
+out_*/
+smoke_out/
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+
+# Índice vectorial derivado: se regenera con rag/index_rag.py
+rag/data/vectors.npy
+
+# Config local del agente
+_backup/
+
+# Entorno
+.env
+node_modules/
+.DS_Store

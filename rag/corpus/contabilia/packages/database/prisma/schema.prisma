@@ -1,0 +1,472 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Organization {
+  id             String   @id @default(uuid())
+  name           String
+  slug           String   @unique
+  logoUrl        String?  @map("logo_url")
+  settings       String   @default("{}")
+  status         String   @default("active")
+  trialEndsAt    DateTime? @map("trial_ends_at")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  customers        Customer[]
+  invoices         Invoice[]
+  customerBalances CustomerBalance[]
+  bankStatements   BankStatement[]
+  bankMovements    BankMovement[]
+  paymentMatches   PaymentMatch[]
+  paymentApps      PaymentApplication[]
+  reconciliations  Reconciliation[]
+  learningLogs     LearningLog[]
+  similarityPats   SimilarityPattern[]
+  auditLogs        AuditLog[]
+  members          OrganizationMember[]
+
+  @@map("organizations")
+}
+
+model User {
+  id           String    @id @default(uuid())
+  email        String    @unique
+  passwordHash String    @map("password_hash")
+  firstName    String?   @map("first_name")
+  lastName     String?   @map("last_name")
+  avatarUrl    String?   @map("avatar_url")
+  role         String    @default("member")
+  status       String    @default("active")
+  lastLoginAt  DateTime? @map("last_login_at")
+  createdAt    DateTime  @default(now()) @map("created_at")
+
+  memberships OrganizationMember[]
+
+  @@map("users")
+}
+
+model OrganizationMember {
+  id             String   @id @default(uuid())
+  organizationId String   @map("organization_id")
+  userId         String   @map("user_id")
+  role           String   @default("member")
+  joinedAt       DateTime @default(now()) @map("joined_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([organizationId, userId])
+  @@map("organization_members")
+}
+
+model Customer {
+  id             String   @id @default(uuid())
+  organizationId String   @map("organization_id")
+  legalName      String   @map("legal_name")
+  rut            String?
+  alias          String?
+  email          String?
+  phone          String?
+  website        String?
+  status         String   @default("active")
+  notes          String?
+  metadata       String   @default("{}")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  organization    Organization         @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  attributes      CustomerAttribute[]
+  invoices        Invoice[]
+  balances        CustomerBalance[]
+  paymentMatches  PaymentMatch[]
+  paymentSuggests PaymentSuggestion[]
+  similarityPats  SimilarityPattern[]
+  learningLogsSel LearningLog[]        @relation("suggested_customer")
+  learningLogsTgt LearningLog[]        @relation("selected_customer")
+
+  @@index([organizationId])
+  @@index([legalName])
+  @@index([rut])
+  @@map("customers")
+}
+
+model CustomerAttribute {
+  id            String   @id @default(uuid())
+  customerId    String   @map("customer_id")
+  attributeType String   @map("attribute_type")
+  value         String
+  source        String   @default("manual")
+  confidence    Float    @default(1.00)
+  verified      Boolean  @default(false)
+  metadata      String   @default("{}")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  customer Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
+
+  @@index([customerId])
+  @@index([attributeType])
+  @@index([value])
+  @@map("customer_attributes")
+}
+
+model Invoice {
+  id             String   @id @default(uuid())
+  organizationId String   @map("organization_id")
+  customerId     String   @map("customer_id")
+  invoiceType    String   @default("factura") @map("invoice_type")
+  invoiceNumber  String   @map("invoice_number")
+  invoiceSerie   String?  @map("invoice_serie")
+  rut            String?
+  amount         Float
+  tax            Float    @default(0)
+  total          Float
+  currency       String   @default("UYU")
+  exchangeRate   Float?   @default(1) @map("exchange_rate")
+  issueDate      DateTime @map("issue_date")
+  dueDate        DateTime @map("due_date")
+  paymentDate    DateTime? @map("payment_date")
+  status         String   @default("issued")
+  balance        Float
+  notes          String?
+  metadata       String   @default("{}")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  organization Organization        @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  customer     Customer            @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  lines        InvoiceLine[]
+  applications AppliedInvoice[]
+
+  @@unique([organizationId, invoiceNumber])
+  @@index([organizationId])
+  @@index([customerId])
+  @@index([status])
+  @@index([dueDate])
+  @@map("invoices")
+}
+
+model InvoiceLine {
+  id          String   @id @default(uuid())
+  invoiceId   String   @map("invoice_id")
+  description String
+  quantity    Float    @default(1)
+  unitPrice   Float    @map("unit_price")
+  discount    Float    @default(0)
+  total       Float
+  metadata    String   @default("{}")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  invoice Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  @@index([invoiceId])
+  @@map("invoice_lines")
+}
+
+model CustomerBalance {
+  id             String   @id @default(uuid())
+  customerId     String   @map("customer_id")
+  organizationId String   @map("organization_id")
+  balanceType    String   @default("credit") @map("balance_type")
+  amount         Float
+  currency       String   @default("UYU")
+  notes          String?
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  customer     Customer     @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@unique([customerId, balanceType, currency])
+  @@index([customerId])
+  @@map("customer_balances")
+}
+
+model BankStatement {
+  id              String    @id @default(uuid())
+  organizationId  String    @map("organization_id")
+  accountNumber   String    @map("account_number")
+  accountName     String?   @map("account_name")
+  bankName        String?   @map("bank_name")
+  periodStart     DateTime  @map("period_start")
+  periodEnd       DateTime  @map("period_end")
+  fileType        String    @default("excel") @map("file_type")
+  filePath        String?   @map("file_path")
+  fileHash        String?   @map("file_hash")
+  originalName    String?   @map("original_name")
+  fileSize        BigInt?   @map("file_size")
+  totalMovements  Int?      @default(0) @map("total_movements")
+  totalCredits    Float?    @default(0) @map("total_credits")
+  totalDebits     Float?    @default(0) @map("total_debits")
+  status          String    @default("pending")
+  errorMessage    String?   @map("error_message")
+  uploadedBy      String?   @map("uploaded_by")
+  uploadedAt      DateTime  @default(now()) @map("uploaded_at")
+  processedAt     DateTime? @map("processed_at")
+  metadata        String    @default("{}")
+
+  organization   Organization    @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  movements      BankMovement[]
+  reconciliations Reconciliation[]
+
+  @@index([organizationId])
+  @@index([status])
+  @@map("bank_statements")
+}
+
+model BankMovement {
+  id              String   @id @default(uuid())
+  bankStatementId String   @map("bank_statement_id")
+  organizationId  String   @map("organization_id")
+  transactionDate DateTime @map("transaction_date")
+  valueDate       DateTime? @map("value_date")
+  description     String
+  reference       String?
+  checkNumber     String?  @map("check_number")
+  movementType    String   @default("unknown") @map("movement_type")
+  debitAmount     Float    @default(0) @map("debit_amount")
+  creditAmount    Float    @default(0) @map("credit_amount")
+  currency        String   @default("UYU")
+  exchangeRate    Float?   @default(1) @map("exchange_rate")
+  rawData         Json?    @map("raw_data")
+  balance         Float?
+  status          String   @default("pending")
+  sequence        Int?
+  hash            String?
+  metadata        String   @default("{}")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  bankStatement BankStatement    @relation(fields: [bankStatementId], references: [id], onDelete: Cascade)
+  organization  Organization     @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  paymentMatch  PaymentMatch?
+  analyses      MovementAnalysis[]
+
+  @@index([bankStatementId])
+  @@index([organizationId])
+  @@index([status])
+  @@index([transactionDate])
+  @@index([hash])
+  @@map("bank_movements")
+}
+
+model PaymentMatch {
+  id             String   @id @default(uuid())
+  bankMovementId String   @unique @map("bank_movement_id")
+  organizationId String   @map("organization_id")
+  customerId     String?  @map("customer_id")
+  engineVersion  String   @map("engine_version")
+  matchStrategy  String   @map("match_strategy")
+  confidence     Float
+  status         String   @default("pending_review")
+  executedRules  Json     @map("executed_rules")
+  matchedRules   Json     @map("matched_rules")
+  evidence       Json
+  aiAnalysis     Json?    @map("ai_analysis")
+  reviewedBy     String?  @map("reviewed_by")
+  reviewedAt     DateTime? @map("reviewed_at")
+  reviewedNotes  String?  @map("reviewed_notes")
+  isCorrection   Boolean  @default(false) @map("is_correction")
+  correctionOfId String?  @map("correction_of_id")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  bankMovement BankMovement         @relation(fields: [bankMovementId], references: [id], onDelete: Cascade)
+  organization Organization         @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  customer     Customer?            @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  suggestions  PaymentSuggestion[]
+  application  PaymentApplication?
+
+  @@index([bankMovementId])
+  @@index([customerId])
+  @@index([status])
+  @@index([confidence])
+  @@map("payment_matches")
+}
+
+model PaymentSuggestion {
+  id                String   @id @default(uuid())
+  paymentMatchId    String   @map("payment_match_id")
+  customerId        String   @map("customer_id")
+  confidence        Float
+  strategyUsed      String   @map("strategy_used")
+  evidenceSummary   String?  @map("evidence_summary")
+  suggestedInvoices Json?    @map("suggested_invoices")
+  selected          Boolean  @default(false)
+  reason            String?
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  paymentMatch PaymentMatch @relation(fields: [paymentMatchId], references: [id], onDelete: Cascade)
+  customer     Customer     @relation(fields: [customerId], references: [id], onDelete: Restrict)
+
+  @@index([paymentMatchId])
+  @@map("payment_suggestions")
+}
+
+model PaymentApplication {
+  id               String   @id @default(uuid())
+  paymentMatchId   String   @unique @map("payment_match_id")
+  organizationId   String   @map("organization_id")
+  applicationType  String   @map("application_type")
+  totalAmount      Float    @map("total_amount")
+  appliedAmount    Float    @map("applied_amount")
+  difference       Float    @default(0)
+  differenceReason String?  @map("difference_reason")
+  notes            String?
+  status           String   @default("completed")
+  createdBy        String?  @map("created_by")
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  paymentMatch    PaymentMatch     @relation(fields: [paymentMatchId], references: [id], onDelete: Cascade)
+  organization    Organization     @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  appliedInvoices AppliedInvoice[]
+
+  @@index([paymentMatchId])
+  @@index([organizationId])
+  @@map("payment_applications")
+}
+
+model AppliedInvoice {
+  id              String   @id @default(uuid())
+  applicationId   String   @map("application_id")
+  invoiceId       String   @map("invoice_id")
+  amountApplied   Float    @map("amount_applied")
+  previousBalance Float    @map("previous_balance")
+  newBalance      Float    @map("new_balance")
+  isPartial       Boolean  @default(false) @map("is_partial")
+  notes           String?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  application PaymentApplication @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  invoice     Invoice            @relation(fields: [invoiceId], references: [id], onDelete: Restrict)
+
+  @@index([applicationId])
+  @@index([invoiceId])
+  @@map("applied_invoices")
+}
+
+model MovementAnalysis {
+  id           String   @id @default(uuid())
+  movementId   String   @map("movement_id")
+  analysisType String   @map("analysis_type")
+  result       Json
+  confidence   Float?
+  details      String?
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  movement BankMovement @relation(fields: [movementId], references: [id], onDelete: Cascade)
+
+  @@index([movementId])
+  @@map("movement_analyses")
+}
+
+model LearningLog {
+  id                   String   @id @default(uuid())
+  organizationId       String   @map("organization_id")
+  inputText            String   @map("input_text")
+  normalizedText       String?  @map("normalized_text")
+  suggestedCustomerId  String?  @map("suggested_customer_id")
+  selectedCustomerId   String?  @map("selected_customer_id")
+  confidence           Float?
+  correctionType       String   @map("correction_type")
+  userId               String?  @map("user_id")
+  feedback             Json?
+  matchStrategy        String?  @map("match_strategy")
+  createdAt            DateTime @default(now()) @map("created_at")
+
+  organization      Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  suggestedCustomer Customer?    @relation("suggested_customer", fields: [suggestedCustomerId], references: [id])
+  selectedCustomer  Customer?    @relation("selected_customer", fields: [selectedCustomerId], references: [id])
+
+  @@index([organizationId])
+  @@index([createdAt])
+  @@map("learning_logs")
+}
+
+model SimilarityPattern {
+  id               String   @id @default(uuid())
+  organizationId   String   @map("organization_id")
+  patternType      String   @map("pattern_type")
+  sourceText       String   @map("source_text")
+  normalizedText   String   @map("normalized_text")
+  targetCustomerId String   @map("target_customer_id")
+  similarityScore  Float    @default(0) @map("similarity_score")
+  occurrences      Int      @default(1)
+  lastUsedAt       DateTime? @map("last_used_at")
+  isActive         Boolean  @default(true) @map("is_active")
+  createdBy        String   @default("system") @map("created_by")
+  metadata         String   @default("{}")
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  customer     Customer     @relation(fields: [targetCustomerId], references: [id], onDelete: Cascade)
+
+  @@index([organizationId])
+  @@index([normalizedText])
+  @@index([patternType])
+  @@index([targetCustomerId])
+  @@index([isActive])
+  @@map("similarity_patterns")
+}
+
+model Reconciliation {
+  id                  String   @id @default(uuid())
+  organizationId      String   @map("organization_id")
+  bankStatementId     String?  @map("bank_statement_id")
+  periodStart         DateTime @map("period_start")
+  periodEnd           DateTime @map("period_end")
+  totalMovements      Int      @default(0) @map("total_movements")
+  totalCredits        Float?   @default(0) @map("total_credits")
+  totalDebits         Float?   @default(0) @map("total_debits")
+  conciliatedCount    Int      @default(0) @map("conciliated_count")
+  pendingCount        Int      @default(0) @map("pending_count")
+  unidentifiedCount   Int      @default(0) @map("unidentified_count")
+  errorCount          Int      @default(0) @map("error_count")
+  duplicateCount      Int      @default(0) @map("duplicate_count")
+  advanceCount        Int      @default(0) @map("advance_count")
+  balanceForwardCount Int      @default(0) @map("balance_forward_count")
+  status              String   @default("draft")
+  notes               String?
+  generatedBy         String?  @map("generated_by")
+  generatedAt         DateTime @default(now()) @map("generated_at")
+  verifiedAt          DateTime? @map("verified_at")
+  metadata            String   @default("{}")
+
+  organization  Organization?  @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  bankStatement BankStatement? @relation(fields: [bankStatementId], references: [id])
+
+  @@index([organizationId])
+  @@index([periodStart, periodEnd])
+  @@map("reconciliations")
+}
+
+model AuditLog {
+  id             String   @id @default(uuid())
+  organizationId String   @map("organization_id")
+  entityType     String   @map("entity_type")
+  entityId       String   @map("entity_id")
+  action         String
+  previousState  Json?    @map("previous_state")
+  newState       Json?    @map("new_state")
+  userId         String?  @map("user_id")
+  ipAddress      String?  @map("ip_address")
+  userAgent      String?  @map("user_agent")
+  metadata       String   @default("{}")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@index([organizationId])
+  @@index([entityType, entityId])
+  @@index([action])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+

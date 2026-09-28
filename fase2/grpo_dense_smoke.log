@@ -1,0 +1,271 @@
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\__init__.py:1568: UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Unsloth: UnslothBCOTrainer is already patched.
+Unsloth: UnslothCPOTrainer is already patched.
+Unsloth: UnslothDPOTrainer is already patched.
+Unsloth: UnslothGKDTrainer is already patched.
+Unsloth: UnslothGRPOTrainer is already patched.
+Unsloth: UnslothKTOTrainer is already patched.
+Unsloth: UnslothNashMDTrainer is already patched.
+Unsloth: UnslothOnlineDPOTrainer is already patched.
+Unsloth: UnslothORPOTrainer is already patched.
+Unsloth: UnslothPPOTrainer is already patched.
+Unsloth: UnslothPRMTrainer is already patched.
+Unsloth: UnslothRewardTrainer is already patched.
+Unsloth: UnslothRLOOTrainer is already patched.
+Unsloth: UnslothSFTTrainer is already patched.
+Unsloth: UnslothXPOTrainer is already patched.
+============================================================
+Cargando merged SFT (bf16 → 4-bit) + LoRA RL attention-only...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:01<21:35,  1.71s/it]Loading weights:   0%|          | 2/760 [00:03<21:45,  1.72s/it]Loading weights:   1%|          | 7/760 [00:03<04:23,  2.86it/s]Loading weights:   2%|▏         | 14/760 [00:03<01:47,  6.95it/s]Loading weights:   4%|▎         | 27/760 [00:03<00:43, 16.74it/s]Loading weights:   5%|▌         | 40/760 [00:03<00:25, 28.10it/s]Loading weights:   6%|▋         | 49/760 [00:04<00:22, 32.03it/s]Loading weights:   9%|▊         | 66/760 [00:04<00:13, 50.48it/s]Loading weights:  10%|█         | 79/760 [00:04<00:10, 62.90it/s]Loading weights:  12%|█▏        | 90/760 [00:04<00:09, 70.13it/s]Loading weights:  13%|█▎        | 101/760 [00:04<00:10, 65.06it/s]Loading weights:  16%|█▌        | 119/760 [00:04<00:07, 85.61it/s]Loading weights:  17%|█▋        | 132/760 [00:04<00:06, 94.12it/s]Loading weights:  19%|█▉        | 144/760 [00:04<00:06, 95.69it/s]Loading weights:  20%|██        | 155/760 [00:05<00:07, 78.29it/s]Loading weights:  23%|██▎       | 172/760 [00:05<00:06, 94.40it/s]Loading weights:  24%|██▍       | 185/760 [00:05<00:05, 100.39it/s]Loading weights:  26%|██▌       | 197/760 [00:05<00:05, 97.00it/s] Loading weights:  27%|██▋       | 208/760 [00:05<00:07, 78.79it/s]Loading weights:  30%|██▉       | 225/760 [00:05<00:05, 95.28it/s]Loading weights:  31%|███▏      | 238/760 [00:05<00:05, 100.79it/s]Loading weights:  33%|███▎      | 249/760 [00:06<00:05, 98.07it/s] Loading weights:  34%|███▍      | 260/760 [00:06<00:06, 76.38it/s]Loading weights:  37%|███▋      | 278/760 [00:06<00:05, 94.95it/s]Loading weights:  38%|███▊      | 289/760 [00:06<00:04, 98.13it/s]Loading weights:  39%|███▉      | 300/760 [00:06<00:04, 98.16it/s]Loading weights:  41%|████      | 311/760 [00:06<00:05, 82.85it/s]Loading weights:  43%|████▎     | 327/760 [00:06<00:04, 96.11it/s]Loading weights:  44%|████▍     | 338/760 [00:07<00:04, 95.60it/s]Loading weights:  46%|████▌     | 349/760 [00:07<00:04, 88.01it/s]Loading weights:  47%|████▋     | 360/760 [00:07<00:04, 91.07it/s]Loading weights:  49%|████▊     | 370/760 [00:07<00:04, 83.40it/s]Loading weights:  51%|█████     | 384/760 [00:07<00:03, 97.03it/s]Loading weights:  52%|█████▏    | 397/760 [00:07<00:03, 102.82it/s]Loading weights:  54%|█████▎    | 408/760 [00:07<00:03, 101.58it/s]Loading weights:  55%|█████▌    | 419/760 [00:08<00:04, 78.03it/s] Loading weights:  63%|██████▎   | 481/760 [00:08<00:01, 198.23it/s]Loading weights:  75%|███████▌  | 573/760 [00:08<00:00, 371.29it/s]Loading weights:  87%|████████▋ | 663/760 [00:08<00:00, 501.92it/s]Loading weights:  99%|█████████▉| 753/760 [00:08<00:00, 606.64it/s]Loading weights: 100%|██████████| 760/760 [00:08<00:00, 90.03it/s] 
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+Modelo + LoRA RL en 14s
+  ✅ LoRA RL solo dentro del text LM (64 capas apuntadas)
+
+Esperando que el trainer parcheado sea UnslothGRPOTrainer: UnslothGRPOTrainer
+Dataset: 7 tareas puente (reward = assert-coverage 0..1).
+Unsloth: We now expect `per_device_train_batch_size` * `gradient_accumulation_steps` * `world_size` to be a multiple of `num_generations`.
+We will change the batch size of 1 to the `num_generations` of 3
+GRPOConfig: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+beta=0.001,
+bf16=True,
+bf16_full_eval=False,
+cache_implementation=None,
+data_seed=3407,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+delta=None,
+disable_dropout=False,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=False,
+ds3_gather_for_generation=True,
+enable_jit_checkpoint=False,
+epsilon=0.2,
+epsilon_high=None,
+eval_accumulation_steps=2,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generation_batch_size=6,
+generation_kwargs={},
+gradient_accumulation_steps=2,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': True},
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+importance_sampling_level=token,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_completions=False,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=False,
+logging_nan_inf_filter=False,
+logging_steps=1,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=bnpo,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.LINEAR,
+mask_truncated_completions=False,
+max_completion_length=1536,
+max_grad_norm=1.0,
+max_prompt_length=512,
+max_steps=4,
+metric_for_best_model=None,
+min_p=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_completions_to_print=None,
+num_generations=3,
+num_iterations=1,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_8BIT,
+optim_args=None,
+optim_target_modules=None,
+output_dir=out_grpo_dense_smoke,
+parallelism_config=None,
+per_device_eval_batch_size=4,
+per_device_train_batch_size=3,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+remove_unused_columns=False,
+repetition_penalty=1.0,
+report_to=[],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+reward_weights=None,
+run_name=None,
+save_on_each_node=False,
+save_only_model=True,
+save_steps=7,
+save_strategy=SaveStrategy.STEPS,
+save_total_limit=None,
+scale_rewards=group,
+seed=7,
+shuffle_dataset=True,
+skip_memory_metrics=True,
+steps_per_generation=2,
+sync_ref_model=False,
+temperature=0.8,
+tf32=None,
+top_entropy_quantile=1.0,
+top_k=None,
+top_p=1.0,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=250,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+unsloth_grpo_mini_batch=None,
+unsloth_logit_chunk_multiplier=None,
+unsloth_num_chunks=-1,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_liger_loss=False,
+use_transformers_paged=False,
+use_vllm=False,
+vllm_enable_sleep_mode=False,
+vllm_gpu_memory_utilization=0.3,
+vllm_guided_decoding_regex=None,
+vllm_importance_sampling_cap=2.0,
+vllm_importance_sampling_correction=False,
+vllm_mode=colocate,
+vllm_model_impl=vllm,
+vllm_sampling_params=None,
+vllm_server_base_url=None,
+vllm_server_host=0.0.0.0,
+vllm_server_port=8000,
+vllm_server_timeout=240.0,
+vllm_tensor_parallel_size=1,
+wandb_log_unique_prompts=False,
+warmup_ratio=None,
+warmup_steps=2,
+weight_decay=0.0,
+)
+Trainer instanciado OK (14s desde el arranque).
+
+-- ej 0: 694 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia traduce el estado interno de cada movimie'
+
+-- ej 1: 924 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia determina si un movimiento bancario es du'
+
+-- ej 2: 891 tokens | prompt conv: system/user
+   user[:80]: 'El motor de contabilia genera el resumen de una conciliación a partir de los mov'
+
+Training GRPO (RL sobre los tests del puente)...
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248044}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 7 | Num Epochs = 2 | Total steps = 4
+O^O/ \_/ \    Batch size per device = 3 | Gradient accumulation steps = 2
+\        /    Data Parallel GPUs = 1 | Total batch size (3 x 2 x 1) = 6
+ "-____-"     Trainable parameters = 3,932,160 of 9,413,745,904 (0.04% trained)
+  0%|          | 0/4 [00:00<?, ?it/s][inicio step 0] vram_cur=8.05 GB
+Passing `generation_config` together with generation-related arguments=({'disable_compile', 'pad_token_id'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for Qwen3_5RMSNorm_forward; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for apply_rotary_pos_emb; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for rotate_half; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for torch_causal_conv1d_update; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for chunked_hidden_states_selective_log_softmax; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for UnslothEfficientGRPO.forward.<locals>.accumulate_chunk; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+ 25%|██▌       | 1/4 [02:24<07:12, 144.21s/it]Unsloth: Will smartly offload gradients to save VRAM!
+Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
+[fin step 1] vram_cur=8.98 GB
+                                               25%|██▌       | 1/4 [02:24<07:12, 144.21s/it]{'loss': '2.512e-07', 'grad_norm': '2.425e-06', 'learning_rate': '0', 'num_tokens': '1.037e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0002512', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '0.3333'}
+
+[step 1] vram_cur=8.98 GB peak=17.11 GB  rewards=0.0
+[inicio step 1] vram_cur=8.98 GB
+ 50%|█████     | 2/4 [03:52<03:42, 111.28s/it][fin step 2] vram_cur=9.06 GB
+                                               50%|█████     | 2/4 [03:52<03:42, 111.28s/it]{'loss': '4.53e-07', 'grad_norm': '3.711e-06', 'learning_rate': '1e-05', 'num_tokens': '1.849e+04', 'completions/mean_length': '1186', 'completions/min_length': '204', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '836', 'completions/min_terminated_length': '204', 'completions/max_terminated_length': '1334', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1186', 'kl': '0.0004065', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '0.6667'}
+
+[step 2] vram_cur=9.06 GB peak=15.17 GB  rewards=0.0
+[inicio step 2] vram_cur=9.06 GB
+ 75%|███████▌  | 3/4 [05:30<01:45, 105.37s/it][fin step 3] vram_cur=9.06 GB
+                                               75%|███████▌  | 3/4 [05:30<01:45, 105.37s/it]{'loss': '4.972e-07', 'grad_norm': '3.525e-06', 'learning_rate': '2e-05', 'num_tokens': '2.881e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0004972', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1'}
+
+[step 3] vram_cur=9.06 GB peak=14.98 GB  rewards=0.0
+[inicio step 3] vram_cur=9.06 GB
+100%|██████████| 4/4 [07:08<00:00, 102.45s/it][fin step 4] vram_cur=9.06 GB
+                                              100%|██████████| 4/4 [07:08<00:00, 102.45s/it]{'loss': '3.682e-07', 'grad_norm': '3.558e-06', 'learning_rate': '1e-05', 'num_tokens': '3.665e+04', 'completions/mean_length': '1140', 'completions/min_length': '520', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '744', 'completions/min_terminated_length': '520', 'completions/max_terminated_length': '1023', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1140', 'kl': '0.0003584', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1.333'}
+
+[step 4] vram_cur=9.06 GB peak=15.03 GB  rewards=0.0
+Unsloth: Restored added_tokens_decoder metadata in out_grpo_dense_smoke\checkpoint-4\tokenizer_config.json.
+                                              100%|██████████| 4/4 [07:10<00:00, 102.45s/it]{'train_runtime': '430', 'train_samples_per_second': '0.056', 'train_steps_per_second': '0.009', 'train_loss': '3.924e-07', 'epoch': '1.333'}
+
+[step 4] vram_cur=9.06 GB peak=15.03 GB  rewards=n/a
+100%|██████████| 4/4 [07:10<00:00, 107.50s/it]
+Guardando adapter RL...
+Unsloth: Restored added_tokens_decoder metadata in out_grpo_dense_smoke/adapter_rl\tokenizer_config.json.
+VRAM pico: 15.03 GB
+LISTO.

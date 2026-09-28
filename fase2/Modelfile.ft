@@ -1,0 +1,7 @@
+FROM D:/ai-lab/fase2/gguf_qwen35_attn_gguf/merged_qwen35_attn.Q4_K_M.gguf
+
+# El GGUF ya trae el template de chat de Qwen3.5 embebido. Params del lab
+# (mismos que local-qwen:latest para comparación limpia con la baselina):
+PARAMETER temperature 0.6
+PARAMETER top_p 0.9
+PARAMETER num_ctx 32768

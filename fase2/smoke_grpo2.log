@@ -1,0 +1,329 @@
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\__init__.py:1568: UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Unsloth: UnslothBCOTrainer is already patched.
+Unsloth: UnslothCPOTrainer is already patched.
+Unsloth: UnslothDPOTrainer is already patched.
+Unsloth: UnslothGKDTrainer is already patched.
+Unsloth: UnslothGRPOTrainer is already patched.
+Unsloth: UnslothKTOTrainer is already patched.
+Unsloth: UnslothNashMDTrainer is already patched.
+Unsloth: UnslothOnlineDPOTrainer is already patched.
+Unsloth: UnslothORPOTrainer is already patched.
+Unsloth: UnslothPPOTrainer is already patched.
+Unsloth: UnslothPRMTrainer is already patched.
+Unsloth: UnslothRewardTrainer is already patched.
+Unsloth: UnslothRLOOTrainer is already patched.
+Unsloth: UnslothSFTTrainer is already patched.
+Unsloth: UnslothXPOTrainer is already patched.
+============================================================
+Cargando merged SFT (bf16 → 4-bit) + LoRA RL attention-only...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:23<4:53:25, 23.20s/it]Loading weights:   0%|          | 2/760 [00:45<4:45:36, 22.61s/it]Loading weights:   1%|          | 7/760 [00:45<54:53,  4.37s/it]  Loading weights:   1%|▏         | 10/760 [00:46<34:08,  2.73s/it]Loading weights:   2%|▏         | 12/760 [00:47<25:08,  2.02s/it]Loading weights:   2%|▏         | 14/760 [00:49<21:49,  1.76s/it]Loading weights:   2%|▏         | 15/760 [00:50<20:30,  1.65s/it]Loading weights:   3%|▎         | 23/760 [00:51<07:41,  1.60it/s]Loading weights:   3%|▎         | 24/760 [00:51<07:22,  1.66it/s]Loading weights:   3%|▎         | 26/760 [00:51<06:10,  1.98it/s]Loading weights:   4%|▎         | 27/760 [00:53<07:15,  1.68it/s]Loading weights:   4%|▎         | 28/760 [00:54<08:23,  1.45it/s]Loading weights:   4%|▍         | 29/760 [00:55<09:21,  1.30it/s]Loading weights:   5%|▍         | 37/760 [00:56<03:41,  3.27it/s]Loading weights:   5%|▌         | 38/760 [00:56<03:47,  3.18it/s]Loading weights:   5%|▌         | 40/760 [00:56<03:24,  3.53it/s]Loading weights:   5%|▌         | 41/760 [00:57<04:51,  2.47it/s]Loading weights:   6%|▌         | 42/760 [00:59<06:22,  1.88it/s]Loading weights:   6%|▌         | 43/760 [01:00<07:41,  1.55it/s]Loading weights:   6%|▌         | 46/760 [01:01<06:12,  1.92it/s]Loading weights:   6%|▌         | 47/760 [01:02<07:25,  1.60it/s]Loading weights:   6%|▋         | 48/760 [01:03<08:37,  1.38it/s]Loading weights:   7%|▋         | 54/760 [01:04<04:06,  2.86it/s]Loading weights:   8%|▊         | 62/760 [01:05<02:26,  4.76it/s]Loading weights:   9%|▊         | 66/760 [01:06<02:40,  4.32it/s]Loading weights:   9%|▉         | 67/760 [01:07<03:35,  3.22it/s]Loading weights:   9%|▉         | 68/760 [01:08<04:37,  2.49it/s]Loading weights:  11%|█         | 80/760 [01:09<02:17,  4.96it/s]Loading weights:  11%|█         | 81/760 [01:10<03:01,  3.74it/s]Loading weights:  11%|█         | 82/760 [01:11<03:54,  2.89it/s]Loading weights:  12%|█▏        | 94/760 [01:12<02:07,  5.24it/s]Loading weights:  12%|█▎        | 95/760 [01:14<02:48,  3.95it/s]Loading weights:  13%|█▎        | 96/760 [01:15<03:42,  2.99it/s]Loading weights:  13%|█▎        | 99/760 [01:16<03:46,  2.91it/s]Loading weights:  13%|█▎        | 100/760 [01:17<04:44,  2.32it/s]Loading weights:  13%|█▎        | 101/760 [01:18<05:46,  1.90it/s]Loading weights:  14%|█▍        | 107/760 [01:19<03:18,  3.29it/s]Loading weights:  16%|█▌        | 119/760 [01:20<01:53,  5.65it/s]Loading weights:  16%|█▌        | 120/760 [01:21<02:33,  4.18it/s]Loading weights:  16%|█▌        | 121/760 [01:22<03:24,  3.12it/s]Loading weights:  18%|█▊        | 133/760 [01:23<01:55,  5.43it/s]Loading weights:  18%|█▊        | 134/760 [01:24<02:33,  4.08it/s]Loading weights:  18%|█▊        | 135/760 [01:25<03:19,  3.13it/s]Loading weights:  19%|█▉        | 143/760 [01:26<02:09,  4.75it/s]Loading weights:  19%|█▉        | 144/760 [01:27<02:18,  4.45it/s]Loading weights:  19%|█▉        | 146/760 [01:27<02:13,  4.61it/s]Loading weights:  19%|█▉        | 147/760 [01:28<03:18,  3.09it/s]Loading weights:  19%|█▉        | 148/760 [01:29<04:27,  2.29it/s]Loading weights:  20%|█▉        | 149/760 [01:30<05:36,  1.82it/s]Loading weights:  20%|██        | 152/760 [01:32<04:51,  2.08it/s]Loading weights:  20%|██        | 153/760 [01:33<05:53,  1.72it/s]Loading weights:  20%|██        | 154/760 [01:34<06:52,  1.47it/s]Loading weights:  21%|██        | 157/760 [01:34<03:53,  2.58it/s]Loading weights:  21%|██        | 158/760 [01:34<03:51,  2.60it/s]Loading weights:  21%|██        | 160/760 [01:35<03:48,  2.62it/s]Loading weights:  21%|██        | 161/760 [01:35<03:16,  3.05it/s]Loading weights:  22%|██▏       | 168/760 [01:36<01:47,  5.49it/s]Loading weights:  22%|██▏       | 169/760 [01:36<02:02,  4.83it/s]Loading weights:  22%|██▎       | 171/760 [01:37<02:05,  4.71it/s]Loading weights:  23%|██▎       | 172/760 [01:38<03:26,  2.85it/s]Loading weights:  23%|██▎       | 173/760 [01:39<04:50,  2.02it/s]Loading weights:  23%|██▎       | 174/760 [01:40<06:02,  1.62it/s]Loading weights:  24%|██▍       | 182/760 [01:41<02:24,  3.99it/s]Loading weights:  24%|██▍       | 183/760 [01:41<02:32,  3.77it/s]Loading weights:  24%|██▍       | 185/760 [01:41<02:21,  4.08it/s]Loading weights:  24%|██▍       | 186/760 [01:43<03:38,  2.62it/s]Loading weights:  25%|██▍       | 187/760 [01:44<04:49,  1.98it/s]Loading weights:  25%|██▍       | 188/760 [01:45<05:56,  1.60it/s]Loading weights:  26%|██▌       | 196/760 [01:46<02:25,  3.88it/s]Loading weights:  26%|██▌       | 197/760 [01:46<02:33,  3.68it/s]Loading weights:  26%|██▌       | 199/760 [01:46<02:20,  3.99it/s]Loading weights:  26%|██▋       | 200/760 [01:47<03:30,  2.66it/s]Loading weights:  26%|██▋       | 201/760 [01:49<04:46,  1.95it/s]Loading weights:  27%|██▋       | 202/760 [01:50<05:49,  1.60it/s]Loading weights:  27%|██▋       | 205/760 [01:51<04:40,  1.98it/s]Loading weights:  27%|██▋       | 206/760 [01:52<05:38,  1.64it/s]Loading weights:  27%|██▋       | 207/760 [01:53<06:36,  1.39it/s]Loading weights:  28%|██▊       | 210/760 [01:53<03:40,  2.50it/s]Loading weights:  28%|██▊       | 211/760 [01:54<03:36,  2.54it/s]Loading weights:  28%|██▊       | 213/760 [01:54<03:31,  2.59it/s]Loading weights:  28%|██▊       | 214/760 [01:54<03:01,  3.01it/s]Loading weights:  29%|██▉       | 221/760 [01:55<01:43,  5.23it/s]Loading weights:  29%|██▉       | 222/760 [01:56<01:55,  4.66it/s]Loading weights:  29%|██▉       | 224/760 [01:56<01:50,  4.84it/s]Loading weights:  30%|██▉       | 225/760 [01:57<03:04,  2.90it/s]Loading weights:  30%|██▉       | 226/760 [01:58<04:23,  2.03it/s]Loading weights:  30%|██▉       | 227/760 [01:59<05:39,  1.57it/s]Loading weights:  31%|███       | 235/760 [02:00<02:14,  3.91it/s]Loading weights:  31%|███       | 236/760 [02:01<02:21,  3.71it/s]Loading weights:  31%|███▏      | 238/760 [02:01<02:09,  4.02it/s]Loading weights:  31%|███▏      | 239/760 [02:02<03:16,  2.66it/s]Loading weights:  32%|███▏      | 240/760 [02:03<04:20,  1.99it/s]Loading weights:  32%|███▏      | 241/760 [02:04<05:26,  1.59it/s]Loading weights:  33%|███▎      | 249/760 [02:05<02:12,  3.86it/s]Loading weights:  33%|███▎      | 250/760 [02:05<02:19,  3.66it/s]Loading weights:  33%|███▎      | 252/760 [02:06<02:07,  3.97it/s]Loading weights:  33%|███▎      | 253/760 [02:07<03:11,  2.64it/s]Loading weights:  33%|███▎      | 254/760 [02:08<04:14,  1.99it/s]Loading weights:  34%|███▎      | 255/760 [02:09<05:21,  1.57it/s]Loading weights:  34%|███▍      | 258/760 [02:10<04:17,  1.95it/s]Loading weights:  34%|███▍      | 259/760 [02:11<05:13,  1.60it/s]Loading weights:  34%|███▍      | 260/760 [02:13<05:59,  1.39it/s]Loading weights:  35%|███▍      | 263/760 [02:13<03:18,  2.50it/s]Loading weights:  35%|███▍      | 264/760 [02:13<03:15,  2.54it/s]Loading weights:  35%|███▌      | 266/760 [02:14<03:16,  2.52it/s]Loading weights:  36%|███▌      | 272/760 [02:14<01:23,  5.82it/s]Loading weights:  36%|███▌      | 275/760 [02:15<01:53,  4.27it/s]Loading weights:  36%|███▋      | 277/760 [02:15<01:47,  4.49it/s]Loading weights:  37%|███▋      | 279/760 [02:18<03:29,  2.30it/s]Loading weights:  37%|███▋      | 280/760 [02:19<04:18,  1.85it/s]Loading weights:  38%|███▊      | 288/760 [02:20<02:04,  3.80it/s]Loading weights:  38%|███▊      | 289/760 [02:20<02:10,  3.62it/s]Loading weights:  38%|███▊      | 291/760 [02:20<01:59,  3.92it/s]Loading weights:  38%|███▊      | 292/760 [02:21<02:54,  2.68it/s]Loading weights:  39%|███▊      | 293/760 [02:23<03:49,  2.04it/s]Loading weights:  39%|███▊      | 294/760 [02:24<04:42,  1.65it/s]Loading weights:  40%|███▉      | 302/760 [02:24<02:00,  3.81it/s]Loading weights:  40%|███▉      | 303/760 [02:25<02:05,  3.63it/s]Loading weights:  40%|████      | 305/760 [02:25<01:55,  3.94it/s]Loading weights:  40%|████      | 306/760 [02:26<02:51,  2.64it/s]Loading weights:  40%|████      | 307/760 [02:27<03:50,  1.96it/s]Loading weights:  41%|████      | 308/760 [02:29<04:42,  1.60it/s]Loading weights:  41%|████      | 311/760 [02:30<03:51,  1.94it/s]Loading weights:  41%|████      | 312/760 [02:31<04:39,  1.61it/s]Loading weights:  41%|████      | 313/760 [02:32<05:21,  1.39it/s]Loading weights:  42%|████▏     | 317/760 [02:32<02:55,  2.53it/s]Loading weights:  42%|████▏     | 319/760 [02:33<02:51,  2.57it/s]Loading weights:  42%|████▏     | 320/760 [02:33<02:30,  2.93it/s]Loading weights:  43%|████▎     | 327/760 [02:34<01:28,  4.91it/s]Loading weights:  43%|████▎     | 328/760 [02:34<01:36,  4.48it/s]Loading weights:  43%|████▎     | 330/760 [02:35<01:31,  4.69it/s]Loading weights:  44%|████▎     | 331/760 [02:36<02:28,  2.89it/s]Loading weights:  44%|████▎     | 332/760 [02:37<03:24,  2.09it/s]Loading weights:  44%|████▍     | 333/760 [02:38<04:16,  1.66it/s]Loading weights:  45%|████▍     | 341/760 [02:39<01:44,  4.00it/s]Loading weights:  45%|████▌     | 342/760 [02:39<01:50,  3.79it/s]Loading weights:  45%|████▌     | 344/760 [02:40<01:44,  3.98it/s]Loading weights:  45%|████▌     | 345/760 [02:41<02:36,  2.66it/s]Loading weights:  46%|████▌     | 346/760 [02:42<03:29,  1.97it/s]Loading weights:  46%|████▌     | 347/760 [02:43<04:17,  1.60it/s]Loading weights:  47%|████▋     | 355/760 [02:44<01:47,  3.78it/s]Loading weights:  47%|████▋     | 356/760 [02:44<01:52,  3.61it/s]Loading weights:  47%|████▋     | 358/760 [02:45<01:42,  3.93it/s]Loading weights:  47%|████▋     | 359/760 [02:46<02:36,  2.56it/s]Loading weights:  47%|████▋     | 360/760 [02:47<03:24,  1.95it/s]Loading weights:  48%|████▊     | 361/760 [02:48<04:10,  1.59it/s]Loading weights:  48%|████▊     | 364/760 [02:49<03:23,  1.95it/s]Loading weights:  48%|████▊     | 365/760 [02:50<04:04,  1.62it/s]Loading weights:  48%|████▊     | 366/760 [02:51<04:45,  1.38it/s]Loading weights:  49%|████▊     | 369/760 [02:51<02:37,  2.48it/s]Loading weights:  49%|████▊     | 370/760 [02:52<02:34,  2.52it/s]Loading weights:  49%|████▉     | 372/760 [02:53<02:31,  2.56it/s]Loading weights:  49%|████▉     | 373/760 [02:53<02:09,  2.98it/s]Loading weights:  50%|█████     | 380/760 [02:53<01:09,  5.44it/s]Loading weights:  50%|█████     | 381/760 [02:54<01:18,  4.84it/s]Loading weights:  50%|█████     | 383/760 [02:54<01:16,  4.96it/s]Loading weights:  51%|█████     | 384/760 [03:00<06:52,  1.10s/it]Loading weights:  51%|█████     | 385/760 [03:02<07:46,  1.24s/it]Loading weights:  51%|█████     | 386/760 [03:04<07:51,  1.26s/it]Loading weights:  52%|█████▏    | 394/760 [03:04<02:43,  2.24it/s]Loading weights:  52%|█████▏    | 395/760 [03:05<02:40,  2.27it/s]Loading weights:  52%|█████▏    | 397/760 [03:05<02:17,  2.65it/s]Loading weights:  52%|█████▏    | 398/760 [03:06<02:55,  2.06it/s]Loading weights:  52%|█████▎    | 399/760 [03:07<03:39,  1.65it/s]Loading weights:  53%|█████▎    | 400/760 [03:08<04:12,  1.42it/s]Loading weights:  54%|█████▎    | 408/760 [03:09<01:39,  3.53it/s]Loading weights:  54%|█████▍    | 409/760 [03:10<01:43,  3.38it/s]Loading weights:  54%|█████▍    | 411/760 [03:10<01:34,  3.71it/s]Loading weights:  54%|█████▍    | 412/760 [03:11<02:17,  2.54it/s]Loading weights:  54%|█████▍    | 413/760 [03:12<02:58,  1.94it/s]Loading weights:  54%|█████▍    | 414/760 [03:13<03:38,  1.59it/s]Loading weights:  55%|█████▍    | 417/760 [03:14<02:55,  1.95it/s]Loading weights:  55%|█████▌    | 418/760 [03:16<03:31,  1.62it/s]Loading weights:  55%|█████▌    | 419/760 [03:17<04:07,  1.38it/s]Loading weights:  56%|█████▌    | 422/760 [03:17<02:16,  2.47it/s]Loading weights:  56%|█████▌    | 423/760 [03:17<02:14,  2.51it/s]Loading weights:  56%|█████▌    | 425/760 [03:18<02:21,  2.37it/s]Loading weights:  56%|█████▌    | 427/760 [03:18<01:40,  3.33it/s]Loading weights:  57%|█████▋    | 431/760 [03:18<00:56,  5.87it/s]Loading weights:  57%|█████▋    | 433/760 [03:18<00:45,  7.14it/s]Loading weights:  57%|█████▋    | 435/760 [03:19<00:38,  8.49it/s]Loading weights:  58%|█████▊    | 443/760 [03:19<00:17, 18.08it/s]Loading weights:  59%|█████▉    | 447/760 [03:19<00:17, 18.11it/s]Loading weights:  60%|█████▉    | 455/760 [03:19<00:11, 26.58it/s]Loading weights:  60%|██████    | 459/760 [03:19<00:14, 20.76it/s]Loading weights:  61%|██████▏   | 467/760 [03:19<00:10, 28.54it/s]Loading weights:  62%|██████▏   | 471/760 [03:20<00:11, 25.28it/s]Loading weights:  63%|██████▎   | 479/760 [03:20<00:08, 33.72it/s]Loading weights:  64%|██████▎   | 484/760 [03:20<00:09, 29.99it/s]Loading weights:  65%|██████▍   | 491/760 [03:20<00:07, 36.31it/s]Loading weights:  65%|██████▌   | 496/760 [03:20<00:09, 27.89it/s]Loading weights:  66%|██████▌   | 501/760 [03:21<00:08, 31.01it/s]Loading weights:  66%|██████▋   | 505/760 [03:21<00:11, 22.35it/s]Loading weights:  67%|██████▋   | 509/760 [03:21<00:11, 22.26it/s]Loading weights:  68%|██████▊   | 513/760 [03:21<00:09, 24.76it/s]Loading weights:  68%|██████▊   | 517/760 [03:21<00:11, 20.48it/s]Loading weights:  68%|██████▊   | 520/760 [03:22<00:10, 21.88it/s]Loading weights:  69%|██████▉   | 527/760 [03:22<00:07, 30.22it/s]Loading weights:  70%|██████▉   | 531/760 [03:22<00:08, 25.78it/s]Loading weights:  71%|███████   | 539/760 [03:22<00:06, 35.17it/s]Loading weights:  72%|███████▏  | 544/760 [03:22<00:07, 30.61it/s]Loading weights:  72%|███████▎  | 551/760 [03:22<00:05, 35.89it/s]Loading weights:  73%|███████▎  | 556/760 [03:23<00:06, 31.16it/s]Loading weights:  74%|███████▍  | 561/760 [03:23<00:09, 20.12it/s]Loading weights:  74%|███████▍  | 565/760 [03:23<00:09, 20.16it/s]Loading weights:  75%|███████▍  | 568/760 [03:23<00:09, 21.14it/s]Loading weights:  76%|███████▌  | 575/760 [03:23<00:06, 28.70it/s]Loading weights:  76%|███████▌  | 579/760 [03:24<00:07, 25.16it/s]Loading weights:  77%|███████▋  | 587/760 [03:24<00:05, 34.18it/s]Loading weights:  78%|███████▊  | 592/760 [03:24<00:05, 30.03it/s]Loading weights:  79%|███████▉  | 599/760 [03:24<00:04, 36.53it/s]Loading weights:  79%|███████▉  | 604/760 [03:24<00:04, 31.48it/s]Loading weights:  80%|████████  | 611/760 [03:24<00:03, 37.87it/s]Loading weights:  81%|████████  | 616/760 [03:25<00:04, 32.26it/s]Loading weights:  82%|████████▏ | 623/760 [03:25<00:03, 38.38it/s]Loading weights:  83%|████████▎ | 628/760 [03:25<00:04, 32.57it/s]Loading weights:  84%|████████▎ | 635/760 [03:25<00:03, 38.67it/s]Loading weights:  84%|████████▍ | 640/760 [03:25<00:03, 32.83it/s]Loading weights:  85%|████████▌ | 647/760 [03:26<00:02, 38.90it/s]Loading weights:  86%|████████▌ | 652/760 [03:26<00:03, 32.84it/s]Loading weights:  87%|████████▋ | 659/760 [03:26<00:02, 38.86it/s]Loading weights:  87%|████████▋ | 664/760 [03:26<00:02, 32.91it/s]Loading weights:  88%|████████▊ | 671/760 [03:26<00:02, 37.20it/s]Loading weights:  89%|████████▉ | 676/760 [03:26<00:02, 31.90it/s]Loading weights:  90%|████████▉ | 683/760 [03:27<00:02, 38.06it/s]Loading weights:  91%|█████████ | 688/760 [03:27<00:02, 32.51it/s]Loading weights:  91%|█████████▏| 695/760 [03:27<00:01, 38.63it/s]Loading weights:  92%|█████████▏| 700/760 [03:27<00:01, 32.73it/s]Loading weights:  93%|█████████▎| 707/760 [03:27<00:01, 38.76it/s]Loading weights:  94%|█████████▎| 712/760 [03:27<00:01, 32.86it/s]Loading weights:  95%|█████████▍| 719/760 [03:28<00:01, 38.98it/s]Loading weights:  95%|█████████▌| 724/760 [03:28<00:01, 33.08it/s]Loading weights:  96%|█████████▌| 731/760 [03:28<00:00, 38.94it/s]Loading weights:  97%|█████████▋| 736/760 [03:28<00:00, 32.89it/s]Loading weights:  98%|█████████▊| 743/760 [03:28<00:00, 38.91it/s]Loading weights:  98%|█████████▊| 748/760 [03:28<00:00, 33.27it/s]Loading weights:  99%|█████████▉| 753/760 [03:29<00:00, 20.81it/s]Loading weights:  99%|█████████▉| 756/760 [03:29<00:00, 15.40it/s]Loading weights: 100%|██████████| 760/760 [03:29<00:00,  3.62it/s]
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+Modelo + LoRA RL en 217s
+  ✅ LoRA RL solo dentro del text LM (64 capas apuntadas)
+
+Esperando que el trainer parcheado sea UnslothGRPOTrainer: UnslothGRPOTrainer
+Dataset: 7 tareas puente (reward = verify_task 0/1).
+Unsloth: We now expect `per_device_train_batch_size` * `gradient_accumulation_steps` * `world_size` to be a multiple of `num_generations`.
+We will change the batch size of 1 to the `num_generations` of 4
+GRPOConfig: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+beta=0.001,
+bf16=True,
+bf16_full_eval=False,
+cache_implementation=None,
+data_seed=3407,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+delta=None,
+disable_dropout=False,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=False,
+ds3_gather_for_generation=True,
+enable_jit_checkpoint=False,
+epsilon=0.2,
+epsilon_high=None,
+eval_accumulation_steps=2,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generation_batch_size=8,
+generation_kwargs={},
+gradient_accumulation_steps=2,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': True},
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+importance_sampling_level=token,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_completions=False,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=False,
+logging_nan_inf_filter=False,
+logging_steps=1,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=bnpo,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.LINEAR,
+mask_truncated_completions=False,
+max_completion_length=2048,
+max_grad_norm=1.0,
+max_prompt_length=512,
+max_steps=2,
+metric_for_best_model=None,
+min_p=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_completions_to_print=None,
+num_generations=4,
+num_iterations=1,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_8BIT,
+optim_args=None,
+optim_target_modules=None,
+output_dir=out_grpo_smoke,
+parallelism_config=None,
+per_device_eval_batch_size=4,
+per_device_train_batch_size=4,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+remove_unused_columns=False,
+repetition_penalty=1.0,
+report_to=[],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+reward_weights=None,
+run_name=None,
+save_on_each_node=False,
+save_only_model=True,
+save_steps=7,
+save_strategy=SaveStrategy.STEPS,
+save_total_limit=None,
+scale_rewards=group,
+seed=7,
+shuffle_dataset=True,
+skip_memory_metrics=True,
+steps_per_generation=2,
+sync_ref_model=False,
+temperature=1.0,
+tf32=None,
+top_entropy_quantile=1.0,
+top_k=None,
+top_p=1.0,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=250,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+unsloth_grpo_mini_batch=None,
+unsloth_logit_chunk_multiplier=None,
+unsloth_num_chunks=-1,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_liger_loss=False,
+use_transformers_paged=False,
+use_vllm=False,
+vllm_enable_sleep_mode=False,
+vllm_gpu_memory_utilization=0.3,
+vllm_guided_decoding_regex=None,
+vllm_importance_sampling_cap=2.0,
+vllm_importance_sampling_correction=False,
+vllm_mode=colocate,
+vllm_model_impl=vllm,
+vllm_sampling_params=None,
+vllm_server_base_url=None,
+vllm_server_host=0.0.0.0,
+vllm_server_port=8000,
+vllm_server_timeout=240.0,
+vllm_tensor_parallel_size=1,
+wandb_log_unique_prompts=False,
+warmup_ratio=None,
+warmup_steps=2,
+weight_decay=0.0,
+)
+Trainer instanciado OK (217s desde el arranque).
+
+-- ej 0: 694 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia traduce el estado interno de cada movimie'
+
+-- ej 1: 924 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia determina si un movimiento bancario es du'
+
+-- ej 2: 891 tokens | prompt conv: system/user
+   user[:80]: 'El motor de contabilia genera el resumen de una conciliación a partir de los mov'
+
+Training GRPO (RL sobre los tests del puente)...
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248044}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 7 | Num Epochs = 1 | Total steps = 2
+O^O/ \_/ \    Batch size per device = 4 | Gradient accumulation steps = 2
+\        /    Data Parallel GPUs = 1 | Total batch size (4 x 2 x 1) = 8
+ "-____-"     Trainable parameters = 3,932,160 of 9,413,745,904 (0.04% trained)
+  0%|          | 0/2 [00:00<?, ?it/s]Passing `generation_config` together with generation-related arguments=({'disable_compile', 'pad_token_id'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for Qwen3_5RMSNorm_forward; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for apply_rotary_pos_emb; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for rotate_half; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for torch_causal_conv1d_update; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for chunked_hidden_states_selective_log_softmax; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+remark: <unknown>:0:0: 161 instructions in function
+remark: <unknown>:0:0: 114 instructions in function
+remark: <unknown>:0:0: 274 instructions in function
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for UnslothEfficientGRPO.forward.<locals>.accumulate_chunk; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+remark: <unknown>:0:0: 1290 instructions in function
+remark: <unknown>:0:0: 765 instructions in function
+remark: <unknown>:0:0: 430 instructions in function
+remark: <unknown>:0:0: 2198 instructions in function
+remark: <unknown>:0:0: 1293 instructions in function
+remark: <unknown>:0:0: 781 instructions in function
+remark: <unknown>:0:0: 4761 instructions in function
+remark: <unknown>:0:0: 2198 instructions in function
+remark: <unknown>:0:0: 1314 instructions in function
+remark: <unknown>:0:0: 1602 instructions in function
+remark: <unknown>:0:0: 2051 instructions in function
+remark: <unknown>:0:0: 2190 instructions in function
+remark: <unknown>:0:0: 1134 instructions in function
+remark: <unknown>:0:0: 1298 instructions in function
+remark: <unknown>:0:0: 1474 instructions in function
+remark: <unknown>:0:0: 792 instructions in function
+remark: <unknown>:0:0: 891 instructions in function
+remark: <unknown>:0:0: 1033 instructions in function
+remark: <unknown>:0:0: 15304 instructions in function
+remark: <unknown>:0:0: 8139 instructions in function
+remark: <unknown>:0:0: 3666 instructions in function
+remark: <unknown>:0:0: 4396 instructions in function
+remark: <unknown>:0:0: 4568 instructions in function
+remark: <unknown>:0:0: 2442 instructions in function
+remark: <unknown>:0:0: 2835 instructions in function
+remark: <unknown>:0:0: 2996 instructions in function
+remark: <unknown>:0:0: 1668 instructions in function
+remark: <unknown>:0:0: 2051 instructions in function
+remark: <unknown>:0:0: 2034 instructions in function
+remark: <unknown>:0:0: 7917 instructions in function
+remark: <unknown>:0:0: 10445 instructions in function
+remark: <unknown>:0:0: 13205 instructions in function
+remark: <unknown>:0:0: 5092 instructions in function
+remark: <unknown>:0:0: 6865 instructions in function
+remark: <unknown>:0:0: 8625 instructions in function
+remark: <unknown>:0:0: 127 instructions in function
+remark: <unknown>:0:0: 465 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1767 instructions in function
+remark: <unknown>:0:0: 3791 instructions in function
+remark: <unknown>:0:0: 9172 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1804 instructions in function
+remark: <unknown>:0:0: 3991 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1795 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 946 instructions in function
+remark: <unknown>:0:0: 97 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 462 instructions in function
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+a_grid_desc_m_ak_container_{4608, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4608, 64}
+ 50%|█████     | 1/2 [12:23<12:23, 743.56s/it]                                               50%|█████     | 1/2 [12:23<12:23, 743.56s/it]

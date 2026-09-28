@@ -1,0 +1,421 @@
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\__init__.py:1568: UserWarning: WARNING: Unsloth should be imported before [transformers] to ensure all optimizations are applied. Your code may run slower or encounter memory issues without these optimizations.
+
+Please restructure your imports with 'import unsloth' at the top of your file.
+  from ._gpu_init import *
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+Unsloth: UnslothBCOTrainer is already patched.
+Unsloth: UnslothCPOTrainer is already patched.
+Unsloth: UnslothDPOTrainer is already patched.
+Unsloth: UnslothGKDTrainer is already patched.
+Unsloth: UnslothGRPOTrainer is already patched.
+Unsloth: UnslothKTOTrainer is already patched.
+Unsloth: UnslothNashMDTrainer is already patched.
+Unsloth: UnslothOnlineDPOTrainer is already patched.
+Unsloth: UnslothORPOTrainer is already patched.
+Unsloth: UnslothPPOTrainer is already patched.
+Unsloth: UnslothPRMTrainer is already patched.
+Unsloth: UnslothRewardTrainer is already patched.
+Unsloth: UnslothRLOOTrainer is already patched.
+Unsloth: UnslothSFTTrainer is already patched.
+Unsloth: UnslothXPOTrainer is already patched.
+============================================================
+Cargando merged SFT (bf16 → 4-bit) + LoRA RL attention-only...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:24<5:10:20, 24.53s/it]Loading weights:   0%|          | 2/760 [00:46<4:53:03, 23.20s/it]Loading weights:   1%|          | 7/760 [00:47<56:23,  4.49s/it]  Loading weights:   2%|▏         | 13/760 [00:48<24:53,  2.00s/it]Loading weights:   2%|▏         | 15/760 [00:50<22:22,  1.80s/it]Loading weights:   4%|▎         | 27/760 [00:51<08:32,  1.43it/s]Loading weights:   4%|▎         | 28/760 [00:52<08:53,  1.37it/s]Loading weights:   4%|▍         | 29/760 [00:53<09:17,  1.31it/s]Loading weights:   5%|▌         | 41/760 [00:55<04:14,  2.82it/s]Loading weights:   6%|▌         | 42/760 [00:56<04:54,  2.44it/s]Loading weights:   6%|▌         | 43/760 [00:57<05:37,  2.12it/s]Loading weights:   6%|▋         | 48/760 [00:57<03:31,  3.37it/s]Loading weights:   9%|▊         | 66/760 [00:57<01:11,  9.66it/s]Loading weights:  10%|█         | 77/760 [00:57<00:47, 14.49it/s]Loading weights:  11%|█         | 85/760 [00:57<00:36, 18.59it/s]Loading weights:  12%|█▎        | 95/760 [00:57<00:26, 25.09it/s]Loading weights:  14%|█▎        | 103/760 [00:57<00:21, 29.90it/s]Loading weights:  16%|█▌        | 119/760 [00:58<00:14, 45.03it/s]Loading weights:  17%|█▋        | 130/760 [00:58<00:11, 54.48it/s]Loading weights:  18%|█▊        | 140/760 [00:58<00:10, 61.25it/s]Loading weights:  20%|█▉        | 150/760 [01:02<01:11,  8.51it/s]Loading weights:  21%|██        | 157/760 [01:05<01:58,  5.11it/s]Loading weights:  23%|██▎       | 172/760 [01:06<01:29,  6.60it/s]Loading weights:  23%|██▎       | 176/760 [01:08<02:00,  4.84it/s]Loading weights:  24%|██▍       | 186/760 [01:10<01:41,  5.65it/s]Loading weights:  25%|██▍       | 189/760 [01:12<02:21,  4.03it/s]Loading weights:  26%|██▋       | 200/760 [01:13<01:48,  5.14it/s]Loading weights:  27%|██▋       | 202/760 [01:15<02:34,  3.61it/s]Loading weights:  27%|██▋       | 205/760 [01:16<02:41,  3.44it/s]Loading weights:  27%|██▋       | 206/760 [01:17<03:15,  2.83it/s]Loading weights:  27%|██▋       | 207/760 [01:18<03:53,  2.37it/s]Loading weights:  28%|██▊       | 213/760 [01:19<02:38,  3.44it/s]Loading weights:  29%|██▉       | 221/760 [01:20<01:33,  5.77it/s]Loading weights:  30%|██▉       | 225/760 [01:21<01:47,  4.96it/s]Loading weights:  30%|██▉       | 226/760 [01:22<02:26,  3.65it/s]Loading weights:  30%|██▉       | 227/760 [01:23<03:15,  2.73it/s]Loading weights:  31%|███       | 235/760 [01:24<01:56,  4.52it/s]Loading weights:  31%|███▏      | 239/760 [01:25<02:04,  4.18it/s]Loading weights:  32%|███▏      | 240/760 [01:26<02:44,  3.15it/s]Loading weights:  32%|███▏      | 241/760 [01:27<03:31,  2.46it/s]Loading weights:  33%|███▎      | 249/760 [01:28<02:00,  4.23it/s]Loading weights:  33%|███▎      | 253/760 [01:29<02:07,  3.98it/s]Loading weights:  33%|███▎      | 254/760 [01:30<02:47,  3.03it/s]Loading weights:  34%|███▎      | 255/760 [01:31<03:32,  2.38it/s]Loading weights:  34%|███▍      | 258/760 [01:32<03:22,  2.48it/s]Loading weights:  34%|███▍      | 259/760 [01:34<04:14,  1.97it/s]Loading weights:  34%|███▍      | 260/760 [01:35<05:01,  1.66it/s]Loading weights:  35%|███▌      | 266/760 [01:35<02:40,  3.09it/s]Loading weights:  36%|███▌      | 274/760 [01:36<01:38,  4.93it/s]Loading weights:  37%|███▋      | 278/760 [01:37<01:48,  4.42it/s]Loading weights:  37%|███▋      | 279/760 [01:38<02:28,  3.23it/s]Loading weights:  37%|███▋      | 280/760 [01:40<03:11,  2.51it/s]Loading weights:  38%|███▊      | 288/760 [01:40<01:49,  4.31it/s]Loading weights:  38%|███▊      | 292/760 [01:42<01:55,  4.05it/s]Loading weights:  39%|███▊      | 293/760 [01:43<02:32,  3.07it/s]Loading weights:  39%|███▊      | 294/760 [01:44<03:16,  2.37it/s]Loading weights:  40%|███▉      | 302/760 [01:45<01:47,  4.26it/s]Loading weights:  40%|███▉      | 303/760 [01:45<01:53,  4.02it/s]Loading weights:  40%|████      | 305/760 [01:45<01:46,  4.26it/s]Loading weights:  40%|████      | 306/760 [01:46<02:39,  2.85it/s]Loading weights:  40%|████      | 307/760 [01:47<03:32,  2.14it/s]Loading weights:  41%|████      | 308/760 [01:49<04:29,  1.68it/s]Loading weights:  41%|████      | 311/760 [01:50<03:44,  2.00it/s]Loading weights:  41%|████      | 312/760 [01:51<04:35,  1.63it/s]Loading weights:  41%|████      | 313/760 [01:52<05:17,  1.41it/s]Loading weights:  42%|████▏     | 316/760 [01:52<02:58,  2.49it/s]Loading weights:  42%|████▏     | 317/760 [01:53<02:54,  2.53it/s]Loading weights:  42%|████▏     | 319/760 [01:53<02:50,  2.59it/s]Loading weights:  42%|████▏     | 320/760 [01:53<02:25,  3.02it/s]Loading weights:  43%|████▎     | 327/760 [01:54<01:21,  5.30it/s]Loading weights:  43%|████▎     | 328/760 [01:55<01:31,  4.71it/s]Loading weights:  43%|████▎     | 330/760 [01:55<01:28,  4.88it/s]Loading weights:  44%|████▎     | 331/760 [01:56<02:27,  2.91it/s]Loading weights:  44%|████▎     | 332/760 [01:57<03:30,  2.04it/s]Loading weights:  44%|████▍     | 333/760 [01:58<04:22,  1.63it/s]Loading weights:  45%|████▍     | 341/760 [01:59<01:47,  3.90it/s]Loading weights:  45%|████▌     | 342/760 [02:00<01:52,  3.70it/s]Loading weights:  45%|████▌     | 344/760 [02:00<01:43,  4.02it/s]Loading weights:  45%|████▌     | 345/760 [02:01<02:35,  2.67it/s]Loading weights:  46%|████▌     | 346/760 [02:02<03:29,  1.98it/s]Loading weights:  46%|████▌     | 347/760 [02:03<04:17,  1.60it/s]Loading weights:  47%|████▋     | 355/760 [02:04<01:46,  3.79it/s]Loading weights:  47%|████▋     | 356/760 [02:04<01:51,  3.61it/s]Loading weights:  47%|████▋     | 358/760 [02:05<01:42,  3.93it/s]Loading weights:  47%|████▋     | 359/760 [02:06<02:33,  2.62it/s]Loading weights:  47%|████▋     | 360/760 [02:07<03:22,  1.98it/s]Loading weights:  48%|████▊     | 361/760 [02:08<04:08,  1.61it/s]Loading weights:  48%|████▊     | 364/760 [02:09<03:27,  1.91it/s]Loading weights:  48%|████▊     | 365/760 [02:10<04:07,  1.60it/s]Loading weights:  48%|████▊     | 366/760 [02:12<04:44,  1.38it/s]Loading weights:  49%|████▊     | 369/760 [02:12<02:37,  2.48it/s]Loading weights:  49%|████▊     | 370/760 [02:12<02:34,  2.52it/s]Loading weights:  49%|████▉     | 372/760 [02:13<02:35,  2.50it/s]Loading weights:  50%|████▉     | 378/760 [02:13<01:05,  5.81it/s]Loading weights:  50%|█████     | 381/760 [02:14<01:27,  4.31it/s]Loading weights:  50%|█████     | 383/760 [02:15<01:30,  4.18it/s]Loading weights:  51%|█████     | 385/760 [02:17<02:47,  2.24it/s]Loading weights:  51%|█████     | 386/760 [02:18<03:22,  1.85it/s]Loading weights:  52%|█████▏    | 394/760 [02:19<01:36,  3.81it/s]Loading weights:  52%|█████▏    | 395/760 [02:19<01:40,  3.64it/s]Loading weights:  52%|█████▏    | 397/760 [02:19<01:32,  3.93it/s]Loading weights:  52%|█████▏    | 398/760 [02:21<02:16,  2.64it/s]Loading weights:  52%|█████▎    | 399/760 [02:22<02:59,  2.01it/s]Loading weights:  53%|█████▎    | 400/760 [02:23<03:39,  1.64it/s]Loading weights:  54%|█████▎    | 408/760 [02:24<01:31,  3.86it/s]Loading weights:  54%|█████▍    | 409/760 [02:24<01:36,  3.65it/s]Loading weights:  54%|█████▍    | 411/760 [02:24<01:28,  3.95it/s]Loading weights:  54%|█████▍    | 412/760 [02:25<02:15,  2.57it/s]Loading weights:  54%|█████▍    | 413/760 [02:27<02:57,  1.96it/s]Loading weights:  54%|█████▍    | 414/760 [02:28<03:36,  1.60it/s]Loading weights:  55%|█████▍    | 417/760 [02:29<02:55,  1.96it/s]Loading weights:  55%|█████▌    | 418/760 [02:30<03:39,  1.56it/s]Loading weights:  55%|█████▌    | 419/760 [02:31<04:09,  1.37it/s]Loading weights:  56%|█████▌    | 422/760 [02:31<02:18,  2.45it/s]Loading weights:  56%|█████▌    | 423/760 [02:32<02:15,  2.49it/s]Loading weights:  56%|█████▌    | 425/760 [02:32<02:11,  2.56it/s]Loading weights:  56%|█████▌    | 426/760 [02:32<01:51,  2.99it/s]Loading weights:  57%|█████▋    | 431/760 [02:33<00:51,  6.43it/s]Loading weights:  57%|█████▋    | 433/760 [02:33<00:42,  7.72it/s]Loading weights:  57%|█████▋    | 435/760 [02:33<00:36,  9.02it/s]Loading weights:  58%|█████▊    | 443/760 [02:33<00:16, 18.88it/s]Loading weights:  59%|█████▉    | 447/760 [02:33<00:16, 18.68it/s]Loading weights:  60%|█████▉    | 455/760 [02:33<00:11, 27.18it/s]Loading weights:  60%|██████    | 459/760 [02:34<00:12, 24.64it/s]Loading weights:  61%|██████▏   | 467/760 [02:34<00:08, 32.65it/s]Loading weights:  62%|██████▏   | 472/760 [02:34<00:09, 29.23it/s]Loading weights:  63%|██████▎   | 479/760 [02:34<00:07, 35.72it/s]Loading weights:  64%|██████▎   | 484/760 [02:34<00:08, 31.09it/s]Loading weights:  65%|██████▍   | 491/760 [02:34<00:07, 37.41it/s]Loading weights:  65%|██████▌   | 496/760 [02:35<00:08, 31.99it/s]Loading weights:  66%|██████▌   | 503/760 [02:35<00:06, 38.13it/s]Loading weights:  67%|██████▋   | 508/760 [02:35<00:08, 28.68it/s]Loading weights:  68%|██████▊   | 515/760 [02:35<00:07, 34.94it/s]Loading weights:  68%|██████▊   | 520/760 [02:35<00:07, 30.77it/s]Loading weights:  69%|██████▉   | 527/760 [02:35<00:06, 36.99it/s]Loading weights:  70%|███████   | 532/760 [02:36<00:07, 31.83it/s]Loading weights:  71%|███████   | 539/760 [02:36<00:05, 37.88it/s]Loading weights:  72%|███████▏  | 544/760 [02:36<00:06, 32.42it/s]Loading weights:  72%|███████▎  | 551/760 [02:36<00:05, 37.24it/s]Loading weights:  73%|███████▎  | 556/760 [02:36<00:06, 31.95it/s]Loading weights:  74%|███████▍  | 563/760 [02:36<00:05, 38.09it/s]Loading weights:  75%|███████▍  | 568/760 [02:37<00:05, 32.44it/s]Loading weights:  76%|███████▌  | 575/760 [02:37<00:04, 38.44it/s]Loading weights:  76%|███████▋  | 580/760 [02:37<00:05, 32.77it/s]Loading weights:  77%|███████▋  | 587/760 [02:37<00:04, 38.79it/s]Loading weights:  78%|███████▊  | 592/760 [02:37<00:05, 32.81it/s]Loading weights:  79%|███████▉  | 599/760 [02:37<00:04, 38.86it/s]Loading weights:  79%|███████▉  | 604/760 [02:38<00:04, 32.85it/s]Loading weights:  80%|████████  | 611/760 [02:38<00:03, 39.00it/s]Loading weights:  81%|████████  | 616/760 [02:38<00:04, 32.91it/s]Loading weights:  82%|████████▏ | 623/760 [02:38<00:03, 38.93it/s]Loading weights:  83%|████████▎ | 628/760 [02:38<00:04, 32.90it/s]Loading weights:  84%|████████▎ | 635/760 [02:38<00:03, 38.92it/s]Loading weights:  84%|████████▍ | 640/760 [02:39<00:03, 33.02it/s]Loading weights:  85%|████████▌ | 647/760 [02:39<00:02, 39.03it/s]Loading weights:  86%|████████▌ | 652/760 [02:39<00:03, 32.97it/s]Loading weights:  87%|████████▋ | 659/760 [02:39<00:02, 38.91it/s]Loading weights:  87%|████████▋ | 664/760 [02:39<00:02, 32.96it/s]Loading weights:  88%|████████▊ | 671/760 [02:39<00:02, 37.27it/s]Loading weights:  89%|████████▉ | 676/760 [02:40<00:02, 31.96it/s]Loading weights:  90%|████████▉ | 683/760 [02:40<00:02, 38.07it/s]Loading weights:  91%|█████████ | 688/760 [02:40<00:02, 29.73it/s]Loading weights:  91%|█████████▏| 695/760 [02:40<00:01, 35.98it/s]Loading weights:  92%|█████████▏| 700/760 [02:40<00:01, 31.26it/s]Loading weights:  93%|█████████▎| 707/760 [02:41<00:01, 37.42it/s]Loading weights:  94%|█████████▎| 712/760 [02:41<00:01, 32.11it/s]Loading weights:  95%|█████████▍| 719/760 [02:41<00:01, 38.28it/s]Loading weights:  95%|█████████▌| 724/760 [02:41<00:01, 32.52it/s]Loading weights:  96%|█████████▌| 731/760 [02:41<00:00, 38.60it/s]Loading weights:  97%|█████████▋| 736/760 [02:41<00:00, 32.68it/s]Loading weights:  98%|█████████▊| 743/760 [02:42<00:00, 38.84it/s]Loading weights:  98%|█████████▊| 748/760 [02:42<00:00, 33.18it/s]Loading weights:  99%|█████████▉| 753/760 [02:42<00:00, 20.79it/s]Loading weights: 100%|█████████▉| 757/760 [02:43<00:00, 16.34it/s]Loading weights: 100%|██████████| 760/760 [02:43<00:00,  4.66it/s]
+The tokenizer you are loading from 'D:/ai-lab/fase2/merged_qwen35_attn' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+Modelo + LoRA RL en 174s
+  ✅ LoRA RL solo dentro del text LM (64 capas apuntadas)
+
+Esperando que el trainer parcheado sea UnslothGRPOTrainer: UnslothGRPOTrainer
+Dataset: 7 tareas puente (reward = assert-coverage 0..1).
+Unsloth: We now expect `per_device_train_batch_size` * `gradient_accumulation_steps` * `world_size` to be a multiple of `num_generations`.
+We will change the batch size of 1 to the `num_generations` of 3
+GRPOConfig: GRPOConfig(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+beta=0.001,
+bf16=True,
+bf16_full_eval=False,
+cache_implementation=None,
+data_seed=3407,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+delta=None,
+disable_dropout=False,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=False,
+ds3_gather_for_generation=True,
+enable_jit_checkpoint=False,
+epsilon=0.2,
+epsilon_high=None,
+eval_accumulation_steps=2,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=IntervalStrategy.NO,
+eval_use_gather_object=False,
+fp16=False,
+fp16_full_eval=False,
+fsdp=[],
+fsdp_config={'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False},
+full_determinism=False,
+generation_batch_size=6,
+generation_kwargs={},
+gradient_accumulation_steps=2,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs={'use_reentrant': True},
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+importance_sampling_level=token,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_completions=False,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=None,
+logging_first_step=False,
+logging_nan_inf_filter=False,
+logging_steps=1,
+logging_strategy=IntervalStrategy.STEPS,
+loss_type=bnpo,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=SchedulerType.LINEAR,
+mask_truncated_completions=False,
+max_completion_length=1536,
+max_grad_norm=1.0,
+max_prompt_length=512,
+max_steps=28,
+metric_for_best_model=None,
+min_p=None,
+model_init_kwargs=None,
+neftune_noise_alpha=None,
+num_completions_to_print=None,
+num_generations=3,
+num_iterations=1,
+num_train_epochs=3.0,
+optim=OptimizerNames.ADAMW_8BIT,
+optim_args=None,
+optim_target_modules=None,
+output_dir=out_grpo_dense,
+parallelism_config=None,
+per_device_eval_batch_size=4,
+per_device_train_batch_size=3,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+ref_model_mixup_alpha=0.6,
+ref_model_sync_steps=512,
+remove_unused_columns=False,
+repetition_penalty=1.0,
+report_to=[],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+reward_weights=None,
+run_name=None,
+save_on_each_node=False,
+save_only_model=True,
+save_steps=7,
+save_strategy=SaveStrategy.STEPS,
+save_total_limit=None,
+scale_rewards=group,
+seed=7,
+shuffle_dataset=True,
+skip_memory_metrics=True,
+steps_per_generation=2,
+sync_ref_model=False,
+temperature=0.8,
+tf32=None,
+top_entropy_quantile=1.0,
+top_k=None,
+top_p=1.0,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=250,
+trackio_space_id=trackio,
+train_sampling_strategy=random,
+unsloth_grpo_mini_batch=None,
+unsloth_logit_chunk_multiplier=None,
+unsloth_num_chunks=-1,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+use_liger_loss=False,
+use_transformers_paged=False,
+use_vllm=False,
+vllm_enable_sleep_mode=False,
+vllm_gpu_memory_utilization=0.3,
+vllm_guided_decoding_regex=None,
+vllm_importance_sampling_cap=2.0,
+vllm_importance_sampling_correction=False,
+vllm_mode=colocate,
+vllm_model_impl=vllm,
+vllm_sampling_params=None,
+vllm_server_base_url=None,
+vllm_server_host=0.0.0.0,
+vllm_server_port=8000,
+vllm_server_timeout=240.0,
+vllm_tensor_parallel_size=1,
+wandb_log_unique_prompts=False,
+warmup_ratio=None,
+warmup_steps=2,
+weight_decay=0.0,
+)
+Trainer instanciado OK (174s desde el arranque).
+
+-- ej 0: 694 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia traduce el estado interno de cada movimie'
+
+-- ej 1: 924 tokens | prompt conv: system/user
+   user[:80]: 'El motor de conciliación de contabilia determina si un movimiento bancario es du'
+
+-- ej 2: 891 tokens | prompt conv: system/user
+   user[:80]: 'El motor de contabilia genera el resumen de una conciliación a partir de los mov'
+
+Training GRPO (RL sobre los tests del puente)...
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248044}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 7 | Num Epochs = 10 | Total steps = 28
+O^O/ \_/ \    Batch size per device = 3 | Gradient accumulation steps = 2
+\        /    Data Parallel GPUs = 1 | Total batch size (3 x 2 x 1) = 6
+ "-____-"     Trainable parameters = 3,932,160 of 9,413,745,904 (0.04% trained)
+  0%|          | 0/28 [00:00<?, ?it/s][inicio step 0] vram_cur=8.05 GB
+Passing `generation_config` together with generation-related arguments=({'disable_compile', 'pad_token_id'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for Qwen3_5RMSNorm_forward; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for apply_rotary_pos_emb; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for rotate_half; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for torch_causal_conv1d_update; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for chunked_hidden_states_selective_log_softmax; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+[unsloth_zoo.log|WARNING]Unsloth: torch.compile could not generate code for UnslothEfficientGRPO.forward.<locals>.accumulate_chunk; running it eagerly from here. Training is unaffected apart from speed. (BackendCompilerFailed)
+  4%|▎         | 1/28 [02:18<1:02:21, 138.57s/it]Unsloth: Will smartly offload gradients to save VRAM!
+Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
+[fin step 1] vram_cur=8.98 GB
+                                                   4%|▎         | 1/28 [02:18<1:02:21, 138.57s/it]{'loss': '2.512e-07', 'grad_norm': '2.425e-06', 'learning_rate': '0', 'num_tokens': '1.037e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0002512', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '0.3333'}
+
+[step 1] vram_cur=8.98 GB peak=17.11 GB  rewards=0.0
+[inicio step 1] vram_cur=8.98 GB
+  7%|▋         | 2/28 [04:23<56:38, 130.70s/it]  [fin step 2] vram_cur=9.06 GB
+                                                 7%|▋         | 2/28 [04:23<56:38, 130.70s/it]{'loss': '4.53e-07', 'grad_norm': '3.711e-06', 'learning_rate': '1e-05', 'num_tokens': '1.849e+04', 'completions/mean_length': '1186', 'completions/min_length': '204', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '836', 'completions/min_terminated_length': '204', 'completions/max_terminated_length': '1334', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1186', 'kl': '0.0004065', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '0.6667'}
+
+[step 2] vram_cur=9.06 GB peak=15.17 GB  rewards=0.0
+[inicio step 2] vram_cur=9.06 GB
+ 11%|█         | 3/28 [06:30<53:47, 129.10s/it][fin step 3] vram_cur=9.06 GB
+                                                11%|█         | 3/28 [06:30<53:47, 129.10s/it]{'loss': '4.972e-07', 'grad_norm': '3.525e-06', 'learning_rate': '2e-05', 'num_tokens': '2.881e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0004972', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1'}
+
+[step 3] vram_cur=9.06 GB peak=14.98 GB  rewards=0.0
+[inicio step 3] vram_cur=9.06 GB
+ 14%|█▍        | 4/28 [08:28<49:53, 124.73s/it][fin step 4] vram_cur=9.06 GB
+                                                14%|█▍        | 4/28 [08:28<49:53, 124.73s/it]{'loss': '3.682e-07', 'grad_norm': '3.558e-06', 'learning_rate': '1.923e-05', 'num_tokens': '3.665e+04', 'completions/mean_length': '1140', 'completions/min_length': '520', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '744', 'completions/min_terminated_length': '520', 'completions/max_terminated_length': '1023', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1140', 'kl': '0.0003584', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1.333'}
+
+[step 4] vram_cur=9.06 GB peak=15.03 GB  rewards=0.0
+[inicio step 4] vram_cur=9.06 GB
+ 18%|█▊        | 5/28 [10:52<50:22, 131.42s/it][fin step 5] vram_cur=9.06 GB
+                                                18%|█▊        | 5/28 [10:52<50:22, 131.42s/it]{'loss': '0.09813', 'grad_norm': '0.03406', 'learning_rate': '1.846e-05', 'num_tokens': '4.564e+04', 'completions/mean_length': '1311', 'completions/min_length': '784', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '1087', 'completions/min_terminated_length': '784', 'completions/max_terminated_length': '1264', 'rewards/reward_fn/mean': '0.2917', 'rewards/reward_fn/std': '0.4587', 'reward': '0.2917', 'reward_std': '0.2602', 'frac_reward_zero_std': '0.5', 'completion_length': '1311', 'kl': '0.0004565', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '1.667'}
+
+[step 5] vram_cur=9.06 GB peak=15.26 GB  rewards=0.2916666865348816
+[inicio step 5] vram_cur=9.06 GB
+ 21%|██▏       | 6/28 [13:10<49:00, 133.64s/it][fin step 6] vram_cur=9.06 GB
+                                                21%|██▏       | 6/28 [13:10<49:00, 133.64s/it]{'loss': '0.1487', 'grad_norm': '0.02506', 'learning_rate': '1.769e-05', 'num_tokens': '5.508e+04', 'completions/mean_length': '1379', 'completions/min_length': '592', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.8333', 'completions/mean_terminated_length': '592', 'completions/min_terminated_length': '592', 'completions/max_terminated_length': '592', 'rewards/reward_fn/mean': '0.1042', 'rewards/reward_fn/std': '0.2552', 'reward': '0.1042', 'reward_std': '0.1804', 'frac_reward_zero_std': '0.5', 'completion_length': '1379', 'kl': '0.000456', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '2'}
+
+[step 6] vram_cur=9.06 GB peak=14.95 GB  rewards=0.1041666716337204
+[inicio step 6] vram_cur=9.06 GB
+ 25%|██▌       | 7/28 [15:12<45:28, 129.95s/it][fin step 7] vram_cur=9.06 GB
+                                                25%|██▌       | 7/28 [15:12<45:28, 129.95s/it]{'loss': '-0.05345', 'grad_norm': '0.02835', 'learning_rate': '1.692e-05', 'num_tokens': '6.302e+04', 'completions/mean_length': '1154', 'completions/min_length': '466', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '773', 'completions/min_terminated_length': '466', 'completions/max_terminated_length': '1247', 'rewards/reward_fn/mean': '0.08333', 'rewards/reward_fn/std': '0.2041', 'reward': '0.08333', 'reward_std': '0.1443', 'frac_reward_zero_std': '0.5', 'completion_length': '1154', 'kl': '0.0004081', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '2.333'}
+
+[step 7] vram_cur=9.06 GB peak=15.10 GB  rewards=0.0833333358168602
+Unsloth: Restored added_tokens_decoder metadata in out_grpo_dense\checkpoint-7\tokenizer_config.json.
+[inicio step 7] vram_cur=9.06 GB
+ 29%|██▊       | 8/28 [17:21<43:11, 129.56s/it][fin step 8] vram_cur=9.06 GB
+                                                29%|██▊       | 8/28 [17:21<43:11, 129.56s/it]{'loss': '0.0382', 'grad_norm': '0.02413', 'learning_rate': '1.615e-05', 'num_tokens': '7.318e+04', 'completions/mean_length': '1480', 'completions/min_length': '1197', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.8333', 'completions/mean_terminated_length': '1197', 'completions/min_terminated_length': '1197', 'completions/max_terminated_length': '1197', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1480', 'kl': '0.0004892', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '2.667'}
+
+[step 8] vram_cur=9.06 GB peak=15.05 GB  rewards=0.1666666716337204
+[inicio step 8] vram_cur=9.06 GB
+ 32%|███▏      | 9/28 [18:54<37:25, 118.21s/it][fin step 9] vram_cur=9.06 GB
+                                                32%|███▏      | 9/28 [18:54<37:25, 118.21s/it]{'loss': '3.81e-07', 'grad_norm': '3.516e-06', 'learning_rate': '1.538e-05', 'num_tokens': '7.992e+04', 'completions/mean_length': '979.7', 'completions/min_length': '189', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '701.5', 'completions/min_terminated_length': '189', 'completions/max_terminated_length': '1324', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '979.7', 'kl': '0.0004131', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '3'}
+
+[step 9] vram_cur=9.06 GB peak=15.01 GB  rewards=0.0
+[inicio step 9] vram_cur=9.06 GB
+ 36%|███▌      | 10/28 [21:03<36:26, 121.48s/it][fin step 10] vram_cur=9.06 GB
+                                                 36%|███▌      | 10/28 [21:03<36:26, 121.48s/it]{'loss': '4.6e-07', 'grad_norm': '3.724e-06', 'learning_rate': '1.462e-05', 'num_tokens': '9.031e+04', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.00046', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '3.333'}
+
+[step 10] vram_cur=9.06 GB peak=14.95 GB  rewards=0.0
+[inicio step 10] vram_cur=9.06 GB
+ 39%|███▉      | 11/28 [22:41<32:22, 114.25s/it][fin step 11] vram_cur=9.06 GB
+                                                 39%|███▉      | 11/28 [22:41<32:22, 114.25s/it]{'loss': '-0.05678', 'grad_norm': '0.0267', 'learning_rate': '1.385e-05', 'num_tokens': '9.864e+04', 'completions/mean_length': '1244', 'completions/min_length': '656', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '951.7', 'completions/min_terminated_length': '656', 'completions/max_terminated_length': '1464', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '1244', 'kl': '0.0004353', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '3.667'}
+
+[step 11] vram_cur=9.06 GB peak=15.01 GB  rewards=0.1666666716337204
+[inicio step 11] vram_cur=9.06 GB
+ 43%|████▎     | 12/28 [25:04<32:50, 123.13s/it][fin step 12] vram_cur=9.06 GB
+                                                 43%|████▎     | 12/28 [25:04<32:50, 123.13s/it]{'loss': '0.1991', 'grad_norm': '0.02479', 'learning_rate': '1.308e-05', 'num_tokens': '1.07e+05', 'completions/mean_length': '1226', 'completions/min_length': '354', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '917', 'completions/min_terminated_length': '354', 'completions/max_terminated_length': '1444', 'rewards/reward_fn/mean': '0.05556', 'rewards/reward_fn/std': '0.1361', 'reward': '0.05556', 'reward_std': '0.09623', 'frac_reward_zero_std': '0.5', 'completion_length': '1226', 'kl': '0.0003984', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '4'}
+
+[step 12] vram_cur=9.06 GB peak=15.06 GB  rewards=0.0555555634200573
+[inicio step 12] vram_cur=9.06 GB
+ 46%|████▋     | 13/28 [26:41<28:49, 115.28s/it][fin step 13] vram_cur=9.06 GB
+                                                 46%|████▋     | 13/28 [26:41<28:49, 115.28s/it]{'loss': '4.252e-07', 'grad_norm': '4.111e-06', 'learning_rate': '1.231e-05', 'num_tokens': '1.14e+05', 'completions/mean_length': '1031', 'completions/min_length': '251', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.1667', 'completions/mean_terminated_length': '930.4', 'completions/min_terminated_length': '251', 'completions/max_terminated_length': '1426', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1031', 'kl': '0.0004278', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '4.333'}
+
+[step 13] vram_cur=9.06 GB peak=15.01 GB  rewards=0.0
+[inicio step 13] vram_cur=9.06 GB
+ 50%|█████     | 14/28 [29:39<31:19, 134.25s/it][fin step 14] vram_cur=9.06 GB
+                                                 50%|█████     | 14/28 [29:39<31:19, 134.25s/it]{'loss': '0.1657', 'grad_norm': '0.03774', 'learning_rate': '1.154e-05', 'num_tokens': '1.23e+05', 'completions/mean_length': '1289', 'completions/min_length': '313', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.5', 'completions/mean_terminated_length': '1041', 'completions/min_terminated_length': '313', 'completions/max_terminated_length': '1489', 'rewards/reward_fn/mean': '0.3889', 'rewards/reward_fn/std': '0.4907', 'reward': '0.3889', 'reward_std': '0.3849', 'frac_reward_zero_std': '0', 'completion_length': '1289', 'kl': '0.0003998', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '4.667'}
+
+[step 14] vram_cur=9.06 GB peak=15.14 GB  rewards=0.3888889253139496
+Unsloth: Restored added_tokens_decoder metadata in out_grpo_dense\checkpoint-14\tokenizer_config.json.
+[inicio step 14] vram_cur=9.06 GB
+ 54%|█████▎    | 15/28 [32:58<33:16, 153.60s/it][fin step 15] vram_cur=9.06 GB
+                                                 54%|█████▎    | 15/28 [32:58<33:16, 153.60s/it]{'loss': '4.463e-07', 'grad_norm': '3.438e-06', 'learning_rate': '1.077e-05', 'num_tokens': '1.313e+05', 'completions/mean_length': '1215', 'completions/min_length': '441', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.6667', 'completions/mean_terminated_length': '574', 'completions/min_terminated_length': '441', 'completions/max_terminated_length': '707', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1215', 'kl': '0.0004438', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '5'}
+
+[step 15] vram_cur=9.06 GB peak=15.10 GB  rewards=0.0
+[inicio step 15] vram_cur=9.06 GB
+ 57%|█████▋    | 16/28 [36:08<32:55, 164.65s/it][fin step 16] vram_cur=9.06 GB
+                                                 57%|█████▋    | 16/28 [36:08<32:55, 164.65s/it]{'loss': '5.138e-07', 'grad_norm': '3.259e-06', 'learning_rate': '1e-05', 'num_tokens': '1.418e+05', 'completions/mean_length': '1536', 'completions/min_length': '1536', 'completions/max_length': '1536', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1536', 'kl': '0.0005138', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '5.333'}
+
+[step 16] vram_cur=9.06 GB peak=15.05 GB  rewards=0.0
+[inicio step 16] vram_cur=9.06 GB
+ 61%|██████    | 17/28 [39:34<32:28, 177.14s/it][fin step 17] vram_cur=9.06 GB
+                                                 61%|██████    | 17/28 [39:34<32:28, 177.14s/it]{'loss': '-0.1315', 'grad_norm': '0.03774', 'learning_rate': '9.231e-06', 'num_tokens': '1.485e+05', 'completions/mean_length': '967.3', 'completions/min_length': '405', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '683', 'completions/min_terminated_length': '405', 'completions/max_terminated_length': '1245', 'rewards/reward_fn/mean': '0.05556', 'rewards/reward_fn/std': '0.1361', 'reward': '0.05556', 'reward_std': '0.09623', 'frac_reward_zero_std': '0.5', 'completion_length': '967.3', 'kl': '0.0003936', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '5.667'}
+
+[step 17] vram_cur=9.06 GB peak=15.10 GB  rewards=0.0555555634200573
+[inicio step 17] vram_cur=9.06 GB
+ 64%|██████▍   | 18/28 [42:49<30:25, 182.51s/it][fin step 18] vram_cur=9.06 GB
+                                                 64%|██████▍   | 18/28 [42:49<30:25, 182.51s/it]{'loss': '4.011e-07', 'grad_norm': '3.921e-06', 'learning_rate': '8.462e-06', 'num_tokens': '1.557e+05', 'completions/mean_length': '1050', 'completions/min_length': '126', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '806.8', 'completions/min_terminated_length': '126', 'completions/max_terminated_length': '1352', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '1050', 'kl': '0.0004203', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '6'}
+
+[step 18] vram_cur=9.06 GB peak=14.97 GB  rewards=0.0
+[inicio step 18] vram_cur=9.06 GB
+remark: <unknown>:0:0: 1314 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+a_grid_desc_m_ak_container_{3840, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{3840, 64}
+ 68%|██████▊   | 19/28 [44:22<23:20, 155.61s/it][fin step 19] vram_cur=9.06 GB
+                                                 68%|██████▊   | 19/28 [44:22<23:20, 155.61s/it]{'loss': '-0.01542', 'grad_norm': '0.03578', 'learning_rate': '7.692e-06', 'num_tokens': '1.598e+05', 'completions/mean_length': '534.7', 'completions/min_length': '115', 'completions/max_length': '1097', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '534.7', 'completions/min_terminated_length': '115', 'completions/max_terminated_length': '1097', 'rewards/reward_fn/mean': '0.1667', 'rewards/reward_fn/std': '0.4082', 'reward': '0.1667', 'reward_std': '0.2887', 'frac_reward_zero_std': '0.5', 'completion_length': '534.7', 'kl': '0.0003652', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '6.333'}
+
+[step 19] vram_cur=9.06 GB peak=13.41 GB  rewards=0.1666666716337204
+[inicio step 19] vram_cur=9.06 GB
+ 71%|███████▏  | 20/28 [46:59<20:46, 155.78s/it][fin step 20] vram_cur=9.06 GB
+                                                 71%|███████▏  | 20/28 [46:59<20:46, 155.78s/it]{'loss': '-0.1561', 'grad_norm': '0.04878', 'learning_rate': '6.923e-06', 'num_tokens': '1.667e+05', 'completions/mean_length': '974.5', 'completions/min_length': '297', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '693.8', 'completions/min_terminated_length': '297', 'completions/max_terminated_length': '1129', 'rewards/reward_fn/mean': '0.1042', 'rewards/reward_fn/std': '0.2552', 'reward': '0.1042', 'reward_std': '0.1804', 'frac_reward_zero_std': '0.5', 'completion_length': '974.5', 'kl': '0.000364', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '6.667'}
+
+[step 20] vram_cur=9.06 GB peak=15.07 GB  rewards=0.1041666716337204
+[inicio step 20] vram_cur=9.06 GB
+ 75%|███████▌  | 21/28 [49:36<18:14, 156.42s/it][fin step 21] vram_cur=9.06 GB
+                                                 75%|███████▌  | 21/28 [49:36<18:14, 156.42s/it]{'loss': '0.01046', 'grad_norm': '0.03193', 'learning_rate': '6.154e-06', 'num_tokens': '1.772e+05', 'completions/mean_length': '1522', 'completions/min_length': '1454', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.8333', 'completions/mean_terminated_length': '1454', 'completions/min_terminated_length': '1454', 'completions/max_terminated_length': '1454', 'rewards/reward_fn/mean': '0.2667', 'rewards/reward_fn/std': '0.432', 'reward': '0.2667', 'reward_std': '0.4619', 'frac_reward_zero_std': '0', 'completion_length': '1522', 'kl': '0.000406', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '7'}
+
+[step 21] vram_cur=9.06 GB peak=15.05 GB  rewards=0.2666667103767395
+Unsloth: Restored added_tokens_decoder metadata in out_grpo_dense\checkpoint-21\tokenizer_config.json.
+[inicio step 21] vram_cur=9.06 GB
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+a_grid_desc_m_ak_container_{4096, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{4096, 64}
+ 79%|███████▊  | 22/28 [50:47<13:04, 130.72s/it][fin step 22] vram_cur=9.06 GB
+                                                 79%|███████▊  | 22/28 [50:47<13:04, 130.72s/it]{'loss': '3.548e-07', 'grad_norm': '5.017e-06', 'learning_rate': '5.385e-06', 'num_tokens': '1.816e+05', 'completions/mean_length': '587.8', 'completions/min_length': '218', 'completions/max_length': '1194', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '587.8', 'completions/min_terminated_length': '218', 'completions/max_terminated_length': '1194', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '587.8', 'kl': '0.0003635', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '7.333'}
+
+[step 22] vram_cur=9.06 GB peak=13.69 GB  rewards=0.0
+[inicio step 22] vram_cur=9.06 GB
+ 82%|████████▏ | 23/28 [53:16<11:21, 136.27s/it][fin step 23] vram_cur=9.06 GB
+                                                 82%|████████▏ | 23/28 [53:16<11:21, 136.27s/it]{'loss': '0.03606', 'grad_norm': '0.03128', 'learning_rate': '4.615e-06', 'num_tokens': '1.902e+05', 'completions/mean_length': '1279', 'completions/min_length': '957', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '1151', 'completions/min_terminated_length': '957', 'completions/max_terminated_length': '1367', 'rewards/reward_fn/mean': '0.125', 'rewards/reward_fn/std': '0.3062', 'reward': '0.125', 'reward_std': '0.2165', 'frac_reward_zero_std': '0.5', 'completion_length': '1279', 'kl': '0.0004829', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '7.667'}
+
+[step 23] vram_cur=9.06 GB peak=15.10 GB  rewards=0.125
+[inicio step 23] vram_cur=9.06 GB
+ 86%|████████▌ | 24/28 [55:47<09:21, 140.47s/it][fin step 24] vram_cur=9.06 GB
+                                                 86%|████████▌ | 24/28 [55:47<09:21, 140.47s/it]{'loss': '0.1116', 'grad_norm': '0.02156', 'learning_rate': '3.846e-06', 'num_tokens': '1.997e+05', 'completions/mean_length': '1359', 'completions/min_length': '476', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.8333', 'completions/mean_terminated_length': '476', 'completions/min_terminated_length': '476', 'completions/max_terminated_length': '476', 'rewards/reward_fn/mean': '0.2083', 'rewards/reward_fn/std': '0.4005', 'reward': '0.2083', 'reward_std': '0.2602', 'frac_reward_zero_std': '0.5', 'completion_length': '1359', 'kl': '0.0005078', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '8'}
+
+[step 24] vram_cur=9.06 GB peak=15.05 GB  rewards=0.2083333432674408
+[inicio step 24] vram_cur=9.06 GB
+ 89%|████████▉ | 25/28 [59:19<08:05, 161.92s/it][fin step 25] vram_cur=9.06 GB
+                                                 89%|████████▉ | 25/28 [59:19<08:05, 161.92s/it]{'loss': '3.875e-07', 'grad_norm': '3.409e-06', 'learning_rate': '3.077e-06', 'num_tokens': '2.068e+05', 'completions/mean_length': '993.8', 'completions/min_length': '225', 'completions/max_length': '1536', 'completions/clipped_ratio': '0.3333', 'completions/mean_terminated_length': '722.8', 'completions/min_terminated_length': '225', 'completions/max_terminated_length': '1205', 'rewards/reward_fn/mean': '0', 'rewards/reward_fn/std': '0', 'reward': '0', 'reward_std': '0', 'frac_reward_zero_std': '1', 'completion_length': '993.8', 'kl': '0.0003675', 'clip_ratio/low_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/high_max': '0', 'clip_ratio/region_mean': '0', 'epoch': '8.333'}
+
+[step 25] vram_cur=9.06 GB peak=15.26 GB  rewards=0.0
+[inicio step 25] vram_cur=9.06 GB

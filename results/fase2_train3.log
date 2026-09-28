@@ -1,0 +1,2471 @@
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+============================================================
+Cargando Qwen3.5-9B-Base 4-bit + LoRA attention-only...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:01<22:23,  1.77s/it]Loading weights:   0%|          | 2/760 [00:03<22:17,  1.76s/it]Loading weights:   1%|          | 7/760 [00:03<04:29,  2.80it/s]Loading weights:   2%|▏         | 14/760 [00:03<01:49,  6.79it/s]Loading weights:   4%|▎         | 27/760 [00:03<00:45, 16.27it/s]Loading weights:   5%|▌         | 38/760 [00:03<00:28, 25.53it/s]Loading weights:   6%|▌         | 46/760 [00:04<00:23, 30.39it/s]Loading weights:   7%|▋         | 54/760 [00:04<00:18, 37.40it/s]Loading weights:   9%|▉         | 67/760 [00:04<00:13, 52.27it/s]Loading weights:  11%|█         | 80/760 [00:04<00:10, 65.64it/s]Loading weights:  12%|█▏        | 93/760 [00:04<00:08, 77.61it/s]Loading weights:  14%|█▎        | 104/760 [00:04<00:09, 71.00it/s]Loading weights:  16%|█▌        | 119/760 [00:04<00:07, 85.41it/s]Loading weights:  17%|█▋        | 132/760 [00:04<00:06, 93.65it/s]Loading weights:  19%|█▉        | 143/760 [00:05<00:06, 94.46it/s]Loading weights:  20%|██        | 154/760 [00:05<00:08, 74.18it/s]Loading weights:  23%|██▎       | 172/760 [00:05<00:06, 92.45it/s]Loading weights:  24%|██▍       | 183/760 [00:05<00:06, 94.83it/s]Loading weights:  26%|██▌       | 194/760 [00:05<00:05, 95.05it/s]Loading weights:  27%|██▋       | 205/760 [00:05<00:06, 81.73it/s]Loading weights:  28%|██▊       | 214/760 [00:05<00:06, 81.99it/s]Loading weights:  30%|██▉       | 226/760 [00:06<00:06, 88.08it/s]Loading weights:  31%|███▏      | 239/760 [00:06<00:05, 94.99it/s]Loading weights:  33%|███▎      | 250/760 [00:06<00:05, 98.12it/s]Loading weights:  34%|███▍      | 261/760 [00:06<00:06, 75.95it/s]Loading weights:  37%|███▋      | 278/760 [00:06<00:05, 92.29it/s]Loading weights:  38%|███▊      | 289/760 [00:06<00:04, 96.00it/s]Loading weights:  39%|███▉      | 300/760 [00:06<00:04, 95.78it/s]Loading weights:  41%|████      | 311/760 [00:07<00:05, 84.09it/s]Loading weights:  42%|████▏     | 320/760 [00:07<00:05, 85.27it/s]Loading weights:  44%|████▎     | 332/760 [00:07<00:04, 92.24it/s]Loading weights:  45%|████▌     | 345/760 [00:07<00:04, 98.16it/s]Loading weights:  47%|████▋     | 356/760 [00:07<00:04, 100.23it/s]Loading weights:  48%|████▊     | 367/760 [00:07<00:05, 74.99it/s] Loading weights:  51%|█████     | 384/760 [00:07<00:04, 92.15it/s]Loading weights:  52%|█████▏    | 395/760 [00:07<00:03, 95.45it/s]Loading weights:  53%|█████▎    | 406/760 [00:08<00:03, 97.69it/s]Loading weights:  55%|█████▍    | 417/760 [00:08<00:04, 83.24it/s]Loading weights:  56%|█████▌    | 427/760 [00:08<00:03, 86.26it/s]Loading weights:  69%|██████▉   | 525/760 [00:08<00:00, 307.37it/s]Loading weights:  82%|████████▏ | 623/760 [00:08<00:00, 479.79it/s]Loading weights:  94%|█████████▎| 711/760 [00:08<00:00, 586.61it/s]Loading weights: 100%|██████████| 760/760 [00:08<00:00, 87.50it/s] 
+Unsloth: D:/ai-lab/models/qwen35-9b-base had a bad pad_token (<|endoftext|>). Using pad_token = <|vision_pad|>.
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+Modelo cargado y LoRA aplicado en 14s
+Parámetros entrenables: 3,932,160 / 5,748,958,448 (0.068%)
+Capas tocadas por LoRA: [3, 7, 11, 15, 19, 23, 27, 31]
+  (esperado [3, 7, 11, 15, 19, 23, 27, 31] — solo full-attention)
+  ✅ Ningún módulo DeltaNet entrenándose.
+Dataset: 140 ejemplos.
+Training QLoRA real...
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 248044}.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 140 | Num Epochs = 2 | Total steps = 36
+O^O/ \_/ \    Batch size per device = 1 | Gradient accumulation steps = 8
+\        /    Data Parallel GPUs = 1 | Total batch size (1 x 8 x 1) = 8
+ "-____-"     Trainable parameters = 3,932,160 of 9,413,745,904 (0.04% trained)
+  0%|          | 0/36 [00:00<?, ?it/s]D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  return original(name)
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\import_fixes.py:3239: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  return original(name)
+remark: <unknown>:0:0: 884 instructions in function
+remark: <unknown>:0:0: 1800 instructions in function
+remark: <unknown>:0:0: 456 instructions in function
+remark: <unknown>:0:0: 932 instructions in function
+remark: <unknown>:0:0: 2811 instructions in function
+remark: <unknown>:0:0: 1901 instructions in function
+remark: <unknown>:0:0: 486 instructions in function
+remark: <unknown>:0:0: 887 instructions in function
+remark: <unknown>:0:0: 1774 instructions in function
+remark: <unknown>:0:0: 1350 instructions in function
+remark: <unknown>:0:0: 2625 instructions in function
+remark: <unknown>:0:0: 10407 instructions in function
+remark: <unknown>:0:0: 10400 instructions in function
+remark: <unknown>:0:0: 2940 instructions in function
+remark: <unknown>:0:0: 2618 instructions in function
+remark: <unknown>:0:0: 5233 instructions in function
+remark: <unknown>:0:0: 5230 instructions in function
+remark: <unknown>:0:0: 10407 instructions in function
+remark: <unknown>:0:0: 46965 instructions in function
+remark: <unknown>:0:0: 285 instructions in function
+remark: <unknown>:0:0: 295 instructions in function
+remark: <unknown>:0:0: 486 instructions in function
+remark: <unknown>:0:0: 940 instructions in function
+remark: <unknown>:0:0: 1821 instructions in function
+remark: <unknown>:0:0: 4612 instructions in function
+remark: <unknown>:0:0: 10770 instructions in function
+remark: <unknown>:0:0: 284 instructions in function
+remark: <unknown>:0:0: 496 instructions in function
+remark: <unknown>:0:0: 915 instructions in function
+remark: <unknown>:0:0: 1959 instructions in function
+remark: <unknown>:0:0: 4719 instructions in function
+remark: <unknown>:0:0: 167 instructions in function
+remark: <unknown>:0:0: 281 instructions in function
+remark: <unknown>:0:0: 492 instructions in function
+remark: <unknown>:0:0: 916 instructions in function
+remark: <unknown>:0:0: 1957 instructions in function
+remark: <unknown>:0:0: 133 instructions in function
+remark: <unknown>:0:0: 161 instructions in function
+remark: <unknown>:0:0: 281 instructions in function
+remark: <unknown>:0:0: 493 instructions in function
+remark: <unknown>:0:0: 912 instructions in function
+remark: <unknown>:0:0: 133 instructions in function
+remark: <unknown>:0:0: 133 instructions in function
+remark: <unknown>:0:0: 162 instructions in function
+remark: <unknown>:0:0: 284 instructions in function
+remark: <unknown>:0:0: 477 instructions in function
+remark: <unknown>:0:0: 114 instructions in function
+remark: <unknown>:0:0: 107 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 5754 instructions in function
+remark: <unknown>:0:0: 4433 instructions in function
+remark: <unknown>:0:0: 3462 instructions in function
+remark: <unknown>:0:0: 6024 instructions in function
+remark: <unknown>:0:0: 4345 instructions in function
+remark: <unknown>:0:0: 3298 instructions in function
+remark: <unknown>:0:0: 4383 instructions in function
+remark: <unknown>:0:0: 4664 instructions in function
+remark: <unknown>:0:0: 4745 instructions in function
+remark: <unknown>:0:0: 2995 instructions in function
+remark: <unknown>:0:0: 3142 instructions in function
+remark: <unknown>:0:0: 3204 instructions in function
+remark: <unknown>:0:0: 1663 instructions in function
+remark: <unknown>:0:0: 1738 instructions in function
+remark: <unknown>:0:0: 1796 instructions in function
+remark: <unknown>:0:0: 3477 instructions in function
+remark: <unknown>:0:0: 2094 instructions in function
+remark: <unknown>:0:0: 1928 instructions in function
+remark: <unknown>:0:0: 1233 instructions in function
+remark: <unknown>:0:0: 1821 instructions in function
+remark: <unknown>:0:0: 1346 instructions in function
+remark: <unknown>:0:0: 1800 instructions in function
+remark: <unknown>:0:0: 668 instructions in function
+remark: <unknown>:0:0: 403 instructions in function
+remark: <unknown>:0:0: 274 instructions in function
+remark: <unknown>:0:0: 1666 instructions in function
+remark: <unknown>:0:0: 668 instructions in function
+remark: <unknown>:0:0: 399 instructions in function
+remark: <unknown>:0:0: 3223 instructions in function
+remark: <unknown>:0:0: 1679 instructions in function
+remark: <unknown>:0:0: 683 instructions in function
+remark: <unknown>:0:0: 354 instructions in function
+remark: <unknown>:0:0: 204 instructions in function
+remark: <unknown>:0:0: 285 instructions in function
+remark: <unknown>:0:0: 505 instructions in function
+remark: <unknown>:0:0: 5881 instructions in function
+remark: <unknown>:0:0: 2954 instructions in function
+remark: <unknown>:0:0: 5881 instructions in function
+remark: <unknown>:0:0: 2954 instructions in function
+remark: <unknown>:0:0: 292 instructions in function
+remark: <unknown>:0:0: 292 instructions in function
+remark: <unknown>:0:0: 394 instructions in function
+remark: <unknown>:0:0: 386 instructions in function
+remark: <unknown>:0:0: 1903 instructions in function
+remark: <unknown>:0:0: 735 instructions in function
+remark: <unknown>:0:0: 285 instructions in function
+remark: <unknown>:0:0: 274 instructions in function
+remark: <unknown>:0:0: 576 instructions in function
+remark: <unknown>:0:0: 728 instructions in function
+remark: <unknown>:0:0: 4189 instructions in function
+remark: <unknown>:0:0: 2124 instructions in function
+remark: <unknown>:0:0: 4189 instructions in function
+remark: <unknown>:0:0: 2124 instructions in function
+remark: <unknown>:0:0: 359 instructions in function
+remark: <unknown>:0:0: 212 instructions in function
+remark: <unknown>:0:0: 31 instructions in function
+remark: <unknown>:0:0: 24 instructions in function
+remark: <unknown>:0:0: 535 instructions in function
+remark: <unknown>:0:0: 305 instructions in function
+remark: <unknown>:0:0: 102 instructions in function
+remark: <unknown>:0:0: 73 instructions in function
+remark: <unknown>:0:0: 1301 instructions in function
+remark: <unknown>:0:0: 765 instructions in function
+remark: <unknown>:0:0: 430 instructions in function
+remark: <unknown>:0:0: 2201 instructions in function
+remark: <unknown>:0:0: 1293 instructions in function
+remark: <unknown>:0:0: 781 instructions in function
+remark: <unknown>:0:0: 4825 instructions in function
+remark: <unknown>:0:0: 2198 instructions in function
+remark: <unknown>:0:0: 1314 instructions in function
+remark: <unknown>:0:0: 1602 instructions in function
+remark: <unknown>:0:0: 2051 instructions in function
+remark: <unknown>:0:0: 2190 instructions in function
+remark: <unknown>:0:0: 1134 instructions in function
+remark: <unknown>:0:0: 1298 instructions in function
+remark: <unknown>:0:0: 1474 instructions in function
+remark: <unknown>:0:0: 792 instructions in function
+remark: <unknown>:0:0: 891 instructions in function
+remark: <unknown>:0:0: 1033 instructions in function
+remark: <unknown>:0:0: 15304 instructions in function
+remark: <unknown>:0:0: 8139 instructions in function
+remark: <unknown>:0:0: 3670 instructions in function
+remark: <unknown>:0:0: 4393 instructions in function
+remark: <unknown>:0:0: 4567 instructions in function
+remark: <unknown>:0:0: 2442 instructions in function
+remark: <unknown>:0:0: 2835 instructions in function
+remark: <unknown>:0:0: 2995 instructions in function
+remark: <unknown>:0:0: 1667 instructions in function
+remark: <unknown>:0:0: 2047 instructions in function
+remark: <unknown>:0:0: 2036 instructions in function
+remark: <unknown>:0:0: 7917 instructions in function
+remark: <unknown>:0:0: 10445 instructions in function
+remark: <unknown>:0:0: 13205 instructions in function
+remark: <unknown>:0:0: 5092 instructions in function
+remark: <unknown>:0:0: 6865 instructions in function
+remark: <unknown>:0:0: 8625 instructions in function
+remark: <unknown>:0:0: 127 instructions in function
+remark: <unknown>:0:0: 465 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1767 instructions in function
+remark: <unknown>:0:0: 3791 instructions in function
+remark: <unknown>:0:0: 9172 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1804 instructions in function
+remark: <unknown>:0:0: 3991 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 951 instructions in function
+remark: <unknown>:0:0: 1795 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 464 instructions in function
+remark: <unknown>:0:0: 946 instructions in function
+remark: <unknown>:0:0: 97 instructions in function
+remark: <unknown>:0:0: 116 instructions in function
+remark: <unknown>:0:0: 137 instructions in function
+remark: <unknown>:0:0: 250 instructions in function
+remark: <unknown>:0:0: 462 instructions in function
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+  3%|▎         | 1/36 [03:43<2:10:21, 223.47s/it]a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+remark: <unknown>:0:0: 765 instructions in function
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+  6%|▌         | 2/36 [03:53<55:30, 97.96s/it]                                                   6%|▌         | 2/36 [03:53<55:30, 97.96s/it]a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+  8%|▊         | 3/36 [04:01<31:20, 56.99s/it]a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+ 11%|█         | 4/36 [04:11<20:25, 38.29s/it]                                               11%|█         | 4/36 [04:11<20:25, 38.29s/it]a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+ 14%|█▍        | 5/36 [04:19<14:07, 27.35s/it]a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+ 17%|█▋        | 6/36 [04:28<10:34, 21.14s/it]                                               17%|█▋        | 6/36 [04:28<10:34, 21.14s/it]a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+ 19%|█▉        | 7/36 [04:38<08:26, 17.46s/it]a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+ 22%|██▏       | 8/36 [04:48<07:00, 15.03s/it]                                               22%|██▏       | 8/36 [04:48<07:00, 15.03s/it]a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+ 25%|██▌       | 9/36 [04:57<06:00, 13.35s/it]a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+ 28%|██▊       | 10/36 [05:07<05:17, 12.20s/it]                                                28%|██▊       | 10/36 [05:07<05:17, 12.20s/it]a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+ 31%|███       | 11/36 [05:17<04:50, 11.60s/it]a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+ 33%|███▎      | 12/36 [05:26<04:16, 10.67s/it]                                                33%|███▎      | 12/36 [05:26<04:16, 10.67s/it]a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+ 36%|███▌      | 13/36 [05:35<03:58, 10.37s/it]a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{640, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{640, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+ 39%|███▉      | 14/36 [05:47<03:56, 10.74s/it]                                                39%|███▉      | 14/36 [05:47<03:56, 10.74s/it]a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{320, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{320, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{384, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{384, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+ 42%|████▏     | 15/36 [05:56<03:36, 10.30s/it]a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{256, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{256, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+ 44%|████▍     | 16/36 [06:05<03:18,  9.93s/it]                                                44%|████▍     | 16/36 [06:05<03:18,  9.93s/it]a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+a_grid_desc_m_ak_container_{192, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{192, 64}
+ 47%|████▋     | 17/36 [06:14<03:01,  9.56s/it]a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+a_grid_desc_m_ak_container_{512, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{512, 64}
+ 50%|█████     | 18/36 [06:18<02:20,  7.80s/it]                                                50%|█████     | 18/36 [06:18<02:20,  7.80s/it] 53%|█████▎    | 19/36 [06:25<02:10,  7.66s/it] 56%|█████▌    | 20/36 [06:34<02:08,  8.02s/it]                                                56%|█████▌    | 20/36 [06:34<02:08,  8.02s/it] 58%|█████▊    | 21/36 [06:44<02:09,  8.62s/it] 61%|██████    | 22/36 [06:52<01:58,  8.46s/it]                                                61%|██████    | 22/36 [06:52<01:58,  8.46s/it] 64%|██████▍   | 23/36 [07:00<01:47,  8.31s/it] 67%|██████▋   | 24/36 [07:10<01:43,  8.66s/it]                                                67%|██████▋   | 24/36 [07:10<01:43,  8.66s/it] 69%|██████▉   | 25/36 [07:18<01:34,  8.63s/it] 72%|███████▏  | 26/36 [07:26<01:23,  8.36s/it]                                                72%|███████▏  | 26/36 [07:26<01:23,  8.36s/it] 75%|███████▌  | 27/36 [07:35<01:17,  8.65s/it] 78%|███████▊  | 28/36 [07:43<01:08,  8.51s/it]                                                78%|███████▊  | 28/36 [07:43<01:08,  8.51s/it] 81%|████████  | 29/36 [07:52<00:59,  8.52s/it] 83%|████████▎ | 30/36 [08:01<00:51,  8.59s/it]                                                83%|████████▎ | 30/36 [08:01<00:51,  8.59s/it] 86%|████████▌ | 31/36 [08:08<00:40,  8.10s/it] 89%|████████▉ | 32/36 [08:15<00:32,  8.04s/it]                                                89%|████████▉ | 32/36 [08:18<00:32,  8.04s/it] 92%|█████████▏| 33/36 [08:25<00:25,  8.63s/it] 94%|█████████▍| 34/36 [08:33<00:16,  8.43s/it]                                                94%|█████████▍| 34/36 [08:33<00:16,  8.43s/it] 97%|█████████▋| 35/36 [08:41<00:08,  8.24s/it]100%|██████████| 36/36 [08:45<00:00,  7.00s/it]                                               100%|██████████| 36/36 [08:45<00:00,  7.00s/it]Unsloth: Restored added_tokens_decoder metadata in D:/ai-lab/fase2/out_qwen35_attn\checkpoint-36\tokenizer_config.json.
+                                               100%|██████████| 36/36 [08:46<00:00,  7.00s/it]100%|██████████| 36/36 [08:46<00:00, 14.63s/it]
+Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass.
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': '1.514', 'grad_norm': '0.1099', 'learning_rate': '5e-05', 'epoch': '0.1143'}
+{'loss': '1.613', 'grad_norm': '0.1276', 'learning_rate': '0.00015', 'epoch': '0.2286'}
+{'loss': '1.6', 'grad_norm': '0.1897', 'learning_rate': '0.0001938', 'epoch': '0.3429'}
+{'loss': '1.358', 'grad_norm': '0.233', 'learning_rate': '0.0001813', 'epoch': '0.4571'}
+{'loss': '1.406', 'grad_norm': '0.2921', 'learning_rate': '0.0001688', 'epoch': '0.5714'}
+{'loss': '1.327', 'grad_norm': '0.3358', 'learning_rate': '0.0001563', 'epoch': '0.6857'}
+{'loss': '1.134', 'grad_norm': '0.3802', 'learning_rate': '0.0001437', 'epoch': '0.8'}
+{'loss': '1.203', 'grad_norm': '0.3834', 'learning_rate': '0.0001313', 'epoch': '0.9143'}
+{'loss': '1.218', 'grad_norm': '0.5119', 'learning_rate': '0.0001187', 'epoch': '1'}
+{'loss': '1.13', 'grad_norm': '0.3693', 'learning_rate': '0.0001063', 'epoch': '1.114'}
+{'loss': '0.9427', 'grad_norm': '0.4339', 'learning_rate': '9.375e-05', 'epoch': '1.229'}
+{'loss': '0.9398', 'grad_norm': '0.3778', 'learning_rate': '8.125e-05', 'epoch': '1.343'}
+{'loss': '0.9476', 'grad_norm': '0.4471', 'learning_rate': '6.875e-05', 'epoch': '1.457'}
+{'loss': '0.8305', 'grad_norm': '0.4223', 'learning_rate': '5.625e-05', 'epoch': '1.571'}
+{'loss': '0.7447', 'grad_norm': '0.3987', 'learning_rate': '4.375e-05', 'epoch': '1.686'}
+{'loss': '0.9535', 'grad_norm': '0.4517', 'learning_rate': '3.125e-05', 'epoch': '1.8'}
+{'loss': '0.8645', 'grad_norm': '0.4701', 'learning_rate': '1.875e-05', 'epoch': '1.914'}
+{'loss': '0.8565', 'grad_norm': '0.6075', 'learning_rate': '6.25e-06', 'epoch': '2'}
+{'train_runtime': '526.8', 'train_samples_per_second': '0.531', 'train_steps_per_second': '0.068', 'train_loss': '1.143', 'epoch': '2'}
+Guardando adapter...
+Unsloth: Restored added_tokens_decoder metadata in D:/ai-lab/fase2/out_qwen35_attn\tokenizer_config.json.
+VRAM pico: 8.82 GB
+LISTO.

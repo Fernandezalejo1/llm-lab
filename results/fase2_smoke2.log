@@ -1,0 +1,110 @@
+============================================================
+1) Backend / GPU
+============================================================
+python: 3.12.14
+torch: 2.11.0+rocm7.13.0
+build: 7.13.99004
+gpu disponible: True
+device: AMD Radeon RX 9070 XT
+capability: (12, 0)
+VRAM total: 17.1 GB
+
+============================================================
+2) Unsloth
+============================================================
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+D:\ai-lab\fase2\.venv\Lib\site-packages\triton\windows_utils.py:224: UserWarning: Failed to find MSVC. Install Visual Studio Build Tools (https://visualstudio.microsoft.com/downloads/) or set the CC environment variable to your C compiler.
+  warnings.warn("Failed to find MSVC."
+D:\ai-lab\fase2\.venv\Lib\site-packages\triton\windows_utils.py:327: UserWarning: Failed to find Windows SDK. Install it via Visual Studio Installer or from https://developer.microsoft.com/windows/downloads/windows-sdk/
+  warnings.warn("Failed to find Windows SDK."
+In file included from \\?\~\AppData\Local\Temp\tmpku54vxfe\hip_utils.c:2:
+D:\ai-lab\fase2\.venv\Lib\site-packages\triton\backends\amd\include\hip/hip_runtime.h(49,10): fatal error: 'stdlib.h' file not found
+   49 | #include <stdlib.h>
+      |          ^~~~~~~~~~
+1 error generated.
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\_vendored\fla\utils\_device.py:100: UserWarning: Triton is not supported on current platform, roll back to CPU.
+  _cpu_device_warning()
+In file included from \\?\~\AppData\Local\Temp\tmpv81pe2si\hip_utils.c:2:
+D:\ai-lab\fase2\.venv\Lib\site-packages\triton\backends\amd\include\hip/hip_runtime.h(49,10): fatal error: 'stdlib.h' file not found
+   49 | #include <stdlib.h>
+      |          ^~~~~~~~~~
+1 error generated.
+D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\_vendored\fla\utils\_device.py:165: UserWarning: Triton is not supported on current platform, roll back to CPU.
+  _cpu_device_warning()
+In file included from \\?\~\AppData\Local\Temp\tmphmhv1zs1\hip_utils.c:2:
+D:\ai-lab\fase2\.venv\Lib\site-packages\triton\backends\amd\include\hip/hip_runtime.h(49,10): fatal error: 'stdlib.h' file not found
+   49 | #include <stdlib.h>
+      |          ^~~~~~~~~~
+1 error generated.
+In file included from \\?\~\AppData\Local\Temp\tmp4nfo5lgy\hip_utils.c:2:
+D:\ai-lab\fase2\.venv\Lib\site-packages\triton\backends\amd\include\hip/hip_runtime.h(49,10): fatal error: 'stdlib.h' file not found
+   49 | #include <stdlib.h>
+      |          ^~~~~~~~~~
+1 error generated.
+D:\ai-lab\fase2\.venv\Lib\site-packages\huggingface_hub\constants.py:301: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Failed to compile. cc_cmd: ['D:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\_rocm_sdk_core\\lib\\llvm\\bin\\clang-cl.exe', '\\\\?\\~\\AppData\\Local\\Temp\\tmpku54vxfe\\hip_utils.c', '/nologo', '/O2', '/LD', '/wd4819', '/std:c11', '/ID:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\triton\\backends\\amd\\include', '/IC:\\Program Files\\AMD\\ROCm\\7.1\\include', '/I\\\\?\\~\\AppData\\Local\\Temp\\tmpg00f2hba', '/I~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Include', '/Fo\\\\?\\~\\AppData\\Local\\Temp\\tmpg00f2hba\\hip_utils.cp312-win_amd64.obj', '/link', '/LIBPATH:~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\libs', 'python312.lib', '/OUT:\\\\?\\~\\AppData\\Local\\Temp\\tmpg00f2hba\\hip_utils.cp312-win_amd64.pyd', '/IMPLIB:\\\\?\\~\\AppData\\Local\\Temp\\tmpg00f2hba\\hip_utils.cp312-win_amd64.lib', '/PDB:\\\\?\\~\\AppData\\Local\\Temp\\tmpg00f2hba\\hip_utils.cp312-win_amd64.pdb']
+Failed to compile. cc_cmd: ['D:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\_rocm_sdk_core\\lib\\llvm\\bin\\clang-cl.exe', '\\\\?\\~\\AppData\\Local\\Temp\\tmpv81pe2si\\hip_utils.c', '/nologo', '/O2', '/LD', '/wd4819', '/std:c11', '/ID:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\triton\\backends\\amd\\include', '/IC:\\Program Files\\AMD\\ROCm\\7.1\\include', '/I\\\\?\\~\\AppData\\Local\\Temp\\tmptosvyafm', '/I~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Include', '/Fo\\\\?\\~\\AppData\\Local\\Temp\\tmptosvyafm\\hip_utils.cp312-win_amd64.obj', '/link', '/LIBPATH:~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\libs', 'python312.lib', '/OUT:\\\\?\\~\\AppData\\Local\\Temp\\tmptosvyafm\\hip_utils.cp312-win_amd64.pyd', '/IMPLIB:\\\\?\\~\\AppData\\Local\\Temp\\tmptosvyafm\\hip_utils.cp312-win_amd64.lib', '/PDB:\\\\?\\~\\AppData\\Local\\Temp\\tmptosvyafm\\hip_utils.cp312-win_amd64.pdb']
+Failed to compile. cc_cmd: ['D:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\_rocm_sdk_core\\lib\\llvm\\bin\\clang-cl.exe', '\\\\?\\~\\AppData\\Local\\Temp\\tmphmhv1zs1\\hip_utils.c', '/nologo', '/O2', '/LD', '/wd4819', '/std:c11', '/ID:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\triton\\backends\\amd\\include', '/IC:\\Program Files\\AMD\\ROCm\\7.1\\include', '/I\\\\?\\~\\AppData\\Local\\Temp\\tmpupkxdmms', '/I~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Include', '/Fo\\\\?\\~\\AppData\\Local\\Temp\\tmpupkxdmms\\hip_utils.cp312-win_amd64.obj', '/link', '/LIBPATH:~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\libs', 'python312.lib', '/OUT:\\\\?\\~\\AppData\\Local\\Temp\\tmpupkxdmms\\hip_utils.cp312-win_amd64.pyd', '/IMPLIB:\\\\?\\~\\AppData\\Local\\Temp\\tmpupkxdmms\\hip_utils.cp312-win_amd64.lib', '/PDB:\\\\?\\~\\AppData\\Local\\Temp\\tmpupkxdmms\\hip_utils.cp312-win_amd64.pdb']
+Failed to compile. cc_cmd: ['D:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\_rocm_sdk_core\\lib\\llvm\\bin\\clang-cl.exe', '\\\\?\\~\\AppData\\Local\\Temp\\tmp4nfo5lgy\\hip_utils.c', '/nologo', '/O2', '/LD', '/wd4819', '/std:c11', '/ID:\\ai-lab\\fase2\\.venv\\Lib\\site-packages\\triton\\backends\\amd\\include', '/IC:\\Program Files\\AMD\\ROCm\\7.1\\include', '/I\\\\?\\~\\AppData\\Local\\Temp\\tmpeegyjmgy', '/I~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\Include', '/Fo\\\\?\\~\\AppData\\Local\\Temp\\tmpeegyjmgy\\hip_utils.cp312-win_amd64.obj', '/link', '/LIBPATH:~\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\libs', 'python312.lib', '/OUT:\\\\?\\~\\AppData\\Local\\Temp\\tmpeegyjmgy\\hip_utils.cp312-win_amd64.pyd', '/IMPLIB:\\\\?\\~\\AppData\\Local\\Temp\\tmpeegyjmgy\\hip_utils.cp312-win_amd64.lib', '/PDB:\\\\?\\~\\AppData\\Local\\Temp\\tmpeegyjmgy\\hip_utils.cp312-win_amd64.pdb']
+🦥 Unsloth Zoo will now patch everything to make training faster!
+unsloth: 2026.9.10
+
+============================================================
+3) Carga 4-bit + LoRA + 8 ejemplos, 3 steps
+============================================================
+==((====))==  Unsloth 2026.9.10: Fast Qwen3 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 2. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = FALSE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\smoke_test.py", line 104, in <module>
+    model, tokenizer = FastLanguageModel.from_pretrained(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\loader_utils.py", line 1891, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\loader.py", line 1030, in from_pretrained
+    model, tokenizer = dispatch_model.from_pretrained(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\qwen3.py", line 399, in from_pretrained
+    return FastLlamaModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth_zoo\temporary_patches\moe_grouped_modulelist.py", line 390, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\llama.py", line 2794, in from_pretrained
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 387, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4089, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 449, in __init__
+    self.model = Qwen3Model(config)
+                 ^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 368, in __init__
+    self.rotary_emb = Qwen3RotaryEmbedding(config=config)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\llama.py", line 1836, in __init__
+    self._set_cos_sin_cache(
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\llama.py", line 1889, in _set_cos_sin_cache
+    cos = (emb.cos() * self.attention_scaling).to(dtype = dtype, device = device, non_blocking = True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\torch\utils\_device.py", line 116, in __torch_function__
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: invalid kernel file
+Search for `hipErrorInvalidKernelFile' in https://rocm.docs.amd.com/projects/HIP/en/latest/index.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Device-side assertion tracking was not enabled by user.

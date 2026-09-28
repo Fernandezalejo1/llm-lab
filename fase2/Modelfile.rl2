@@ -1,0 +1,7 @@
+FROM D:/ai-lab/fase2/gguf_qwen35_attn_rl2_gguf/merged_qwen35_attn_rl2.Q4_K_M.gguf
+
+# GGUF del modelo GRPO-RL dense (Fase 3b). Template Qwen3.5 embebido.
+# Params del lab (mismos que local-qwen-rl para comparación limpia):
+PARAMETER temperature 0.6
+PARAMETER top_p 0.9
+PARAMETER num_ctx 32768

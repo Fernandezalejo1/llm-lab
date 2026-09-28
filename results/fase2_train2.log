@@ -1,0 +1,46 @@
+[bitsandbytes.cextension|WARNING]WARNING: BNB_ROCM_VERSION=715 environment variable detected; loading libbitsandbytes_rocm715.dll.
+This overrides automatic ROCm version selection.
+If this was unintended clear the variable and retry: unset BNB_ROCM_VERSION
+
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+============================================================
+Cargando Qwen3.5-9B-Base 4-bit + LoRA attention-only...
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+==((====))==  Unsloth 2026.9.10: Fast Qwen3_5 patching. Transformers: 5.5.0.
+   \\   /|    AMD Radeon RX 9070 XT. Num GPUs = 1. Max memory: 15.922 GB. Platform: Windows.
+O^O/ \_/ \    Torch: 2.11.0+rocm7.13.0. ROCm Toolkit: 7.13.99004. Triton: 3.8.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:12<2:40:56, 12.72s/it]Loading weights:   0%|          | 2/760 [00:21<2:12:22, 10.48s/it]Loading weights:   1%|          | 7/760 [00:21<25:30,  2.03s/it]  Loading weights:   2%|▏         | 14/760 [00:21<09:47,  1.27it/s]Loading weights:   4%|▎         | 27/760 [00:21<03:42,  3.29it/s]Loading weights:   5%|▌         | 38/760 [00:22<02:08,  5.63it/s]Loading weights:   6%|▌         | 47/760 [00:22<01:29,  7.98it/s]Loading weights:   8%|▊         | 63/760 [00:22<00:49, 14.12it/s]Loading weights:  10%|▉         | 73/760 [00:22<00:36, 18.75it/s]Loading weights:  11%|█         | 83/760 [00:22<00:28, 23.88it/s]Loading weights:  12%|█▎        | 95/760 [00:22<00:20, 32.26it/s]Loading weights:  14%|█▍        | 105/760 [00:22<00:17, 38.23it/s]Loading weights:  16%|█▌        | 119/760 [00:22<00:12, 51.69it/s]Loading weights:  17%|█▋        | 132/760 [00:23<00:09, 63.20it/s]Loading weights:  19%|█▉        | 143/760 [00:23<00:08, 69.33it/s]Loading weights:  20%|██        | 154/760 [00:23<00:09, 61.15it/s]Loading weights:  23%|██▎       | 172/760 [00:23<00:07, 80.03it/s]Loading weights:  24%|██▍       | 183/760 [00:23<00:06, 85.36it/s]Loading weights:  26%|██▌       | 194/760 [00:23<00:06, 87.73it/s]Loading weights:  27%|██▋       | 205/760 [00:23<00:07, 76.56it/s]Loading weights:  28%|██▊       | 214/760 [00:24<00:07, 77.38it/s]Loading weights:  30%|██▉       | 226/760 [00:24<00:06, 82.47it/s]Loading weights:  31%|███▏      | 239/760 [00:24<00:05, 89.72it/s]Loading weights:  33%|███▎      | 250/760 [00:24<00:05, 93.21it/s]Loading weights:  34%|███▍      | 260/760 [00:24<00:06, 71.44it/s]Loading weights:  37%|███▋      | 278/760 [00:24<00:05, 90.29it/s]Loading weights:  38%|███▊      | 289/760 [00:24<00:05, 93.39it/s]Loading weights:  39%|███▉      | 300/760 [00:25<00:04, 93.23it/s]Loading weights:  41%|████      | 310/760 [00:25<00:05, 85.78it/s]Loading weights:  42%|████▏     | 320/760 [00:25<00:05, 79.55it/s]Loading weights:  44%|████▎     | 332/760 [00:25<00:04, 85.86it/s]Loading weights:  45%|████▌     | 345/760 [00:25<00:04, 94.84it/s]Loading weights:  47%|████▋     | 356/760 [00:25<00:04, 97.72it/s]Loading weights:  48%|████▊     | 367/760 [00:25<00:05, 76.21it/s]Loading weights:  51%|█████     | 384/760 [00:25<00:04, 92.95it/s]Loading weights:  52%|█████▏    | 395/760 [00:26<00:03, 96.04it/s]Loading weights:  53%|█████▎    | 406/760 [00:26<00:03, 97.09it/s]Loading weights:  55%|█████▍    | 417/760 [00:26<00:04, 80.20it/s]Loading weights:  56%|█████▌    | 426/760 [00:26<00:04, 79.71it/s]Loading weights:  68%|██████▊   | 515/760 [00:26<00:00, 271.78it/s]Loading weights:  80%|████████  | 611/760 [00:26<00:00, 442.88it/s]Loading weights:  93%|█████████▎| 709/760 [00:26<00:00, 582.34it/s]Loading weights: 100%|██████████| 760/760 [00:26<00:00, 28.27it/s] 
+Unsloth: D:/ai-lab/models/qwen35-9b-base had a bad pad_token (<|endoftext|>). Using pad_token = <|vision_pad|>.
+Unsloth: Explicit target_modules are constrained by the finetune_(vision|language|attention|mlp) filters; adapters attach only where both select.
+Modelo cargado y LoRA aplicado en 33s
+Parámetros entrenables: 3,932,160 / 5,748,958,448 (0.068%)
+Capas tocadas por LoRA: [3, 7, 11, 15, 19, 23, 27, 31]
+  (esperado [3, 7, 11, 15, 19, 23, 27, 31] — solo full-attention)
+  ✅ Ningún módulo DeltaNet entrenándose.
+Dataset: 140 ejemplos.
+Traceback (most recent call last):
+  File "D:\ai-lab\fase2\train_qwen35.py", line 160, in <module>
+    main()
+  File "D:\ai-lab\fase2\train_qwen35.py", line 131, in main
+    trainer = SFTTrainer(
+              ^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\trainer.py", line 1308, in new_init
+    original_init(self, *args, **kwargs)
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\trainer.py", line 1468, in new_init
+    original_init(self, *args, **kwargs)
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\UnslothSFTTrainer.py", line 1783, in __init__
+    super().__init__(
+  File "D:\ai-lab\fase2\unsloth_compiled_cache\UnslothSFTTrainer.py", line 1110, in __init__
+    super().__init__(
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\unsloth\models\_utils.py", line 3856, in _unsloth_trainer_init
+    _original_trainer_init(self, *args, **kwargs)
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\trainer.py", line 550, in __init__
+    default_callbacks = DEFAULT_CALLBACKS + get_reporting_integration_callbacks(self.args.report_to)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai-lab\fase2\.venv\Lib\site-packages\transformers\integrations\integration_utils.py", line 2604, in get_reporting_integration_callbacks
+    raise ValueError(
+ValueError: None is not supported, only azure_ml, comet_ml, mlflow, neptune, tensorboard, trackio, wandb, codecarbon, clearml, dagshub, flyte, dvclive, swanlab, kubeflow are supported.
