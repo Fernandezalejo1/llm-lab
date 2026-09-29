@@ -5,6 +5,8 @@
 **Baseline → hypothesis → experiment → evaluation → generalization.**
 On a single consumer GPU (AMD RX 9070 XT 16 GB, Windows), no cloud, no API keys.
 
+[![CI](https://github.com/Fernandezalejo1/llm-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernandezalejo1/llm-lab/actions/workflows/ci.yml)
+
 </div>
 
 ---
